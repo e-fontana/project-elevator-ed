@@ -1,15 +1,9 @@
-`include "frequency_divisor.v"
+`include "frequency_divisor/design.v"
 
-`include "click_handler/location.v"
+module top#(parameter clk_frequency_divisor = 50000000)(CLK_50, clk);
+    input CLK_50;
+    output clk;
 
-`include "emergency/sos_handler.v"
-`include "emergency/door_situation.v"
-`include "emergency/weight_control.v"
-
-`include "position/queue.v"
-`include "position/moviment.v"
-
-module TOP(clk);
-    input clk;
+    frequency_divisor #(clk_frequency_divisor) FD(CLK_50, clk);
 
 endmodule
