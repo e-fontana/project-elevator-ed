@@ -3,7 +3,7 @@
 module test;
     wire clk;
     reg clk50;
-    
+
     integer i;
     parameter clk_frequency = 500;
 
@@ -15,13 +15,14 @@ module test;
 
     initial begin
         clk50 = 0;
+        $display("Clock frequency test!");
         for (i = 0; i < clk_frequency * 5 + 1; i = i + 1) begin
             change_clock;
         end
     end
   
     task display;
-        #1 $display("clk50: %b, clk: %b", clk50, clk);
+        #1 $display("clk: %b", clk);
     endtask
 
     task change_clock;

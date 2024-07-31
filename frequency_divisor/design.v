@@ -1,6 +1,7 @@
 module frequency_divisor #(parameter clk_frequency = 50000000) (clk_50, clk);
     input clk_50;
     output reg clk;
+
     reg [25:0] counter;
 
     always @(posedge clk_50) begin
@@ -12,5 +13,4 @@ module frequency_divisor #(parameter clk_frequency = 50000000) (clk_50, clk);
             clk <= ~clk;
         end
     end
-
 endmodule
