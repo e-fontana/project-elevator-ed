@@ -13,7 +13,8 @@ module top_tb;
      emergency_led,
      st_floor_led,
      nd_floor_led,
-     rd_floor_led;
+     rd_floor_led,
+     door_status_led;
     
     reg clk50, weight_sensor;
 
@@ -33,7 +34,8 @@ module top_tb;
      .emergency_led(emergency_led),
      .st_floor_led(st_floor_led),
      .nd_floor_led(nd_floor_led),
-     .rd_floor_led(rd_floor_led)
+     .rd_floor_led(rd_floor_led),
+     .door_status_led(door_status_led)
     );
 
     initial begin
