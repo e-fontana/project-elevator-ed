@@ -2,20 +2,46 @@
 `include "./design.v"
 
 module top_tb;
-    wire clk;
-    reg clk50;
+    wire
+     clk,
+     sos_button,
+     st_floor_button,
+     nd_floor_button,
+     rd_floor_button,
+     sos_led,
+     weight_led,
+     emergency_led,
+     st_floor_led,
+     nd_floor_led,
+     rd_floor_led;
     
+    reg clk50, weight_sensor;
+
     integer i;
     parameter clk_frequency = 500;
 
-    top #(clk_frequency) TOP(clk50, clk);
-
-    always @(clk) begin
-        display_clock;
-    end
+    top #(clk_frequency) TOP(
+     .CLK_50(clk50),
+     .clk(clk),
+     .sos_button(sos_button),
+     .weight_sensor(weight_sensor),
+     .st_floor_button(st_floor_button),
+     .nd_floor_button(nd_floor_button),
+     .rd_floor_button(rd_floor_button),
+     .sos_led(sos_led),
+     .weight_led(weight_led),
+     .emergency_led(emergency_led),
+     .st_floor_led(st_floor_led),
+     .nd_floor_led(nd_floor_led),
+     .rd_floor_led(rd_floor_led)
+    );
 
     initial begin
         clock_test;
+    end
+
+    always @(clk) begin
+        #1 display_clock;
     end
   
     task display_clock;
@@ -29,7 +55,6 @@ module top_tb;
     task clock_test; 
         #1 begin
             clk50 = 0;
-            $display("Clock frequency test!");
             for (i = 0; i < clk_frequency * 5 + 1; i = i + 1) begin
                 change_clock;
             end
