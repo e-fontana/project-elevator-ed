@@ -2,9 +2,24 @@
 `include "./design.v"
 
 module top_tb;
-    wire sos_led, weight_led, emergency_led, st_floor_led, nd_floor_led, rd_floor_led, clk, door_status_led;
+    wire sos_led,
+     weight_led,
+     emergency_led,
+     st_floor_led,
+     nd_floor_led,
+     rd_floor_led,
+     clk,
+     door_status_led,
+     st_floor_indicator,
+     nd_floor_indicator,
+     rd_floor_indicator;
     
-    reg CLK_50, sos_button, weight_sensor, st_floor_button, nd_floor_button, rd_floor_button;
+    reg CLK_50,
+     sos_button,
+     weight_sensor,
+     st_floor_button,
+     nd_floor_button,
+     rd_floor_button;
 
     integer i;
     parameter clk_frequency = 500;
@@ -23,6 +38,9 @@ module top_tb;
      .st_floor_led(st_floor_led),
      .nd_floor_led(nd_floor_led),
      .rd_floor_led(rd_floor_led),
+     .st_floor_indicator(st_floor_indicator),
+     .nd_floor_indicator(nd_floor_indicator),
+     .rd_floor_indicator(rd_floor_indicator),
      .door_status_led(door_status_led)
     );
 
