@@ -3,3 +3,8 @@ clk: 1
 clk: 0
 clk: 1
 clk: 0
+clk: 1
+clk: 0
+clk: 1
+clk: 0
+frequency_divisor/testbench.v:17: $finish called at 5000 (1s)
