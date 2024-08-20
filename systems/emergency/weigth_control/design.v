@@ -1,4 +1,4 @@
-module weight_handler
+module weight_control
     (
         clk,
         weight,
