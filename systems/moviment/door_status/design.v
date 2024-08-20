@@ -5,6 +5,8 @@ module door_status #(parameter st_floor = 2'b00, nd_floor = 2'b01, rd_floor = 2'
     output reg door_status;
     inout is_mooving;
 
+    // TODO: Call emergency module to verify door status
+
     always @(next_floor) begin
 
         if (open_when == st_floor & floor == st_floor) begin
