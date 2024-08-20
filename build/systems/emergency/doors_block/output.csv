@@ -1,0 +1,12 @@
+door_block = 0, sos_mode = 0
+door_block = 1, sos_mode = 1
+door_block = 0, sos_mode = 0
+door_block = 1, sos_mode = 1
+door_block = 0, sos_mode = 0
+door_block = 1, sos_mode = 1
+door_block = 0, sos_mode = 0
+door_block = 1, sos_mode = 1
+door_block = 0, sos_mode = 0
+door_block = 1, sos_mode = 1
+./systems/emergency/doors_block/testbench.v:14: $finish called at 10 (1s)
+door_block = 0, sos_mode = 0
