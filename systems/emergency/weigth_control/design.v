@@ -1,16 +1,15 @@
 module weight_control
     (
-        clk,
         weight_flip,
-        reset_weight_flip,
+        weight_flip_reset,
         weight_limit_exceeded,
     );
-    input clk, weight_flip, reset_weight_flip;
+    input clk, weight_flip, weight_flip_reset;
     output reg weight_limit_exceeded;
 
     reg [2:0] counter = 3'b000;
 
-    always @(posedge reset_weight_flip) begin
+    always @(posedge weight_flip_reset) begin
         counter <= 3'b000;
         weight_limit_exceeded <= 1'b0;
     end
