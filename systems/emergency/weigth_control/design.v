@@ -1,29 +1,21 @@
 module weight_control
     (
-        clk,
-        weight,
-        is_door_open,
-        is_alarm_active
+        weight_flip,
+        weight_flip_reset,
+        weight_limit_exceeded,
     );
+    input clk, weight_flip, weight_flip_reset;
+    output reg weight_limit_exceeded;
 
-    input clk;
-    input [7:0] weight;
+    reg [2:0] counter = 3'b000;
 
-    always @(posedge clk) begin
-        if (weight > 100) begin
-            is_door_open <= 1;
-            is_alarm_active <= 1;
-            $display("Weight is too high");
-        end else begin
-            if (is_alarm_active == 1) begin
-                is_alarm_active <= 0;
-                $display("Alarm is deactivated");
-            end
-            if (is_door_open == 1) begin
-                is_door_open <= 0;
-                $display("Door is closed");
-            end
-        end
-        $display("Weight: %d", weight);
+    always @(posedge weight_flip_reset) begin
+        counter <= 3'b000;
+        weight_limit_exceeded <= 1'b0;
+    end
+
+    always @(posedge weight_flip) begin
+        if (counter <= 3'b101) counter <= counter + 1;
+        else weight_limit_exceeded <= 1'b1;
     end
 endmodule
