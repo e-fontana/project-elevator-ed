@@ -5,7 +5,7 @@ module sos_handler_tb;
     reg sos_button;
     wire sos_mode;
     
-    location LOCATION(clk, sos_button, sos_mode);
+    sos_handler sh(clk, sos_button, sos_mode);
 
     initial begin
         sos_button = 0;
