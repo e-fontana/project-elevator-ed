@@ -1,0 +1,48 @@
+#! /usr/local/bin/vvp
+:ivl_version "11.0 (stable)" "(v11_0-132-gb2f2414f4)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+S_0x557f9fbb20d0 .scope module, "moviment_authorization_tb" "moviment_authorization_tb" 2 3;
+ .timescale 0 0;
+v0x557f9fbc0e70_0 .var "clk", 0 0;
+v0x557f9fbc0f40_0 .var "emergency_mode", 0 0;
+v0x557f9fbc1010_0 .net "moviment_authorization", 0 0, v0x557f9fbc0d50_0;  1 drivers
+S_0x557f9fbb2260 .scope module, "mv_a" "moviment_authorization" 2 7, 3 1 0, S_0x557f9fbb20d0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "emergency_mode";
+    .port_info 2 /OUTPUT 1 "moviment_authorization";
+v0x557f9fbb27f0_0 .net "clk", 0 0, v0x557f9fbc0e70_0;  1 drivers
+v0x557f9fb7a230_0 .net "emergency_mode", 0 0, v0x557f9fbc0f40_0;  1 drivers
+v0x557f9fbc0d50_0 .var "moviment_authorization", 0 0;
+E_0x557f9fb79620 .event posedge, v0x557f9fbb27f0_0;
+    .scope S_0x557f9fbb2260;
+T_0 ;
+    %wait E_0x557f9fb79620;
+    %load/vec4 v0x557f9fb7a230_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x557f9fbc0d50_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0x557f9fbc0d50_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x557f9fbb20d0;
+T_1 ;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "systems/moviment/moviment_authorization/testbench.v";
+    "./systems/moviment/moviment_authorization/design.v";
