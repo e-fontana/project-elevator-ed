@@ -1,11 +1,8 @@
 module weight_control
     (
-        weight_flip,
-        weight_flip_reset,
-        weight_limit_exceeded,
+       input weight_flip, weight_flip_reset,
+       output reg weight_limit_exceeded
     );
-    input clk, weight_flip, weight_flip_reset;
-    output reg weight_limit_exceeded;
 
     reg [2:0] counter = 3'b000;
 
