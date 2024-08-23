@@ -7,68 +7,114 @@
 :vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
 :vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
 :vpi_module "/usr/local/lib/ivl/va_math.vpi";
-S_0x563aa7daf200 .scope module, "weight_control_tb" "weight_control_tb" 2 3;
+S_0x5606887f25e0 .scope module, "weight_control_tb" "weight_control_tb" 2 3;
  .timescale 0 0;
-o0x7f1cf5475018 .functor BUFZ 1, C4<z>; HiZ drive
-v0x563aa7dbf3a0_0 .net "clk", 0 0, o0x7f1cf5475018;  0 drivers
-o0x7f1cf5475078 .functor BUFZ 1, C4<z>; HiZ drive
-v0x563aa7dbf460_0 .net "reset_weight_flip", 0 0, o0x7f1cf5475078;  0 drivers
-o0x7f1cf54750a8 .functor BUFZ 1, C4<z>; HiZ drive
-v0x563aa7dbf530_0 .net "weight_flip", 0 0, o0x7f1cf54750a8;  0 drivers
-v0x563aa7dbf630_0 .net "weight_limit_exceeded", 0 0, v0x563aa7dbf210_0;  1 drivers
-S_0x563aa7daf390 .scope module, "wc" "weight_control" 2 6, 3 1 0, S_0x563aa7daf200;
+v0x560688817bb0_0 .var "clk", 0 0;
+v0x560688817c70_0 .var "weight_flip", 0 0;
+v0x560688817d60_0 .var "weight_flip_reset", 0 0;
+v0x560688817e60_0 .net "weight_limit_exceeded", 0 0, v0x560688817a70_0;  1 drivers
+E_0x5606887ca620 .event posedge, v0x560688817bb0_0;
+S_0x5606887f1620 .scope module, "wc" "weight_control" 2 10, 3 1 0, S_0x5606887f25e0;
  .timescale 0 0;
-    .port_info 0 /INPUT 1 "clk";
-    .port_info 1 /INPUT 1 "weight_flip";
-    .port_info 2 /INPUT 1 "reset_weight_flip";
-    .port_info 3 /OUTPUT 1 "weight_limit_exceeded";
-    .port_info 4 /NODIR 0 "";
-v0x563aa7daf540_0 .net "clk", 0 0, o0x7f1cf5475018;  alias, 0 drivers
-v0x563aa7dbefa0_0 .var "counter", 2 0;
-v0x563aa7dbf080_0 .net "reset_weight_flip", 0 0, o0x7f1cf5475078;  alias, 0 drivers
-v0x563aa7dbf150_0 .net "weight_flip", 0 0, o0x7f1cf54750a8;  alias, 0 drivers
-v0x563aa7dbf210_0 .var "weight_limit_exceeded", 0 0;
-E_0x563aa7d757a0 .event posedge, v0x563aa7dbf150_0;
-E_0x563aa7dada80 .event posedge, v0x563aa7dbf080_0;
-    .scope S_0x563aa7daf390;
+    .port_info 0 /INPUT 1 "weight_flip";
+    .port_info 1 /INPUT 1 "weight_flip_reset";
+    .port_info 2 /OUTPUT 1 "weight_limit_exceeded";
+v0x560688803f60_0 .var "counter", 2 0;
+v0x560688817910_0 .net "weight_flip", 0 0, v0x560688817c70_0;  1 drivers
+v0x5606888179d0_0 .net "weight_flip_reset", 0 0, v0x560688817d60_0;  1 drivers
+v0x560688817a70_0 .var "weight_limit_exceeded", 0 0;
+E_0x5606887ca780 .event posedge, v0x560688817910_0;
+E_0x5606887ed8f0 .event posedge, v0x5606888179d0_0;
+    .scope S_0x5606887f1620;
 T_0 ;
     %pushi/vec4 0, 0, 3;
-    %store/vec4 v0x563aa7dbefa0_0, 0, 3;
+    %store/vec4 v0x560688803f60_0, 0, 3;
     %end;
     .thread T_0;
-    .scope S_0x563aa7daf390;
+    .scope S_0x5606887f1620;
 T_1 ;
-    %wait E_0x563aa7dada80;
+    %wait E_0x5606887ed8f0;
     %pushi/vec4 0, 0, 3;
-    %assign/vec4 v0x563aa7dbefa0_0, 0;
+    %store/vec4 v0x560688803f60_0, 0, 3;
     %pushi/vec4 0, 0, 1;
-    %assign/vec4 v0x563aa7dbf210_0, 0;
+    %store/vec4 v0x560688817a70_0, 0, 1;
     %jmp T_1;
     .thread T_1;
-    .scope S_0x563aa7daf390;
+    .scope S_0x5606887f1620;
 T_2 ;
-    %wait E_0x563aa7d757a0;
-    %load/vec4 v0x563aa7dbefa0_0;
+    %wait E_0x5606887ca780;
+    %load/vec4 v0x560688803f60_0;
     %cmpi/u 5, 0, 3;
     %flag_or 5, 4;
     %jmp/0xz  T_2.0, 5;
-    %load/vec4 v0x563aa7dbefa0_0;
+    %load/vec4 v0x560688803f60_0;
     %addi 1, 0, 3;
-    %assign/vec4 v0x563aa7dbefa0_0, 0;
+    %store/vec4 v0x560688803f60_0, 0, 3;
     %jmp T_2.1;
 T_2.0 ;
     %pushi/vec4 1, 0, 1;
-    %assign/vec4 v0x563aa7dbf210_0, 0;
+    %store/vec4 v0x560688817a70_0, 0, 1;
 T_2.1 ;
     %jmp T_2;
     .thread T_2;
-    .scope S_0x563aa7daf200;
+    .scope S_0x5606887f25e0;
 T_3 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x560688817bb0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x560688817c70_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x560688817d60_0, 0, 1;
     %end;
     .thread T_3;
+    .scope S_0x5606887f25e0;
+T_4 ;
+    %delay 200, 0;
+    %vpi_call 2 18 "$finish" {0 0 0};
+    %end;
+    .thread T_4;
+    .scope S_0x5606887f25e0;
+T_5 ;
+    %delay 1, 0;
+    %load/vec4 v0x560688817bb0_0;
+    %inv;
+    %store/vec4 v0x560688817bb0_0, 0, 1;
+    %jmp T_5;
+    .thread T_5;
+    .scope S_0x5606887f25e0;
+T_6 ;
+    %delay 5, 0;
+    %load/vec4 v0x560688817c70_0;
+    %inv;
+    %store/vec4 v0x560688817c70_0, 0, 1;
+    %jmp T_6;
+    .thread T_6;
+    .scope S_0x5606887f25e0;
+T_7 ;
+    %delay 50, 0;
+    %load/vec4 v0x560688817d60_0;
+    %inv;
+    %store/vec4 v0x560688817d60_0, 0, 1;
+    %jmp T_7;
+    .thread T_7;
+    .scope S_0x5606887f25e0;
+T_8 ;
+    %wait E_0x5606887ca620;
+    %load/vec4 v0x560688817e60_0;
+    %pad/u 32;
+    %cmpi/u 0, 0, 32;
+    %flag_or 5, 4;
+    %jmp/0xz  T_8.0, 5;
+    %vpi_call 2 27 "$monitor", "O limite de peso n\303\243o foi excedido - weight_limit_exceeded: %b", v0x560688817e60_0 {0 0 0};
+    %jmp T_8.1;
+T_8.0 ;
+    %vpi_call 2 29 "$monitor", "O limite de peso foi excedido - weight_limit_exceeded: %b", v0x560688817e60_0 {0 0 0};
+T_8.1 ;
+    %jmp T_8;
+    .thread T_8;
 # The file index is used to find the file name in the following table.
 :file_names 4;
     "N/A";
     "<interactive>";
-    "systems/emergency/weigth_control/testbench.v";
-    "././systems/emergency/weigth_control/design.v";
+    "systems/emergency/weight_control/testbench.v";
+    "./systems/emergency/weight_control/design.v";
