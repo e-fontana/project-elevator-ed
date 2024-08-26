@@ -8,5 +8,5 @@ module moviment_direction (floor, next_floor, direction);
     end else if (floor > next_floor) begin
         direction = going_down;
     end
-    // TODO: If the floor is the same as the next floor, the elevator should stop, but not in this module.
+    // DONE (door_status): If the floor is the same as the next floor, the elevator should stop, but not in this module.
 endmodule
