@@ -1,34 +1,33 @@
 `include "./handlers/sos_handler/design.v"
 
 module sos_handler_tb;
-    reg clk;
-    reg sos_button;
-    wire sos_mode;
+    reg sos_flip;
+    reg sos_mode;
     
-    sos_handler sh(clk, sos_button, sos_mode);
+  sos_handler sh(
+    .sos_flip(sos_flip),
+    .sos_mode(sos_mode)
+    );
 
     initial begin
-        sos_button = 0;
-        change_clk;
-        $display("sos_button initial: %b", sos_button);
+        sos_flip = 0;
+      	#1;
+        $display("sos_flip initial: %b", sos_flip);
         $display("sos_mode initial: %b", sos_mode);
-        
-        sos_button = 1;
+              
         change_clk;
-        $display("sos_button final: %b", sos_button);
-        $display("sos_mode final: %b", sos_mode);
-
-        sos_button = 0;
+      	#1;
+        $display("sos_flip expected 1: %b", sos_flip);
+        $display("sos_mode expected 1: %b", sos_mode);
+      	
         change_clk;
-        $display("sos_button final: %b", sos_button);
-        $display("sos_mode final: %b", sos_mode);
+      	#1;
+        $display("sos_flip expected 0: %b", sos_flip);
+        $display("sos_mode expected 1: %b", sos_mode);
     end
-
-    task display;
-        $display("sos_mode: %b", sos_mode);
-    endtask
-
+	
+      
     task change_clk;
-        #1 clk = ~clk;
+        #1 sos_flip = ~sos_flip;
     endtask
 endmodule
