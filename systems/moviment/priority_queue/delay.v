@@ -13,3 +13,4 @@ module delay (clk, delay, count, pass);
             count = count + 1;
         end
     end
+endmodule
