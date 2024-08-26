@@ -1,6 +1,6 @@
 # Loading project elevator
-# Compile of design.v failed with 9 errors.
-# Compile of testbench.v failed with 9 errors.
+# Compile of design.v failed with 1 errors.
+# Compile of testbench.v failed with 1 errors.
 # Compile of door.v was successful.
 # Compile of door_tb.v was successful.
 # Compile of goal.v was successful.
@@ -11,15 +11,15 @@
 # Compile of buttons.v was successful.
 # Compile of floor_types_tb.v was successful.
 # Compile of buttons_tb.v was successful.
-# Compile of frequency.v failed with 9 errors.
-# Compile of frequency_tb.v failed with 9 errors.
+# Compile of frequency.v failed with 1 errors.
+# Compile of frequency_tb.v failed with 1 errors.
 # Compile of sos.v was successful.
 # Compile of sos_tb.v was successful.
 # Compile of weight.v was successful.
 # Compile of weight_tb.v was successful.
 # Compile of emergency.v was successful.
 # Compile of emergency_tb.v was successful.
-# 20 compiles, 4 failed with 36 errors.
+# 20 compiles, 4 failed with 4 errors.
 # Compile of design.v was successful.
 # Compile of testbench.v was successful.
 # Compile of door.v was successful.
@@ -43,7 +43,7 @@
 # 20 compiles, 0 failed with no errors.
 vsim work.testbench
 # vsim work.testbench 
-# Start time: 11:29:26 on Aug 26,2024
+# Start time: 11:54:05 on Aug 26,2024
 # Loading work.testbench
 # Loading work.TOP
 # Loading work.frequency
@@ -52,10 +52,10 @@ vsim work.testbench
 # Loading work.door
 # Loading work.goal
 vsim work.testbench
-# End time: 11:29:42 on Aug 26,2024, Elapsed time: 0:00:16
+# End time: 11:54:30 on Aug 26,2024, Elapsed time: 0:00:25
 # Errors: 0, Warnings: 3
 # vsim work.testbench 
-# Start time: 11:29:42 on Aug 26,2024
+# Start time: 11:54:30 on Aug 26,2024
 # Loading work.testbench
 # Loading work.TOP
 # Loading work.frequency
@@ -66,7 +66,6 @@ vsim work.testbench
 add wave -position insertpoint sim:/testbench/TOP/*
 add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
 add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
-add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
 run
 # time:0000000000000000000000000000000000000000000000000000000000000110,clk:0,leds:001,floor:100,door:0,moving:1
 # ** Note: $finish    : /home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v(16)
@@ -74,5 +73,3 @@ run
 # 1
 # Break in Module testbench at /home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v line 16
 run -continue
-# End time: 11:33:59 on Aug 26,2024, Elapsed time: 0:04:17
-# Errors: 0, Warnings: 1
