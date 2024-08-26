@@ -10,10 +10,11 @@ module priority_queue #(parameter st_floor = 2'b00, nd_floor = 2'b01, rd_floor =
 
     parameter set_zero = 3'b000;
 
-    delay delay (clk, delay_time, count, pass);
+    delay delay (clk, delay_time, count_delay, pass);
 
     always @(posedge pass) begin
-        floor = next_floor
+        floor = next_floor;
+        next_floor = open_when;
     end
 
     always @(negedge is_mooving or posedge st_led or posedge nd_led or posedge rd_led) begin
@@ -29,21 +30,21 @@ module priority_queue #(parameter st_floor = 2'b00, nd_floor = 2'b01, rd_floor =
                         3'b001: begin
                             open_when = rd_floor;
                             next_floor = nd_floor;
-                            count = set_zero;
+                            count_delay = set_zero;
                         end
                         3'b010: begin
                             open_when = nd_floor;
                             next_floor = nd_floor;
-                            count = set_zero;
+                            count_delay = set_zero;
                         end
                         3'b011: begin
                             open_when = nd_floor;
                             next_floor = nd_floor;
-                            count = set_zero;
+                            count_delay = set_zero;
                         end
                         default: begin
                             open_when = st_floor;
-                            count = set_zero;
+                            count_delay = set_zero;
                         end
                     endcase
                 end
@@ -53,20 +54,21 @@ module priority_queue #(parameter st_floor = 2'b00, nd_floor = 2'b01, rd_floor =
                         3'b001: begin
                             open_when = rd_floor;
                             next_floor = rd_floor;
-                            count = set_zero;
+                            count_delay = set_zero;
                         end
                         3'b100: begin
                             open_when = st_floor;
                             next_floor = st_floor;
-                            count = set_zero;
+                            count_delay = set_zero;
                         end
                         3'b101: begin
                             open_when = st_floor;
                             next_floor = st_floor;
-                            count = set_zero;
+                            count_delay = set_zero;
                         end
                         default: begin
                             open_when = nd_floor;
+                            count_delay = set_zero;
                         end
                     endcase
                 end
@@ -76,18 +78,17 @@ module priority_queue #(parameter st_floor = 2'b00, nd_floor = 2'b01, rd_floor =
                         3'b010: begin
                             open_when = nd_floor;
                             next_floor = nd_floor;
-                            count = set_zero;
+                            count_delay = set_zero;
                         end
                         3'b100: begin
                             open_when = st_floor;
                             next_floor = nd_floor;
-                            count = set_zero;
-                            next_floor = open_when;
+                            count_delay = set_zero;
                         end
                         3'b110: begin
                             open_when = nd_floor;
                             next_floor = nd_floor;
-                            count = set_zero;
+                            count_delay = set_zero;
                         end
                         default: begin
                             open_when = rd_floor;
