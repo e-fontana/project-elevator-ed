@@ -1,35 +1,25 @@
 # Loading project elevator
-vsim work.movement_tb
-# vsim work.movement_tb 
-# Start time: 02:46:32 on Aug 26,2024
-# Loading work.movement_tb
-# Loading work.movement
-# Loading work.floor_types
-# Loading work.door
-# Loading work.goal
-vsim work.movement_tb
-# End time: 02:46:46 on Aug 26,2024, Elapsed time: 0:00:14
-# Errors: 0, Warnings: 1
-# vsim work.movement_tb 
-# Start time: 02:46:46 on Aug 26,2024
-# Loading work.movement_tb
-# Loading work.movement
-# Loading work.floor_types
-# Loading work.door
-# Loading work.goal
-add wave -position insertpoint sim:/movement_tb/MOVEMENT/*
-run
-# time:0000000000000000000000000000000000000000000000000000000000000010,clk:x,leds:000,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000000100,clk:x,leds:001,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000000110,clk:x,leds:010,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000001000,clk:x,leds:011,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000001010,clk:x,leds:100,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000001100,clk:x,leds:101,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000001110,clk:x,leds:110,floor:xxx,door:x,moving:x
-# ** Note: $finish    : /home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v(20)
-#    Time: 16 ps  Iteration: 0  Instance: /movement_tb
-# 1
-# Break in Module movement_tb at /home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v line 20
+# Compile of design.v failed with 9 errors.
+# Compile of testbench.v failed with 9 errors.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v failed with 9 errors.
+# Compile of frequency_tb.v failed with 9 errors.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# 20 compiles, 4 failed with 36 errors.
 # Compile of design.v was successful.
 # Compile of testbench.v was successful.
 # Compile of door.v was successful.
@@ -42,29 +32,47 @@ run
 # Compile of buttons.v was successful.
 # Compile of floor_types_tb.v was successful.
 # Compile of buttons_tb.v was successful.
-# 12 compiles, 0 failed with no errors.
-# Load canceled
-vsim work.movement_tb
-# End time: 02:48:06 on Aug 26,2024, Elapsed time: 0:01:20
-# Errors: 0, Warnings: 2
-# vsim work.movement_tb 
-# Start time: 02:48:06 on Aug 26,2024
-# Loading work.movement_tb
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 11:29:26 on Aug 26,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
 # Loading work.movement
 # Loading work.floor_types
 # Loading work.door
 # Loading work.goal
-add wave -position insertpoint sim:/movement_tb/MOVEMENT/*
+vsim work.testbench
+# End time: 11:29:42 on Aug 26,2024, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 3
+# vsim work.testbench 
+# Start time: 11:29:42 on Aug 26,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+add wave -position insertpoint sim:/testbench/TOP/*
+add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
 run
-# time:0000000000000000000000000000000000000000000000000000000000000011,clk:0,leds:000,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000000101,clk:0,leds:001,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000000111,clk:0,leds:010,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000001001,clk:0,leds:011,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000001011,clk:0,leds:100,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000001101,clk:0,leds:101,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000001111,clk:0,leds:110,floor:xxx,door:x,moving:x
-# time:0000000000000000000000000000000000000000000000000000000000010001,clk:0,leds:111,floor:xxx,door:x,moving:x
-# ** Note: $finish    : /home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v(21)
-#    Time: 19 ps  Iteration: 0  Instance: /movement_tb
+# time:0000000000000000000000000000000000000000000000000000000000000110,clk:0,leds:001,floor:100,door:0,moving:1
+# ** Note: $finish    : /home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v(16)
+#    Time: 8 ps  Iteration: 0  Instance: /testbench
 # 1
-# Break in Module movement_tb at /home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v line 21
+# Break in Module testbench at /home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v line 16
+run -continue
+# End time: 11:33:59 on Aug 26,2024, Elapsed time: 0:04:17
+# Errors: 0, Warnings: 1
