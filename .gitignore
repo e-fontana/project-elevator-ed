@@ -1,3 +1,4 @@
 build/**/**/*.out
 build/**/**/*.txt
 build/**/**/*.csv
+.vscode

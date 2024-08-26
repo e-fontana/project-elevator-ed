@@ -9,7 +9,7 @@ module door_block_tb;
     always #1 sos_mode = ~sos_mode;
 
     initial begin
-        sos_mode = 0;
+        sos_mode = 1'b0;
         $monitor("door_block = %b, sos_mode = %b", door_block, sos_mode);
         #10 $finish;
     end
