@@ -4,13 +4,17 @@ module delay (clk, delay, count, pass);
     output reg pass;
     inout [2:0] count;
     
+    reg [2:0] count_temp;
+
     always @(posedge clk) begin
         if (count == delay) begin
             pass <= 1'b1;
-            count <= 3'b000;
+            count_temp <= 3'b000;
+            count <= count_temp;
         end else begin
             pass <= 1'b0;
-            count <= count + 1;
+            count_temp <= count + 1;
+            count <= count_temp;
         end
     end
 endmodule
