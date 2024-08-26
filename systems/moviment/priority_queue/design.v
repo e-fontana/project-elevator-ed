@@ -2,9 +2,23 @@ module priority_queue #(parameter st_floor = 2'b00, nd_floor = 2'b01, rd_floor =
 
     inout [1:0] floor;
     input st_led, nd_led, rd_led, is_mooving, clk;
-    output [1:0] open_when, next_floor;
+    output reg [1:0] open_when;
+
+    reg [1:0] next_floor;
+    reg pass;
+    reg [2:0] count_delay, delay_time = 3'b100;
+
+    parameter set_zero = 3'b000;
+
+    delay delay (clk, delay_time, count, pass);
+
+    always @(posedge pass) begin
+        floor = next_floor
+    end
 
     always @(negedge is_mooving or posedge st_led or posedge nd_led or posedge rd_led) begin
+
+        // Vou tirar o controle de movimento e separar em outro módulo
 
         if (~is_mooving) begin
 
@@ -15,26 +29,21 @@ module priority_queue #(parameter st_floor = 2'b00, nd_floor = 2'b01, rd_floor =
                         3'b001: begin
                             open_when = rd_floor;
                             next_floor = nd_floor;
-                            wait(4);
-                            floor = next_floor;
-                            next_floor = open_when;
+                            count = set_zero;
                         end
                         3'b010: begin
                             open_when = nd_floor;
                             next_floor = nd_floor;
-                            wait(4);
-                            floor = next_floor;
+                            count = set_zero;
                         end
                         3'b011: begin
                             open_when = nd_floor;
                             next_floor = nd_floor;
-                            wait(4);
-                            floor = next_floor;
+                            count = set_zero;
                         end
                         default: begin
                             open_when = st_floor;
-                            wait(4);
-                            floor = next_floor;
+                            count = set_zero;
                         end
                     endcase
                 end
@@ -44,20 +53,17 @@ module priority_queue #(parameter st_floor = 2'b00, nd_floor = 2'b01, rd_floor =
                         3'b001: begin
                             open_when = rd_floor;
                             next_floor = rd_floor;
-                            wait(4);
-                            floor = next_floor;
+                            count = set_zero;
                         end
                         3'b100: begin
                             open_when = st_floor;
                             next_floor = st_floor;
-                            wait(4);
-                            floor = next_floor;
+                            count = set_zero;
                         end
                         3'b101: begin
                             open_when = st_floor;
                             next_floor = st_floor;
-                            wait(4);
-                            floor = next_floor;
+                            count = set_zero;
                         end
                         default: begin
                             open_when = nd_floor;
@@ -70,21 +76,18 @@ module priority_queue #(parameter st_floor = 2'b00, nd_floor = 2'b01, rd_floor =
                         3'b010: begin
                             open_when = nd_floor;
                             next_floor = nd_floor;
-                            wait(4);
-                            floor = next_floor;
+                            count = set_zero;
                         end
                         3'b100: begin
                             open_when = st_floor;
                             next_floor = nd_floor;
-                            wait(4);
-                            floor = next_floor;
+                            count = set_zero;
                             next_floor = open_when;
                         end
                         3'b110: begin
                             open_when = nd_floor;
                             next_floor = nd_floor;
-                            wait(4);
-                            floor = next_floor;
+                            count = set_zero;
                         end
                         default: begin
                             open_when = rd_floor;
