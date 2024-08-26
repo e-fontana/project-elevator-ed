@@ -7,9 +7,6 @@ module sos_handler
     input sos_flip;
     output reg sos_mode = 0;
 
-    always @(posedge sos_flip or negedge sos_flip) begin
-        if (sos_flip) sos_mode = 1'b1;
-        else sos_mode = 1'b0;
-    end
+    always @(sos_flip) sos_mode <= sos_flip;
 
 endmodule
