@@ -24,6 +24,8 @@ class Accuracy():
 				data_line["floor2"] = int(row[4][-1])
 				data_line["floor3"] = int(row[5][-1])
 				data_line["door"] = int(row[6][-1])
+				data_line["sos_mode"] = int(row[7][-1])
+				data_line["weight_limit_exceeded"] = int(row[8][-1])
 				self.data.append(data_line)
 	
 	def render(self):
@@ -36,10 +38,14 @@ class Accuracy():
 			led1 = "1●" if line["led1"] else "1○"
 			led2 = "2●" if line["led2"] else "2○"
 			led3 = "3●" if line["led3"] else "3○"
-			door = "aberta" if line["door"] else "fechada"
+			door = "porta aberta" if line["door"] else "porta fechada"
+
+			sos_mode = "SOS●" if line["sos_mode"] else "SOS○"
+			weight_limit_exceeded = "weight●" if line["weight_limit_exceeded"] else "weight○"
 			print(f'time: {i}')
 			print(floor1, floor2, floor3, sep="  ")
 			print(led1, led2, led3)
+			print(sos_mode, weight_limit_exceeded)
 			print(door)
 			time.sleep(.2)
 
