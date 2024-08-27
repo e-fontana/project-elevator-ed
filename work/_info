@@ -9,29 +9,121 @@ z2
 !i10f 100
 cModel Technology
 d/home/andreojr
-vdoor
-Z0 !s110 1724684034
+vbuttons
+Z0 !s110 1724742527
 !i10b 1
-!s100 hKU]5O3=YG^6CPG46jie40
+!s100 n_>T<f12>hHJIU?0cg7bn1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I@jbTDCI==_Q5H<MAaJhci3
+IoTU50V:6:mT;AiIBSgL5[2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 d/home/andreojr/dev/edu/engc40/modelsim-elevator
-w1724648801
-8door.v
-Fdoor.v
-!i122 760
-L0 1 5
-Z4 OV;L;2020.1;71
+w1724732943
+8buttons.v
+Fbuttons.v
+!i122 2074
+Z4 L0 1 22
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1724684034.000000
-Z6 !s107 floor_types.v|door.v|goal.v|movement.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v|
-Z7 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v|
+Z6 !s108 1724742527.000000
+Z7 !s107 buttons.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v|
+Z8 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v|
 !i113 1
-Z8 o-work work
-Z9 tCvgOpt 0
+Z9 o-work work
+Z10 tCvgOpt 0
+vbuttons_tb
+R0
+!i10b 1
+!s100 ?8:G7ZCP@SlMBINieIH3Q3
+R1
+IIBQjT0U]EcZDZeTjNhE`O2
+R2
+R3
+w1724727088
+8/home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v
+F/home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v
+!i122 2074
+L0 3 19
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vdelay
+Z11 !s110 1724742528
+!i10b 1
+!s100 F4VUh9U<lF3I9bW`n2zl61
+R1
+IKZP=Hzk?=^fhFR3eZ]mUj0
+R2
+R3
+w1724736551
+8delay.v
+Fdelay.v
+!i122 2078
+R4
+R5
+r1
+!s85 0
+31
+Z12 !s108 1724742528.000000
+!s107 delay.v|frequency.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v|
+!i113 1
+R9
+R10
+vdelay_tb
+R11
+!i10b 1
+!s100 fL6LJEb<>Z]:`:^<>Q[^l3
+R1
+IZEagU0TXGchW^GN6XQnZY1
+R2
+R3
+w1724736587
+8/home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v
+F/home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v
+!i122 2078
+L0 4 18
+R5
+r1
+!s85 0
+31
+R12
+Z14 !s107 delay.v|frequency.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v|
+R13
+!i113 1
+R9
+R10
+vdoor
+R0
+!i10b 1
+!s100 hKU]5O3=YG^6CPG46jie40
+R1
+I@jbTDCI==_Q5H<MAaJhci3
+R2
+R3
+w1724648801
+8door.v
+Fdoor.v
+!i122 2070
+L0 1 5
+R5
+r1
+!s85 0
+31
+R6
+Z15 !s107 floor_types.v|buttons.v|door.v|goal.v|movement.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v|
+Z16 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v|
+!i113 1
+R9
+R10
 vdoor_tb
 R0
 !i10b 1
@@ -43,18 +135,18 @@ R3
 w1724638628
 8/home/andreojr/dev/edu/engc40/modelsim-elevator/door_tb.v
 F/home/andreojr/dev/edu/engc40/modelsim-elevator/door_tb.v
-!i122 756
-L0 3 35
-R4
+!i122 2066
+Z17 L0 3 35
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 door.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/door_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/door_tb.v|
 !i113 1
-R8
 R9
+R10
 vfloor_types
 R0
 !i10b 1
@@ -66,18 +158,18 @@ R3
 w1724649951
 8floor_types.v
 Ffloor_types.v
-!i122 762
+!i122 2073
 L0 1 8
-R4
+R5
 r1
 !s85 0
 31
-R5
-Z10 !s107 floor_types.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v|
-Z11 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v|
+R6
+Z18 !s107 floor_types.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v|
 !i113 1
-R8
 R9
+R10
 vfloor_types_tb
 R0
 !i10b 1
@@ -89,64 +181,87 @@ R3
 w1724649933
 8/home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v
 F/home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v
-!i122 762
+!i122 2073
 L0 3 18
-R4
+R5
 r1
 !s85 0
 31
-R5
-R10
-R11
+R6
+R18
+R19
 !i113 1
-R8
 R9
+R10
 vfrequency
-R0
+R11
 !i10b 1
-!s100 8QmVkGA;?ehR5z?R9nnBT0
+!s100 nJZ0jT9?LiFA5RZFNA72R0
 R1
-IX8JM=23Eb[M:gWn]WUa391
+IWJZGAj3885eHk8F9VUYb23
 R2
 R3
-w1724684019
+w1724740833
 8frequency.v
 Ffrequency.v
-!i122 764
+!i122 2078
 L0 1 20
-R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 frequency.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v|
-Z12 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v|
+R12
+R14
+R13
 !i113 1
-R8
 R9
+R10
+vfrequency_door
+!s110 1724742240
+!i10b 1
+!s100 VGDBadRAQM5`n2_nn@jfF0
+R1
+Imf2VTiLFU>^^cm6XK<_g<3
+R2
+R3
+w1724741917
+8/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_door.v
+F/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_door.v
+!i122 2046
+L0 1 16
+R5
+r1
+!s85 0
+31
+!s108 1724742240.000000
+!s107 /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_door.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_door.v|
+!i113 1
+R9
+R10
 vfrequency_tb
 R0
 !i10b 1
-!s100 6f>ghM;ol4Q3^UaTn:_F63
+!s100 zIgY8_BPY:aM=U7mocTR71
 R1
-IImFeUR7zz[i31Z=@Mn3gQ0
+I?lQOGB]hMSe>ZB[5]M?UZ2
 R2
 R3
-w1724658929
+w1724738404
 8/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v
 F/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v
-!i122 764
-L0 3 22
-R4
+!i122 2076
+L0 3 36
+R5
 r1
 !s85 0
 31
-R5
-Z13 !s107 frequency.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v|
-R12
+R6
+!s107 frequency.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v|
 !i113 1
-R8
 R9
+R10
 vgoal
 R0
 !i10b 1
@@ -158,18 +273,18 @@ R3
 w1724653363
 8goal.v
 Fgoal.v
-!i122 760
+!i122 2070
 L0 1 28
-R4
+R5
 r1
 !s85 0
 31
-R5
 R6
-R7
+R15
+R16
 !i113 1
-R8
 R9
+R10
 vgoal_tb
 R0
 !i10b 1
@@ -181,64 +296,64 @@ R3
 w1724646741
 8/home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v
 F/home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v
-!i122 758
+!i122 2068
 L0 3 34
-R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 goal.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v|
 !i113 1
-R8
 R9
+R10
 vmovement
 R0
 !i10b 1
-!s100 LOT6RHB`38V@^Vg?G:E<W0
+!s100 oVib_ALDJjRU;4I_6?haN2
 R1
-IM?]3=DlKBzX4Jd0Y2PLS=0
+IQ:oc7GNzVDE`ljZ2S1VRP2
 R2
 R3
-w1724682474
+w1724742454
 8movement.v
 Fmovement.v
-!i122 760
-L0 5 22
-R4
+!i122 2070
+L0 6 24
+R5
 r1
 !s85 0
 31
-R5
 R6
-R7
+R15
+R16
 !i113 1
-R8
 R9
+R10
 vmovement_tb
 R0
 !i10b 1
-!s100 GK_fVISm^AUO0ba2RX:]]2
+!s100 fz:1eNhE;IoNUT`6Wk;GQ1
 R1
-Ioe73?hMI039^GEe3fM:361
+ID40ilUEHb<Rz8WA==[g;40
 R2
 R3
-w1724679104
+w1724742058
 8/home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v
 F/home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v
-!i122 760
-L0 3 30
-R4
+!i122 2070
+L0 3 33
+R5
 r1
 !s85 0
 31
-R5
 R6
-R7
+R15
+R16
 !i113 1
-R8
 R9
+R10
 vtb
 !s110 1724638634
 !i10b 1
@@ -248,64 +363,64 @@ IEGTmOYbQan1N?EUoBZc3R0
 R2
 R3
 w1724634377
-Z14 8/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v
-Z15 F/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v
+Z20 8/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v
+Z21 F/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v
 !i122 4
 L0 3 3
-R4
+R5
 r1
 !s85 0
 31
 !s108 1724638634.000000
 !s107 design.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v|
-Z16 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v|
+Z22 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v|
 !i113 1
-R8
 R9
+R10
 vtestbench
 R0
 !i10b 1
-!s100 Ao?XMSz5Od7b8XR_M^eJ72
+!s100 d7LRfM949OOQ52_IS9:5[1
 R1
-I?6Kf9lo1R89RQm?27g:8o2
+IjdOWm^>f6WSB1=:mnZzHf0
 R2
 R3
-w1724680703
-R14
-R15
-!i122 754
-L0 3 25
-R4
+w1724739727
+R20
+R21
+!i122 2064
+R17
+R5
 r1
 !s85 0
 31
-R5
-Z17 !s107 floor_types.v|door.v|goal.v|movement.v|frequency.v|design.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v|
-R16
+R6
+Z23 !s107 floor_types.v|buttons.v|door.v|goal.v|movement.v|frequency.v|design.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v|
+R22
 !i113 1
-R8
 R9
+R10
 vTOP
 R0
 !i10b 1
-!s100 iY`eDU_?Y=CCiCL2ko6Ug0
+!s100 43KJ^zShoIj=efSI>Qj`J0
 R1
-ISd9JcYD4[[2]AUSQc:L5`1
+I?7f^PNn0<7Y]HSS>X0llh2
 R2
 R3
-w1724684027
+w1724739407
 8design.v
 Fdesign.v
-!i122 754
-L0 4 7
-R4
+!i122 2064
+L0 5 7
+R5
 r1
 !s85 0
 31
-R5
-R17
-R16
+R6
+R23
+R22
 !i113 1
-R8
 R9
+R10
 n@t@o@p

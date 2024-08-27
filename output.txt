@@ -1,9 +1,5 @@
-CLK 0
-                  10 clk_50:0,clk:0,leds:000,floor:010,door:1,moving:0
-                  20 clk_50:0,clk:0,leds:001,floor:010,door:0,moving:1
-                  30 clk_50:0,clk:0,leds:010,floor:010,door:0,moving:1
-                  40 clk_50:0,clk:0,leds:011,floor:010,door:0,moving:1
-                  50 clk_50:0,clk:0,leds:100,floor:010,door:0,moving:1
-                  60 clk_50:0,clk:0,leds:101,floor:010,door:0,moving:1
-                  70 clk_50:0,clk:0,leds:110,floor:010,door:0,moving:1
-                  80 clk_50:0,clk:0,leds:111,floor:010,door:0,moving:1
+** VVP Stop(0) **
+** Flushing output streams.
+** Current simulation time is 8711233 ticks.
+[?2004h> [?2004l[?2004l[?2004h[?2004l
+** Continue **

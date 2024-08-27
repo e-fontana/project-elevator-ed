@@ -5,56 +5,70 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	floor_types
 
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/buttons.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/buttons.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module buttons
+
+Top level modules:
+	buttons
+
 } {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/emergency.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/emergency.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/buttons.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/buttons.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-
-} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v {0 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module frequency
-** Error: ** while parsing file included at /home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v(1)
-** while parsing file included at design.v(1)
-** at frequency.v(12): (vlog-2730) Undefined variable: 'moving'.
--- Compiling module goal
--- Compiling module door
--- Compiling module floor_types
--- Compiling module movement
--- Compiling module TOP
--- Compiling module testbench
-
-} {4.0 5.0} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module goal
 -- Compiling module door
+-- Compiling module buttons
 -- Compiling module floor_types
+-- Compiling module frequency_door
 -- Compiling module movement
 -- Compiling module movement_tb
 
 Top level modules:
 	movement_tb
 
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module frequency
+-- Compiling module goal
+-- Compiling module door
+-- Compiling module buttons
+-- Compiling module floor_types
+-- Compiling module frequency_door
+-- Compiling module movement
+-- Compiling module TOP
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
 } {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/weight.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/weight.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency.v {0 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency.v
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module frequency
-** Error: /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency.v(12): (vlog-2730) Undefined variable: 'moving'.
-
-} {4.0 5.0} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/sos_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/sos_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-
-} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/movement.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/movement.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module goal
--- Compiling module door
--- Compiling module floor_types
--- Compiling module movement
 
 Top level modules:
-	movement
+	frequency
+
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/design.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/design.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module frequency
+-- Compiling module goal
+-- Compiling module door
+-- Compiling module buttons
+-- Compiling module floor_types
+-- Compiling module frequency_door
+-- Compiling module movement
+-- Compiling module TOP
+
+Top level modules:
+	TOP
+
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/sos_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/sos_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
 } {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -63,6 +77,15 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	floor_types_tb
+
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module frequency
+-- Compiling module delay
+-- Compiling module delay_tb
+
+Top level modules:
+	delay_tb
 
 } {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/door.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/door.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -77,14 +100,22 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 } {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/weight_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/weight_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v {0 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/delay.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/delay.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module delay
+
+Top level modules:
+	delay
+
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module frequency
-** Error: ** while parsing file included at /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v(1)
-** at frequency.v(12): (vlog-2730) Undefined variable: 'moving'.
 -- Compiling module frequency_tb
 
-} {4.0 5.0} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v
+Top level modules:
+	frequency_tb
+
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module goal
 -- Compiling module goal_tb
@@ -107,10 +138,15 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	goal
 
-} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-
 } {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/emergency_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/emergency_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module buttons
+-- Compiling module buttons_tb
+
+Top level modules:
+	buttons_tb
 
 } {} {}}
