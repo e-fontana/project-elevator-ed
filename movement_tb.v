@@ -1,3 +1,4 @@
+
 `include "movement.v"
 
 module movement_tb;
@@ -15,6 +16,8 @@ module movement_tb;
 		button3 = 1'b1;
 
 		#5 press_button2;
+		#5 press_button3;
+		#5 press_button1;
 		#5 $finish;
 	end
 

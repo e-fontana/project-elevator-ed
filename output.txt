@@ -1,5 +1,0 @@
-** VVP Stop(0) **
-** Flushing output streams.
-** Current simulation time is 8711233 ticks.
-[?2004h> [?2004l[?2004l[?2004h[?2004l
-** Continue **

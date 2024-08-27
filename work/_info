@@ -1,426 +1,598 @@
 m255
 K4
 z2
-!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-d/home/andreojr
+Z0 dC:/intelFPGA/18.1/elevador
 vbuttons
-Z0 !s110 1724742527
+Z1 !s110 1724750029
 !i10b 1
-!s100 n_>T<f12>hHJIU?0cg7bn1
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IoTU50V:6:mT;AiIBSgL5[2
+!s100 >]?MM2I<<GhWd<AJmHj`80
+IfR7N^_gCGN?`X]=D;B[RL0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 d/home/andreojr/dev/edu/engc40/modelsim-elevator
-w1724732943
+R0
+w1724743816
 8buttons.v
 Fbuttons.v
-!i122 2074
-Z4 L0 1 22
-Z5 OV;L;2020.1;71
+L0 1
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1724742527.000000
-Z7 !s107 buttons.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v|
-Z8 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v|
+Z4 !s108 1724750029.000000
+Z5 !s107 buttons.v|floor_goal.v|door_status.v|floor_converter.v|door_frequency.v|movement.v|C:/intelFPGA/18.1/elevador/movement_tb.v|
+Z6 !s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/movement_tb.v|
 !i113 1
-Z9 o-work work
-Z10 tCvgOpt 0
+Z7 o-work work
+Z8 tCvgOpt 0
 vbuttons_tb
-R0
+Z9 !s110 1724750028
 !i10b 1
-!s100 ?8:G7ZCP@SlMBINieIH3Q3
-R1
-IIBQjT0U]EcZDZeTjNhE`O2
+!s100 Fj``ANUD>;PQ[7NKVNKM;3
+I_Kc1IOYL4J3hiFIA[Vdf=2
 R2
+R0
+w1724743808
+8C:/intelFPGA/18.1/elevador/buttons_tb.v
+FC:/intelFPGA/18.1/elevador/buttons_tb.v
+L0 3
 R3
-w1724727088
-8/home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v
-F/home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v
-!i122 2074
-L0 3 19
-R5
 r1
 !s85 0
 31
-R6
+Z10 !s108 1724750028.000000
+!s107 buttons.v|C:/intelFPGA/18.1/elevador/buttons_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/buttons_tb.v|
+!i113 1
 R7
 R8
-!i113 1
-R9
-R10
 vdelay
-Z11 !s110 1724742528
+R9
 !i10b 1
-!s100 F4VUh9U<lF3I9bW`n2zl61
-R1
-IKZP=Hzk?=^fhFR3eZ]mUj0
+!s100 Sk14DSReeE;6j3?naQBN70
+I3UdDZQAA]nKg8mKP^A4=61
 R2
-R3
-w1724736551
+R0
+w1724743901
 8delay.v
 Fdelay.v
-!i122 2078
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+Z11 !s107 delay.v|frequency_divisor.v|C:/intelFPGA/18.1/elevador/delay_tb.v|
+Z12 !s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/delay_tb.v|
+!i113 1
+R7
+R8
+vdelay_tb
+R9
+!i10b 1
+!s100 Qd^b>=HPAOdDE>[SEYHnN0
+I[[6Z`g`OYl4<BIXbl_a?P1
+R2
+R0
+w1724744882
+8C:/intelFPGA/18.1/elevador/delay_tb.v
+FC:/intelFPGA/18.1/elevador/delay_tb.v
+L0 5
+R3
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 1
+R7
+R8
+vdoor
+!s110 1724695329
+!i10b 1
+!s100 nLkCiNI:`>oPMRSgQQk=:0
+Ie;LKZaShU2:T>]<9com2a2
+R2
+R0
+w1724693389
+8C:/intelFPGA/18.1/elevador/door_status.v
+FC:/intelFPGA/18.1/elevador/door_status.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1724695329.000000
+!s107 C:/intelFPGA/18.1/elevador/door_status.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/door_status.v|
+!i113 1
+R7
+R8
+vdoor_block
+R9
+!i10b 1
+!s100 Dd0HJ_Njl22LCzegS`V6S3
+ISNOQE<zC]hBW0W;A9MROD3
+R2
+R0
+w1724692758
+8C:/intelFPGA/18.1/elevador/door_block.v
+FC:/intelFPGA/18.1/elevador/door_block.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA/18.1/elevador/door_block.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/door_block.v|
+!i113 1
+R7
+R8
+vdoor_block_tb
+R9
+!i10b 1
+!s100 =YZH<h39AUe1`KE>lR;YU2
+ITEMoAeomibU;o3jM^JjD]3
+R2
+R0
+w1724692892
+8C:/intelFPGA/18.1/elevador/door_block_tb.v
+FC:/intelFPGA/18.1/elevador/door_block_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA/18.1/elevador/door_block_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/door_block_tb.v|
+!i113 1
+R7
+R8
+vdoor_frequency
+R1
+!i10b 1
+!s100 i6a9ig[;Y4G]b<WIkn;FV1
+IDaLbo>a?<kV7XYzaIAi>H3
+R2
+R0
+w1724745259
+8door_frequency.v
+Fdoor_frequency.v
+L0 1
+R3
+r1
+!s85 0
+31
 R4
 R5
-r1
-!s85 0
-31
-Z12 !s108 1724742528.000000
-!s107 delay.v|frequency.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v|
-Z13 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v|
-!i113 1
-R9
-R10
-vdelay_tb
-R11
-!i10b 1
-!s100 fL6LJEb<>Z]:`:^<>Q[^l3
-R1
-IZEagU0TXGchW^GN6XQnZY1
-R2
-R3
-w1724736587
-8/home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v
-F/home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v
-!i122 2078
-L0 4 18
-R5
-r1
-!s85 0
-31
-R12
-Z14 !s107 delay.v|frequency.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v|
-R13
-!i113 1
-R9
-R10
-vdoor
-R0
-!i10b 1
-!s100 hKU]5O3=YG^6CPG46jie40
-R1
-I@jbTDCI==_Q5H<MAaJhci3
-R2
-R3
-w1724648801
-8door.v
-Fdoor.v
-!i122 2070
-L0 1 5
-R5
-r1
-!s85 0
-31
 R6
-Z15 !s107 floor_types.v|buttons.v|door.v|goal.v|movement.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v|
-Z16 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v|
 !i113 1
-R9
-R10
+R7
+R8
+vdoor_status
+R1
+!i10b 1
+!s100 TzK:@;E7QzIbjhWEP2j0<1
+I?V7n1>QBAGRUoQV^;YNeO1
+R2
+R0
+w1724743980
+8door_status.v
+Fdoor_status.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
 vdoor_tb
-R0
-!i10b 1
-!s100 jH[n=o=n6V?2bX7g;IX1Y1
 R1
-I9lCO3XAZWWI;9kgB0O0BK1
+!i10b 1
+!s100 k6WA4B;JQ0=LHOKD1YRfo3
+I9iHJGmlnDIf4Cd83=YFXf3
 R2
+R0
+w1724744914
+8C:/intelFPGA/18.1/elevador/door_status_tb.v
+FC:/intelFPGA/18.1/elevador/door_status_tb.v
+L0 3
 R3
-w1724638628
-8/home/andreojr/dev/edu/engc40/modelsim-elevator/door_tb.v
-F/home/andreojr/dev/edu/engc40/modelsim-elevator/door_tb.v
-!i122 2066
-Z17 L0 3 35
-R5
 r1
 !s85 0
 31
-R6
-!s107 door.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/door_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/door_tb.v|
+R4
+!s107 door_status.v|C:/intelFPGA/18.1/elevador/door_status_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/door_status_tb.v|
 !i113 1
+R7
+R8
+vemergency_module
 R9
+!i10b 1
+!s100 >J]faV3QXa>FT<^U8l3jf0
+IQV]N]^206Q8_POM<@cK@e3
+R2
+R0
+w1724694944
+8C:/intelFPGA/18.1/elevador/emergency.v
+FC:/intelFPGA/18.1/elevador/emergency.v
+L0 1
+R3
+r1
+!s85 0
+31
 R10
+!s107 C:/intelFPGA/18.1/elevador/emergency.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/emergency.v|
+!i113 1
+R7
+R8
+vfloor_converter
+R1
+!i10b 1
+!s100 oaljGAaHM8>Q1b1:`AlMh3
+ITgeEMKP:HI8N_m<e<b^762
+R2
+R0
+w1724744109
+8floor_converter.v
+Ffloor_converter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+R8
 vfloor_types
-R0
+Z13 !s110 1724695383
 !i10b 1
-!s100 IG4L>Dh6O3_X_Y51l4c413
-R1
-I8DPn1gQ]B666TXK87bgF62
+!s100 jV^IEiT2_1WC]c^31IXCJ2
+I1mm<kkoPG4]6W:DkYfhlL1
 R2
+R0
+w1724695291
+8C:/intelFPGA/18.1/elevador/floor_type.v
+FC:/intelFPGA/18.1/elevador/floor_type.v
+L0 1
 R3
-w1724649951
-8floor_types.v
-Ffloor_types.v
-!i122 2073
-L0 1 8
-R5
 r1
 !s85 0
 31
-R6
-Z18 !s107 floor_types.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v|
-Z19 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v|
+Z14 !s108 1724695383.000000
+!s107 C:/intelFPGA/18.1/elevador/floor_type.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/floor_type.v|
 !i113 1
-R9
-R10
+R7
+R8
 vfloor_types_tb
-R0
-!i10b 1
-!s100 h1RSI?bHVNzUV]7]GO=ZG1
 R1
-IgKH^EL1>?G:0KTd9Ch@:d0
+!i10b 1
+!s100 B56;P[k2iY_@zd5LE[GFK0
+IgOO][Sdn`^Z@g=enIJ9US1
 R2
+R0
+w1724744094
+8C:/intelFPGA/18.1/elevador/floor_converter_tb.v
+FC:/intelFPGA/18.1/elevador/floor_converter_tb.v
+L0 3
 R3
-w1724649933
-8/home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v
-F/home/andreojr/dev/edu/engc40/modelsim-elevator/floor_types_tb.v
-!i122 2073
-L0 3 18
-R5
 r1
 !s85 0
 31
-R6
-R18
-R19
+R4
+!s107 floor_converter.v|C:/intelFPGA/18.1/elevador/floor_converter_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/floor_converter_tb.v|
 !i113 1
-R9
-R10
+R7
+R8
 vfrequency
+R9
+!i10b 1
+!s100 ]KAMZP]_>18BCb;1hoN0g2
+IE]JF>ndbzbiWkZ?NAn5i12
+R2
+R0
+w1724744237
+8frequency_divisor.v
+Ffrequency_divisor.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
 R11
-!i10b 1
-!s100 nJZ0jT9?LiFA5RZFNA72R0
-R1
-IWJZGAj3885eHk8F9VUYb23
-R2
-R3
-w1724740833
-8frequency.v
-Ffrequency.v
-!i122 2078
-L0 1 20
-R5
-r1
-!s85 0
-31
 R12
-R14
-R13
 !i113 1
-R9
-R10
-vfrequency_door
-!s110 1724742240
+R7
+R8
+vfrequency_divisor
+Z15 !s110 1724693782
 !i10b 1
-!s100 VGDBadRAQM5`n2_nn@jfF0
-R1
-Imf2VTiLFU>^^cm6XK<_g<3
+!s100 32R:[;jZ3:9mgiK[a6;892
+ImkllK_SnNdk<agJ_@4e7n2
 R2
+R0
+w1724693002
+8C:/intelFPGA/18.1/elevador/frequency_divisor.v
+FC:/intelFPGA/18.1/elevador/frequency_divisor.v
+L0 1
 R3
-w1724741917
-8/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_door.v
-F/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_door.v
-!i122 2046
-L0 1 16
-R5
 r1
 !s85 0
 31
-!s108 1724742240.000000
-!s107 /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_door.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_door.v|
+Z16 !s108 1724693782.000000
+!s107 C:/intelFPGA/18.1/elevador/frequency_divisor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/frequency_divisor.v|
 !i113 1
-R9
-R10
+R7
+R8
 vfrequency_tb
-R0
+R9
 !i10b 1
-!s100 zIgY8_BPY:aM=U7mocTR71
-R1
-I?lQOGB]hMSe>ZB[5]M?UZ2
+!s100 :gClkcEVl?;[IMEN_]JBR0
+IlWL6ahTmSV^_D4HkPi]YQ3
 R2
+R0
+w1724744890
+Z17 8C:/intelFPGA/18.1/elevador/frequency_divisor_tb.v
+Z18 FC:/intelFPGA/18.1/elevador/frequency_divisor_tb.v
+L0 3
 R3
-w1724738404
-8/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v
-F/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v
-!i122 2076
-L0 3 36
-R5
 r1
 !s85 0
 31
-R6
-!s107 frequency.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_tb.v|
-!i113 1
-R9
 R10
+!s107 frequency_divisor.v|C:/intelFPGA/18.1/elevador/frequency_divisor_tb.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/frequency_divisor_tb.v|
+!i113 1
+R7
+R8
 vgoal
-R0
-!i10b 1
-!s100 em[P3FkMTnz_>Aj5kLG]<3
 R1
-I^7FTYKd9I<;0?6Y7KF>Wi0
+!i10b 1
+!s100 TH6fA55<IVZaiZO^?^T<31
+I^@G67EIl0MbXaKdU:nf2?1
 R2
+R0
+w1724744342
+8floor_goal.v
+Ffloor_goal.v
+L0 1
 R3
-w1724653363
-8goal.v
-Fgoal.v
-!i122 2070
-L0 1 28
-R5
 r1
 !s85 0
 31
+R4
+R5
 R6
-R15
-R16
 !i113 1
-R9
-R10
+R7
+R8
 vgoal_tb
-R0
-!i10b 1
-!s100 2dQ1FIKm^Lm;OmB9;Rfab3
 R1
-IMP@[MICo7>ePYjFCM4=4E2
+!i10b 1
+!s100 IGTV@6Fca[W^OnW3U@Ffz1
+IMm6]n6A94W=7ml7LXbJ:l2
 R2
+R0
+w1724744817
+8C:/intelFPGA/18.1/elevador/floor_goal_tb.v
+FC:/intelFPGA/18.1/elevador/floor_goal_tb.v
+L0 3
 R3
-w1724646741
-8/home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v
-F/home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v
-!i122 2068
-L0 3 34
-R5
 r1
 !s85 0
 31
-R6
-!s107 goal.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/goal_tb.v|
+R4
+!s107 floor_goal.v|C:/intelFPGA/18.1/elevador/floor_goal_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/floor_goal_tb.v|
 !i113 1
-R9
-R10
+R7
+R8
 vmovement
-R0
-!i10b 1
-!s100 oVib_ALDJjRU;4I_6?haN2
 R1
-IQ:oc7GNzVDE`ljZ2S1VRP2
+!i10b 1
+!s100 AP<:hlYe5GlMU6nejRL;E3
+I`keW]mK>PBjEdF2Y^oL??1
 R2
-R3
-w1724742454
+R0
+w1724750023
 8movement.v
 Fmovement.v
-!i122 2070
-L0 6 24
-R5
+L0 7
+R3
 r1
 !s85 0
 31
+R4
+R5
 R6
-R15
-R16
 !i113 1
-R9
-R10
+R7
+R8
 vmovement_tb
-R0
-!i10b 1
-!s100 fz:1eNhE;IoNUT`6Wk;GQ1
 R1
-ID40ilUEHb<Rz8WA==[g;40
+!i10b 1
+!s100 VL:WFe8c67aol11giPH1n0
+I4_Y4h8Pg5UzF4I0fDM:OG0
 R2
+R0
+w1724747693
+8C:/intelFPGA/18.1/elevador/movement_tb.v
+FC:/intelFPGA/18.1/elevador/movement_tb.v
+L0 4
 R3
-w1724742058
-8/home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v
-F/home/andreojr/dev/edu/engc40/modelsim-elevator/movement_tb.v
-!i122 2070
-L0 3 33
-R5
 r1
 !s85 0
 31
+R4
+R5
 R6
+!i113 1
+R7
+R8
+vmoviment_authorization
+R13
+!i10b 1
+!s100 b]bf3_7a0<o<03][TgQ=33
+I^MijaWa6P__GMd;T<MzVY2
+R2
+R0
+w1724693889
+8C:/intelFPGA/18.1/elevador/movement_authorization.v
+FC:/intelFPGA/18.1/elevador/movement_authorization.v
+L0 1
+R3
+r1
+!s85 0
+31
+R14
+!s107 C:/intelFPGA/18.1/elevador/movement_authorization.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/movement_authorization.v|
+!i113 1
+R7
+R8
+vmoviment_authorization_tb
+R13
+!i10b 1
+!s100 ?OaAFc6TV<0?:Mhbgk4@c1
+I<di;gR=NTP6AlK:6zbaRd3
+R2
+R0
+w1724693903
+8C:/intelFPGA/18.1/elevador/movement_authorization_tb.v
+FC:/intelFPGA/18.1/elevador/movement_authorization_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R14
+!s107 C:/intelFPGA/18.1/elevador/movement_authorization_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/movement_authorization_tb.v|
+!i113 1
+R7
+R8
+vsos_handler
+R9
+!i10b 1
+!s100 m06Hch5XdN=`>D[m8E?oc0
+Il8hJRW4eTMRb=<UDE@CTc3
+R2
+R0
+w1724692946
+8C:/intelFPGA/18.1/elevador/sos_handler.v
+FC:/intelFPGA/18.1/elevador/sos_handler.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA/18.1/elevador/sos_handler.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/sos_handler.v|
+!i113 1
+R7
+R8
+vsos_handler_tb
+R9
+!i10b 1
+!s100 4i@:`1aS[R[gaKnDcE:T]0
+IGaWOHanDeS]8i3zDmJk9i3
+R2
+R0
+w1724692941
+8C:/intelFPGA/18.1/elevador/sos_handler_tb.v
+FC:/intelFPGA/18.1/elevador/sos_handler_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA/18.1/elevador/sos_handler_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/sos_handler_tb.v|
+!i113 1
+R7
+R8
+vtest
 R15
-R16
-!i113 1
-R9
-R10
-vtb
-!s110 1724638634
 !i10b 1
-!s100 dCa5AL[5_9TzNL[j`NAKD3
-R1
-IEGTmOYbQan1N?EUoBZc3R0
+!s100 F2ghR@o6bZ9=?9cWMzWDY2
+IP^5FdK_ajL@m4eLl7^nNi1
 R2
-R3
-w1724634377
-Z20 8/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v
-Z21 F/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v
-!i122 4
-L0 3 3
-R5
-r1
-!s85 0
-31
-!s108 1724638634.000000
-!s107 design.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v|
-Z22 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v|
-!i113 1
-R9
-R10
-vtestbench
 R0
-!i10b 1
-!s100 d7LRfM949OOQ52_IS9:5[1
-R1
-IjdOWm^>f6WSB1=:mnZzHf0
-R2
-R3
-w1724739727
-R20
-R21
-!i122 2064
+w1724693011
 R17
-R5
-r1
-!s85 0
-31
-R6
-Z23 !s107 floor_types.v|buttons.v|door.v|goal.v|movement.v|frequency.v|design.v|/home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v|
-R22
-!i113 1
-R9
-R10
-vTOP
-R0
-!i10b 1
-!s100 43KJ^zShoIj=efSI>Qj`J0
-R1
-I?7f^PNn0<7Y]HSS>X0llh2
-R2
+R18
+L0 1
 R3
-w1724739407
-8design.v
-Fdesign.v
-!i122 2064
-L0 5 7
-R5
 r1
 !s85 0
 31
-R6
-R23
-R22
+R16
+!s107 C:/intelFPGA/18.1/elevador/frequency_divisor_tb.v|
+R19
 !i113 1
+R7
+R8
+vweight_control
 R9
+!i10b 1
+!s100 8GIS`];jnM=leg?U>]a5C2
+I<H]Z]_@mmaXhhM2LD@JF<2
+R2
+R0
+w1724692957
+8C:/intelFPGA/18.1/elevador/weight_controller.v
+FC:/intelFPGA/18.1/elevador/weight_controller.v
+L0 1
+R3
+r1
+!s85 0
+31
 R10
-n@t@o@p
+!s107 C:/intelFPGA/18.1/elevador/weight_controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/weight_controller.v|
+!i113 1
+R7
+R8
+vweight_control_tb
+R9
+!i10b 1
+!s100 5fHUCU[kMO4iCH^l8T?6O2
+IiAIdT58cF4AK2OX@6PN9W1
+R2
+R0
+w1724693029
+8C:/intelFPGA/18.1/elevador/weight_controller_tb.v
+FC:/intelFPGA/18.1/elevador/weight_controller_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA/18.1/elevador/weight_controller_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA/18.1/elevador/weight_controller_tb.v|
+!i113 1
+R7
+R8

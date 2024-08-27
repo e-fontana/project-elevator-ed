@@ -1,9 +1,0 @@
-module movement(
-	clk,
-	st_button,
-	nd_button,
-	rd_button,
-
-);
-	
-endmodule

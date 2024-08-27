@@ -1,5 +1,5 @@
 
-`include "frequency_divisor.v"
+`include "frequency.v"
 `include "delay.v"
 
 module delay_tb;
