@@ -5,6 +5,7 @@ module testbench;
 	wire led1, led2, led3, floor1, floor2, floor3, door, moving;
 
 	always #1 clk_50 <= ~clk_50;
+	always #1 $strobe("led1:%b,led2:%b,led3:%b,floor1:%b,floor2:%b,floor3:%b,door:%b", led1, led2, led3, floor1, floor2, floor3, door);
 
 	TOP TOP(clk_50, clk, button1, button2, button3, led1, led2, led3, floor1, floor2, floor3, door, moving);
 
@@ -16,8 +17,8 @@ module testbench;
 		button3 = 1'b1;
 
 		#15 press_button3;
-		#4 press_button1;
-		#4 press_button2;
+		#15 press_button2;
+		#100 $finish;
 	end
 
 	task press_button1; begin

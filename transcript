@@ -1,4 +1,27 @@
 # Loading project elevator
+# Compile of design.v failed with 2 errors.
+# Compile of testbench.v failed with 2 errors.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v failed with 2 errors.
+# Compile of movement_tb.v failed with 2 errors.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# 22 compiles, 4 failed with 8 errors.
 # Compile of design.v was successful.
 # Compile of testbench.v was successful.
 # Compile of door.v was successful.
@@ -22,130 +45,36 @@
 # Compile of delay.v was successful.
 # Compile of delay_tb.v was successful.
 # 22 compiles, 0 failed with no errors.
-vsim work.delay_tb
-# vsim work.delay_tb 
-# Start time: 02:30:27 on Aug 27,2024
-# Loading work.delay_tb
-# Loading work.delay
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 13:35:27 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
 # Loading work.frequency
-# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'count'. The port definition is at: delay.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /delay_tb/D File: /home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v Line: 11
-vsim work.delay_tb
-# End time: 02:30:42 on Aug 27,2024, Elapsed time: 0:00:15
+# Loading work.movement
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+vsim work.testbench
+# End time: 13:35:42 on Aug 27,2024, Elapsed time: 0:00:15
 # Errors: 0, Warnings: 3
-# vsim work.delay_tb 
-# Start time: 02:30:42 on Aug 27,2024
-# Loading work.delay_tb
-# Loading work.delay
+# vsim work.testbench 
+# Start time: 13:35:42 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
 # Loading work.frequency
-# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'count'. The port definition is at: delay.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /delay_tb/D File: /home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v Line: 11
-add wave -position insertpoint sim:/delay_tb/D/*
-add wave -position insertpoint sim:/delay_tb/FREQUENCY/*
-run -continue
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (1) for port 'count'. The port definition is at: delay.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /delay_tb/D File: /home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v Line: 11
+# Loading work.movement
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/*
+add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
 run
-# clk:0,count:0,pass:x
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# ** Note: $finish    : /home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v(19)
-#    Time: 300 ps  Iteration: 0  Instance: /delay_tb
-# 1
-# Break in Module delay_tb at /home/andreojr/dev/edu/engc40/modelsim-elevator/delay_tb.v line 19
-run -continue
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# clk:1,count:0,pass:0
-# clk:0,count:0,pass:0
-# Compile of design.v failed with 2 errors.
-# Compile of testbench.v failed with 2 errors.
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
 # Compile of door.v was successful.
 # Compile of door_tb.v was successful.
 # Compile of goal.v was successful.
@@ -156,8 +85,8 @@ run -continue
 # Compile of buttons.v was successful.
 # Compile of floor_types_tb.v was successful.
 # Compile of buttons_tb.v was successful.
-# Compile of frequency.v failed with 2 errors.
-# Compile of frequency_tb.v failed with 2 errors.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
 # Compile of sos.v was successful.
 # Compile of sos_tb.v was successful.
 # Compile of weight.v was successful.
@@ -165,35 +94,286 @@ run -continue
 # Compile of emergency.v was successful.
 # Compile of emergency_tb.v was successful.
 # Compile of delay.v was successful.
-# Compile of delay_tb.v failed with 2 errors.
-# 22 compiles, 5 failed with 10 errors.
-# Compile of design.v failed with 2 errors.
-# Compile of testbench.v failed with 2 errors.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v failed with 2 errors.
-# Compile of frequency_tb.v failed with 2 errors.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v failed with 2 errors.
-# 22 compiles, 5 failed with 10 errors.
+# Compile of delay_tb.v was successful.
+# 22 compiles, 0 failed with no errors.
 # Load canceled
-# End time: 02:41:22 on Aug 27,2024, Elapsed time: 0:10:40
-# Errors: 0, Warnings: 4
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 13:38:14 on Aug 27,2024, Elapsed time: 0:02:32
+# Errors: 0, Warnings: 3
+# vsim work.testbench 
+# Start time: 13:38:14 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+run
+# WARNING: No extended dataflow license exists
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# 22 compiles, 0 failed with no errors.
+# Load canceled
+vsim work.testbench
+# End time: 13:40:38 on Aug 27,2024, Elapsed time: 0:02:24
+# Errors: 0, Warnings: 2
+# vsim work.testbench 
+# Start time: 13:40:38 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/*
+add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+run
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# 22 compiles, 0 failed with no errors.
+# Load canceled
+vsim work.testbench
+# End time: 13:42:07 on Aug 27,2024, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 2
+# vsim work.testbench 
+# Start time: 13:42:07 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/*
+run
+add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+restart
+run
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 13:45:39 on Aug 27,2024, Elapsed time: 0:03:32
+# Errors: 0, Warnings: 2
+# vsim work.testbench 
+# Start time: 13:45:39 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/*
+run
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+restart
+run
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 13:49:42 on Aug 27,2024, Elapsed time: 0:04:03
+# Errors: 0, Warnings: 2
+# vsim work.testbench 
+# Start time: 13:49:42 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+run
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 13:55:04 on Aug 27,2024, Elapsed time: 0:05:22
+# Errors: 0, Warnings: 2
+# vsim work.testbench 
+# Start time: 13:55:04 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+run
+# End time: 14:05:58 on Aug 27,2024, Elapsed time: 0:10:54
+# Errors: 0, Warnings: 3
 # Closing project /home/andreojr/dev/edu/engc40/modelsim-elevator/elevator.mpf
+# reading /home/andreojr/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevator
+# Compile of design.v failed with 6 errors.
+# Compile of testbench.v failed with 6 errors.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v failed with 6 errors.
+# Compile of movement_tb.v failed with 6 errors.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of frequency_door.v failed with 5 errors.
+# Compile of frequency_move.v failed with 1 errors.
+# 24 compiles, 6 failed with 30 errors.
 # reading /home/andreojr/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
 # Loading project elevator
 # Compile of design.v was successful.
@@ -218,916 +398,9 @@ run -continue
 # Compile of emergency_tb.v was successful.
 # Compile of delay.v was successful.
 # Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.frequency_tb
-# vsim work.frequency_tb 
-# Start time: 02:41:35 on Aug 27,2024
-# Loading work.frequency_tb
-# Loading work.frequency
-add wave -position insertpoint sim:/frequency_tb/FREQUENCY/*
-run
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.frequency_tb
-# End time: 02:42:44 on Aug 27,2024, Elapsed time: 0:01:09
-# Errors: 0, Warnings: 3
-# vsim work.frequency_tb 
-# Start time: 02:42:44 on Aug 27,2024
-# Loading work.frequency_tb
-# Loading work.frequency
-add wave -position insertpoint sim:/frequency_tb/FREQUENCY/*
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-# Load canceled
-run
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.frequency_tb
-# End time: 02:45:00 on Aug 27,2024, Elapsed time: 0:02:16
-# Errors: 0, Warnings: 3
-# vsim work.frequency_tb 
-# Start time: 02:45:00 on Aug 27,2024
-# Loading work.frequency_tb
-# Loading work.frequency
-add wave -position insertpoint sim:/frequency_tb/FREQUENCY/*
-run
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.testbench
-# End time: 02:52:03 on Aug 27,2024, Elapsed time: 0:07:03
-# Errors: 0, Warnings: 2
-# vsim work.testbench 
-# Start time: 02:52:03 on Aug 27,2024
-# Loading work.testbench
-# Loading work.TOP
-# Loading work.frequency
-# Loading work.movement
-# Loading work.floor_types
-# Loading work.door
-# Loading work.goal
-# Loading work.buttons
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'FREQUENCY'.  Expected 6, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/TOP/FREQUENCY File: design.v Line: 9
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button2'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button3'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'moving'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'clk'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'MOVEMENT'.  Expected 12, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/TOP/MOVEMENT File: design.v Line: 10
-# ** Warning: (vsim-3722) design.v(10): [TFMPC] - Missing connection for port 'floor3'.
-# ** Warning: (vsim-3722) design.v(10): [TFMPC] - Missing connection for port 'door'.
-# ** Warning: (vsim-3722) design.v(10): [TFMPC] - Missing connection for port 'moving'.
-add wave -position insertpoint sim:/testbench/TOP/*
-run
-# ** Note: $finish    : /home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v(18)
-#    Time: 12 ps  Iteration: 0  Instance: /testbench
-# 1
-# Break in Module testbench at /home/andreojr/dev/edu/engc40/modelsim-elevator/testbench.v line 18
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.frequency_tb
-# End time: 02:53:57 on Aug 27,2024, Elapsed time: 0:01:54
-# Errors: 0, Warnings: 11
-# vsim work.frequency_tb 
-# Start time: 02:53:57 on Aug 27,2024
-# Loading work.frequency_tb
-# Loading work.frequency
-add wave -position insertpoint sim:/frequency_tb/FREQUENCY/*
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-# Load canceled
-run
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.frequency_tb
-# End time: 03:02:58 on Aug 27,2024, Elapsed time: 0:09:01
-# Errors: 0, Warnings: 3
-# vsim work.frequency_tb 
-# Start time: 03:02:58 on Aug 27,2024
-# Loading work.frequency_tb
-# Loading work.frequency
-add wave -position insertpoint sim:/frequency_tb/FREQUENCY/*
-run
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.testbench
-# End time: 03:05:19 on Aug 27,2024, Elapsed time: 0:02:21
-# Errors: 0, Warnings: 2
-# vsim work.testbench 
-# Start time: 03:05:19 on Aug 27,2024
-# Loading work.testbench
-# Loading work.TOP
-# Loading work.frequency
-# Loading work.movement
-# Loading work.floor_types
-# Loading work.door
-# Loading work.goal
-# Loading work.buttons
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'FREQUENCY'.  Expected 6, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/TOP/FREQUENCY File: design.v Line: 9
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button2'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button3'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'moving'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'clk'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'MOVEMENT'.  Expected 12, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/TOP/MOVEMENT File: design.v Line: 10
-# ** Warning: (vsim-3722) design.v(10): [TFMPC] - Missing connection for port 'floor3'.
-# ** Warning: (vsim-3722) design.v(10): [TFMPC] - Missing connection for port 'door'.
-# ** Warning: (vsim-3722) design.v(10): [TFMPC] - Missing connection for port 'moving'.
-vsim work.testbench
-# End time: 03:05:31 on Aug 27,2024, Elapsed time: 0:00:12
-# Errors: 0, Warnings: 10
-# vsim work.testbench 
-# Start time: 03:05:31 on Aug 27,2024
-# Loading work.testbench
-# Loading work.TOP
-# Loading work.frequency
-# Loading work.movement
-# Loading work.floor_types
-# Loading work.door
-# Loading work.goal
-# Loading work.buttons
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'FREQUENCY'.  Expected 6, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/TOP/FREQUENCY File: design.v Line: 9
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button2'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button3'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'moving'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'clk'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'MOVEMENT'.  Expected 12, found 9.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/TOP/MOVEMENT File: design.v Line: 10
-# ** Warning: (vsim-3722) design.v(10): [TFMPC] - Missing connection for port 'floor3'.
-# ** Warning: (vsim-3722) design.v(10): [TFMPC] - Missing connection for port 'door'.
-# ** Warning: (vsim-3722) design.v(10): [TFMPC] - Missing connection for port 'moving'.
-add wave -position insertpoint sim:/testbench/TOP/*
-run
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.testbench
-# End time: 03:07:51 on Aug 27,2024, Elapsed time: 0:02:20
-# Errors: 0, Warnings: 11
-# vsim work.testbench 
-# Start time: 03:07:51 on Aug 27,2024
-# Loading work.testbench
-# Loading work.TOP
-# Loading work.frequency
-# Loading work.movement
-# Loading work.floor_types
-# Loading work.door
-# Loading work.goal
-# Loading work.buttons
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'FREQUENCY'.  Expected 6, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/TOP/FREQUENCY File: design.v Line: 9
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button2'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button3'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'moving'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'clk'.
-add wave -position insertpoint sim:/testbench/TOP/*
-run
-add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'FREQUENCY'.  Expected 6, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/TOP/FREQUENCY File: design.v Line: 9
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button2'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button3'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'moving'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'clk'.
-run
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
-add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'FREQUENCY'.  Expected 6, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/TOP/FREQUENCY File: design.v Line: 9
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button2'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button3'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'moving'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'clk'.
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'FREQUENCY'.  Expected 6, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/TOP/FREQUENCY File: design.v Line: 9
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button2'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'button3'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'moving'.
-# ** Warning: (vsim-3722) design.v(9): [TFMPC] - Missing connection for port 'clk'.
-run
-# End time: 03:17:34 on Aug 27,2024, Elapsed time: 0:09:43
-# Errors: 0, Warnings: 6
-# Closing project /home/andreojr/dev/edu/engc40/modelsim-elevator/elevator.mpf
-# reading /home/andreojr/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
-# Loading project elevator
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.testbench
-# vsim work.testbench 
-# Start time: 03:17:48 on Aug 27,2024
-# Loading work.testbench
-# Loading work.TOP
-# Loading work.frequency
-# Loading work.movement
-# Loading work.floor_types
-# Loading work.door
-# Loading work.goal
-# Loading work.buttons
-add wave -position insertpoint sim:/testbench/TOP/*
-add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
-add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
-run
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou cima 1 x $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou baixo 1 0 $b1
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-# Load canceled
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.testbench
-# End time: 03:22:54 on Aug 27,2024, Elapsed time: 0:05:06
-# Errors: 0, Warnings: 4
-# vsim work.testbench 
-# Start time: 03:22:54 on Aug 27,2024
-# Loading work.testbench
-# Loading work.TOP
-# Loading work.frequency
-# Loading work.movement
-# Loading work.floor_types
-# Loading work.door
-# Loading work.goal
-# Loading work.buttons
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-add wave -position insertpoint sim:/testbench/TOP/*
-add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
-add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
-run
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou cima 1 x $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou baixo 1 0 $b1
-# entrou cima 1 1 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou baixo 1 0 $b1
-# entrou cima 1 1 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou baixo 1 0 $b1
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.testbench
-# End time: 03:28:02 on Aug 27,2024, Elapsed time: 0:05:08
-# Errors: 0, Warnings: 3
-# vsim work.testbench 
-# Start time: 03:28:02 on Aug 27,2024
-# Loading work.testbench
-# Loading work.TOP
-# Loading work.frequency
-# Loading work.movement
-# Loading work.floor_types
-# Loading work.door
-# Loading work.goal
-# Loading work.buttons
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.testbench
-# End time: 03:28:18 on Aug 27,2024, Elapsed time: 0:00:16
-# Errors: 0, Warnings: 2
-# vsim work.testbench 
-# Start time: 03:28:18 on Aug 27,2024
-# Loading work.testbench
-# Loading work.TOP
-# Loading work.frequency
-# Loading work.movement
-# Loading work.floor_types
-# Loading work.door
-# Loading work.goal
-# Loading work.buttons
-add wave -position insertpoint sim:/testbench/TOP/*
-add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
-add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
-add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
-run
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou baixo 1 x $b0
-# entrou cima 1 x $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou baixo 1 0 $b1
-# entrou cima 1 1 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou baixo 1 0 $b1
-# entrou cima 1 1 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou baixo 1 0 $b1
-# entrou cima 1 1 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou cima 1 0 $b1
-# entrou baixo 1 0 $b1
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# entrou baixo 1 1 $b0
-# entrou baixo 1 0 $b0
-# WARNING: No extended dataflow license exists
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# 24 compiles, 0 failed with no errors.
 # Compile of design.v was successful.
 # Compile of testbench.v was successful.
 # Compile of door.v was successful.
@@ -1151,52 +424,36 @@ run
 # Compile of delay.v was successful.
 # Compile of delay_tb.v was successful.
 # Compile of frequency_door.v was successful.
-# 23 compiles, 0 failed with no errors.
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Compile of design.v was successful.
-# Compile of testbench.v was successful.
-# Compile of door.v was successful.
-# Compile of door_tb.v was successful.
-# Compile of goal.v was successful.
-# Compile of goal_tb.v was successful.
-# Compile of movement.v was successful.
-# Compile of movement_tb.v was successful.
-# Compile of floor_types.v was successful.
-# Compile of buttons.v was successful.
-# Compile of floor_types_tb.v was successful.
-# Compile of buttons_tb.v was successful.
-# Compile of frequency.v was successful.
-# Compile of frequency_tb.v was successful.
-# Compile of sos.v was successful.
-# Compile of sos_tb.v was successful.
-# Compile of weight.v was successful.
-# Compile of weight_tb.v was successful.
-# Compile of emergency.v was successful.
-# Compile of emergency_tb.v was successful.
-# Compile of delay.v was successful.
-# Compile of delay_tb.v was successful.
-# Compile of frequency_door.v was successful.
-# 23 compiles, 0 failed with no errors.
+# Compile of frequency_move.v was successful.
+# 24 compiles, 0 failed with no errors.
 vsim work.testbench
-# End time: 04:03:56 on Aug 27,2024, Elapsed time: 0:35:38
-# Errors: 0, Warnings: 4
 # vsim work.testbench 
-# Start time: 04:03:56 on Aug 27,2024
+# Start time: 14:10:48 on Aug 27,2024
 # Loading work.testbench
 # Loading work.TOP
 # Loading work.frequency
 # Loading work.movement
 # Loading work.frequency_door
+# Loading work.frequency_move
 # Loading work.floor_types
 # Loading work.door
 # Loading work.goal
 # Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+run
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/FD/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/FM/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 14:14:47 on Aug 27,2024, Elapsed time: 0:03:59
+# Errors: 0, Warnings: 1
+# Closing project /home/andreojr/dev/edu/engc40/modelsim-elevator/elevator.mpf
+# reading /home/andreojr/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevator
 # Compile of design.v was successful.
 # Compile of testbench.v was successful.
 # Compile of door.v was successful.
@@ -1220,10 +477,342 @@ vsim work.testbench
 # Compile of delay.v was successful.
 # Compile of delay_tb.v was successful.
 # Compile of frequency_door.v was successful.
-# 23 compiles, 0 failed with no errors.
+# Compile of frequency_move.v was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 14:14:56 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
 add wave -position insertpoint sim:/testbench/TOP/*
 add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
 add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+run
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/FD/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# End time: 14:22:37 on Aug 27,2024, Elapsed time: 0:07:41
+# Errors: 0, Warnings: 1
+# Closing project /home/andreojr/dev/edu/engc40/modelsim-elevator/elevator.mpf
+# reading /home/andreojr/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevator
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 14:22:45 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/*
+add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/FD/*
+run
+# WARNING: No extended dataflow license exists
+run -continue
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/FM/*
+restart
+run
+# End time: 14:28:18 on Aug 27,2024, Elapsed time: 0:05:33
+# Errors: 0, Warnings: 1
+# Closing project /home/andreojr/dev/edu/engc40/modelsim-elevator/elevator.mpf
+# reading /home/andreojr/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevator
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 14:29:05 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/*
+add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+run
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/FD/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/FM/*
+restart
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart
+run
+restart
+run
+# End time: 14:45:20 on Aug 27,2024, Elapsed time: 0:16:15
+# Errors: 0, Warnings: 1
+# Closing project /home/andreojr/dev/edu/engc40/modelsim-elevator/elevator.mpf
+# reading /home/andreojr/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevator
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 14:46:20 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.led_disable
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (2) for port 'floor'. The port definition is at: led_disable.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/TOP/MOVEMENT/LD File: movement.v Line: 25
+add wave -position insertpoint sim:/testbench/TOP/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+run
+# WARNING: No extended dataflow license exists
+# End time: 14:51:20 on Aug 27,2024, Elapsed time: 0:05:00
+# Errors: 0, Warnings: 3
+# Closing project /home/andreojr/dev/edu/engc40/modelsim-elevator/elevator.mpf
+# reading /home/andreojr/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevator
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 14:51:37 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+run
+# End time: 14:53:27 on Aug 27,2024, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 2
+# Closing project /home/andreojr/dev/edu/engc40/modelsim-elevator/elevator.mpf
+# reading /home/andreojr/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevator
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 14:53:36 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+run
+# End time: 14:57:32 on Aug 27,2024, Elapsed time: 0:03:56
+# Errors: 0, Warnings: 2
+# Closing project /home/andreojr/dev/edu/engc40/modelsim-elevator/elevator.mpf
+# reading /home/andreojr/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevator
+vsim work.testbench -t 10ns
+# vsim work.testbench -t 10ns 
+# Start time: 14:58:32 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# can't read "Startup(-L)": no such element in array
+# Load canceled
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# End time: 14:59:45 on Aug 27,2024, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 1
+# Closing project /home/andreojr/dev/edu/engc40/modelsim-elevator/elevator.mpf
+# reading /home/andreojr/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevator
+vsim work.testbench -t 10ns
+# vsim work.testbench -t 10ns 
+# Start time: 14:59:50 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
 add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
 run
 # Compile of design.v was successful.
@@ -1248,20 +837,11 @@ run
 # Compile of emergency_tb.v was successful.
 # Compile of delay.v was successful.
 # Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.testbench
-# End time: 04:08:36 on Aug 27,2024, Elapsed time: 0:04:40
-# Errors: 0, Warnings: 4
-# vsim work.testbench 
-# Start time: 04:08:36 on Aug 27,2024
-# Loading work.testbench
-# Loading work.TOP
-# Loading work.frequency
-# Loading work.movement
-# Loading work.floor_types
-# Loading work.door
-# Loading work.goal
-# Loading work.buttons
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# 24 compiles, 0 failed with no errors.
+# can't read "Startup(-L)": no such element in array
+# Load canceled
 # Compile of design.v was successful.
 # Compile of testbench.v was successful.
 # Compile of door.v was successful.
@@ -1284,21 +864,94 @@ vsim work.testbench
 # Compile of emergency_tb.v was successful.
 # Compile of delay.v was successful.
 # Compile of delay_tb.v was successful.
-# 22 compiles, 0 failed with no errors.
-vsim work.testbench
-# End time: 04:08:58 on Aug 27,2024, Elapsed time: 0:00:22
-# Errors: 0, Warnings: 2
-# vsim work.testbench 
-# Start time: 04:08:58 on Aug 27,2024
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.testbench -t 10ns
+# End time: 15:00:19 on Aug 27,2024, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 3
+# vsim work.testbench -t 10ns 
+# Start time: 15:00:19 on Aug 27,2024
 # Loading work.testbench
 # Loading work.TOP
 # Loading work.frequency
 # Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
 # Loading work.floor_types
 # Loading work.door
 # Loading work.goal
 # Loading work.buttons
-add wave -position insertpoint sim:/testbench/TOP/*
-add wave -position insertpoint sim:/testbench/TOP/FREQUENCY/*
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+run
+vsim work.testbench
+# End time: 15:01:20 on Aug 27,2024, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 2
+# vsim work.testbench 
+# Start time: 15:01:20 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
+run
+add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/FD/*
+restart
+run
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of buttons.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# 24 compiles, 0 failed with no errors.
+# can't read "Startup(-L)": no such element in array
+# Load canceled
+# can't read "Startup(-L)": no such element in array
+# Load canceled
+# can't read "Startup(-L)": no such element in array
+# Load canceled
+# Break key hit
+# can't read "Startup(-L)": no such element in array
+# Load canceled
+vsim work.testbench
+# End time: 15:06:14 on Aug 27,2024, Elapsed time: 0:04:54
+# Errors: 0, Warnings: 2
+# vsim work.testbench 
+# Start time: 15:06:14 on Aug 27,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
 add wave -position insertpoint sim:/testbench/TOP/MOVEMENT/*
 run

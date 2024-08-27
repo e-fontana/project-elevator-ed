@@ -1,15 +1,11 @@
-module frequency #(parameter clk_freq = 50000000) (clk_50, button1, button2, button3, moving, clk);
-	input clk_50, button1, button2, button3, moving;
+module frequency #(parameter clk_freq = 50000000) (clk_50, clk);
+	input clk_50;
 	output reg clk;
 
-	reg [25:0] counter = 1'b0;
-
-	always @(negedge button1 or negedge button2 or negedge button3) begin
-		if (~moving) counter <= 0;
-	end
+	reg [25:0] counter = 0;
 	
 	always @(posedge clk_50) begin
-		if (counter < clk_freq && moving) begin
+		if (counter < clk_freq) begin
 			counter <= counter + 1;
 			clk <= 1'b0;
 		end else begin
