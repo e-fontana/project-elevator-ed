@@ -21,7 +21,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 -- Compiling module door
 -- Compiling module buttons
 -- Compiling module floor_types
--- Compiling module frequency_door
 -- Compiling module movement
 -- Compiling module movement_tb
 
@@ -35,7 +34,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 -- Compiling module door
 -- Compiling module buttons
 -- Compiling module floor_types
--- Compiling module frequency_door
 -- Compiling module movement
 -- Compiling module TOP
 -- Compiling module testbench
@@ -60,7 +58,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 -- Compiling module door
 -- Compiling module buttons
 -- Compiling module floor_types
--- Compiling module frequency_door
 -- Compiling module movement
 -- Compiling module TOP
 
