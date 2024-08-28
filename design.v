@@ -1,7 +1,3 @@
-`include "frequency.v"
-`include "movement.v"
-`include "emergency.v"
-
 module TOP (
 		// ENTRADAS
 

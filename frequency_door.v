@@ -7,7 +7,7 @@ module frequency_door #(parameter door_time = 2) (clk, move_handler, weight_limi
 	always @(posedge move_handler) begin
 		counter <= 0;
 	end
-	
+
 	always @(posedge clk) begin
 		if (~weight_limit_exceeded) begin
 			if (counter < door_time) begin

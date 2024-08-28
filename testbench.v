@@ -1,5 +1,3 @@
-`include "design.v"
-
 module testbench;
 	reg clk_50, button1, button2, button3, sos_flip, weight_flip, weight_flip_reset;
 	wire clk, led1, led2, led3, floor1, floor2, floor3, door, moving, sos_mode, weight_limit_exceeded;

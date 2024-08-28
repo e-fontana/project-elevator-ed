@@ -1,5 +1,3 @@
-`include "movement.v"
-
 module movement_tb;
 	reg clk, button1, button2, button3;
 	wire led1, led2, led3, floor1, floor2, floor3, door, moving;

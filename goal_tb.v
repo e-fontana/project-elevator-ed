@@ -1,5 +1,3 @@
-`include "goal.v"
-
 module goal_tb;
 	reg [1:0] floor;
 	reg led1, led2, led3, moving;

@@ -1,11 +1,3 @@
-`include "goal.v"
-`include "door.v"
-`include "buttons.v"
-`include "led_disable.v"
-`include "floor_types.v"
-`include "frequency_move.v"
-`include "frequency_door.v"
-
 module movement (clk, button1, button2, button3, led1, led2, led3, floor1, floor2, floor3, door, moving, sos_mode, weight_limit_exceeded);
 	input clk, button1, button2, button3;
 	output led1, led2, led3, floor1, floor2, floor3, door, sos_mode, weight_limit_exceeded;

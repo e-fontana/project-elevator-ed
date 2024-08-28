@@ -1,6 +1,3 @@
-`include "frequency.v"
-`include "delay.v"
-
 module delay_tb;
 	reg clk_50;
 	wire count, clk, pass;

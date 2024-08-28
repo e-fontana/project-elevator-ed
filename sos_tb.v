@@ -1,5 +1,3 @@
-`include "sos.v"
-
 module sos_handler_tb;
     reg sos_flip;
     wire sos_mode;
