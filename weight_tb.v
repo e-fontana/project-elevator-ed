@@ -1,4 +1,4 @@
-`include "systems/emergency/weight_control/design.v"
+`include "weight.v"
 
 module weight_tb;
     reg clk = 1'b0,
@@ -7,7 +7,7 @@ module weight_tb;
 
     wire weight_limit_exceeded;
 
-    weight_control wc (
+    weight wc (
       .weight_flip(weight_flip),
       .weight_flip_reset(weight_flip_reset),
       .weight_limit_exceeded(weight_limit_exceeded)

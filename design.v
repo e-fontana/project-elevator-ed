@@ -23,8 +23,8 @@ module TOP (
 		// emergencia (leds vermelhos)
 		sos_mode, weight_limit_exceeded
 	);
-	input clk_50, clk, button1, button2, button3, sos_flip, weight_flip, weight_flip_reset;
-	output led1, led2, led3, floor1, floor2, floor3, door, moving, sos_mode, weight_limit_exceeded;
+	input clk_50, button1, button2, button3, sos_flip, weight_flip, weight_flip_reset;
+	output led1, led2, led3, floor1, floor2, floor3, door, moving, sos_mode, weight_limit_exceeded, clk;
 
 	parameter clk_freq = 1;
 	frequency #(clk_freq) FREQUENCY(clk_50, clk);

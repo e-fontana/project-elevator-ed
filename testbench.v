@@ -1,8 +1,10 @@
 `include "design.v"
 
 module testbench;
-	reg clk_50, clk, button1, button2, button3, sos_flip, weight_flip, weight_flip_reset;
-	wire led1, led2, led3, floor1, floor2, floor3, door, moving, sos_mode, weight_limit_exceeded;
+	reg clk_50, button1, button2, button3, sos_flip, weight_flip, weight_flip_reset;
+	wire clk, led1, led2, led3, floor1, floor2, floor3, door, moving, sos_mode, weight_limit_exceeded;
+	
+	integer i = 0;
 
 	always #1 clk_50 <= ~clk_50;
 	always #1 $strobe("led1:%b,led2:%b,led3:%b,floor1:%b,floor2:%b,floor3:%b,door:%b,sos_mode:%b,weight_limit_exceeded:%b", led1, led2, led3, floor1, floor2, floor3, door, sos_mode, weight_limit_exceeded);
@@ -11,7 +13,6 @@ module testbench;
 
 	initial begin
 		clk_50 = 1'b0;
-		clk = 1'b0;
 		button1 = 1'b1;
 		button2 = 1'b1;
 		button3 = 1'b1;
@@ -19,10 +20,11 @@ module testbench;
 		weight_flip = 1'b0;
 		weight_flip_reset = 1'b0;
 
-		#10 for (integer i = 0; i <= 6; i = i + 1) increase_people;
-		#20 press_button3;
-
-		#100 $finish;
+		#40 press_button3;
+		#40 press_button2;
+		#40 press_button1;
+	
+		#1000 $finish;
 	end
 
 	task reset_weight; begin

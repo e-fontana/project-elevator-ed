@@ -29,9 +29,8 @@ module movement (clk, button1, button2, button3, led1, led2, led3, floor1, floor
 	goal #(labelF1, labelF2, labelF3) GOAL(floor, led1, led2, led3, move_handler, goal_floor);
 	buttons #(labelF1, labelF2, labelF3) BT(clk, button1, button2, button3, led1, led2, led3, move_handler, floor);
 
-
-	always @(posedge door_clk or negedge move_handler) moving = move_handler;
-	always @(posedge move_clk) floor = next_floor;
+	always @(posedge door_clk or negedge move_handler) moving <= move_handler;
+	always @(posedge move_clk) floor <= next_floor;
 
 	always @(floor or goal_floor) begin
 		if (goal_floor == floor) begin
