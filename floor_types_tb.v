@@ -1,4 +1,3 @@
-`include "floor_types.v"
 
 module floor_types_tb;
 	reg [1:0] floor;

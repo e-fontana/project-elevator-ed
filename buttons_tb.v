@@ -1,4 +1,3 @@
-`include "buttons.v"
 
 module buttons_tb;
 	reg button1, button2, button3;

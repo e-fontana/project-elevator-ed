@@ -1,8 +1,8 @@
-`include "design.v"
-
 module testbench;
     reg clk_50, clk, button1, button2, button3, sos_flip, weight_flip, weight_flip_reset;
     wire led1, led2, led3, floor1, floor2, floor3, door, moving, sos_mode, weight_limit_exceeded;
+	 
+	 integer i = 0;
 
     always #1 clk_50 <= ~clk_50;
     always #1
@@ -49,8 +49,7 @@ module testbench;
         sos_flip = 1'b0;
         weight_flip = 1'b0;
         weight_flip_reset = 1'b0;
-
-        #10 for (integer i = 0; i <= 6; i = i + 1) increase_people;
+        #10 for (i = 0; i <= 6; i = i + 1) increase_people;
         #20 press_button3;
 
         #100 $finish;

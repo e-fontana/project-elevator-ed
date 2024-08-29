@@ -1,5 +1,3 @@
-`include "systems/emergency/weight_control/design.v"
-
 module weight_tb;
     reg clk = 1'b0,
     weight_flip = 1'b0,

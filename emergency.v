@@ -1,5 +1,4 @@
-`include "sos.v"
-`include "weight.v"
+
 
 module emergency(sos_flip, sos_mode, door, weight_flip, weight_flip_reset, weight_limit_exceeded);
 	input sos_flip, door, weight_flip, weight_flip_reset;

@@ -1,4 +1,3 @@
-`include "frequency.v"
 
 module frequency_tb;
     reg clk_50, button1, button2, button3, moving;

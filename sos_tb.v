@@ -1,4 +1,3 @@
-`include "./systems/emergency/sos_handler/design.v"
 
 module sos_handler_tb;
     reg sos_flip;

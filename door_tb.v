@@ -1,4 +1,3 @@
-`include "door.v"
 
 module door_tb;
 	reg moving, f1, f2, f3;

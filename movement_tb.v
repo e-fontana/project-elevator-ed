@@ -1,4 +1,3 @@
-`include "movement.v"
 
 module movement_tb;
 	reg clk, button1, button2, button3;
