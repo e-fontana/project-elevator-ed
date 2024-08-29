@@ -1,5 +1,5 @@
 Analysis & Synthesis report for design
-Thu Aug 29 16:10:46 2024
+Thu Aug 29 16:43:04 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -11,6 +11,7 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
   5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -37,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Aug 29 16:10:46 2024              ;
+; Analysis & Synthesis Status        ; Failed - Thu Aug 29 16:43:04 2024              ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; design                                         ;
 ; Top-level Entity Name              ; TOP                                            ;
@@ -162,7 +163,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Aug 29 16:10:40 2024
+    Info: Processing started: Thu Aug 29 16:43:00 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off semestral -c design
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -216,36 +217,72 @@ Info (12021): Found 1 design units, including 1 entities, in source file /home/a
 Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/buttons.v
     Info (12023): Found entity 1: buttons File: /home/andreojr/dev/project-elevator-ed/buttons.v Line: 1
 Info (12127): Elaborating entity "TOP" for the top level hierarchy
-Info (12128): Elaborating entity "frequency" for hierarchy "frequency:FREQUENCY" File: /home/andreojr/dev/project-elevator-ed/design.v Line: 26
-Warning (10230): Verilog HDL assignment warning at frequency.v(9): truncated value with size 32 to match size of target (26) File: /home/andreojr/dev/project-elevator-ed/frequency.v Line: 9
-Info (12128): Elaborating entity "movement" for hierarchy "movement:MOVEMENT" File: /home/andreojr/dev/project-elevator-ed/design.v Line: 27
+Info (12128): Elaborating entity "frequency" for hierarchy "frequency:FREQUENCY" File: /home/andreojr/dev/project-elevator-ed/design.v Line: 40
+Warning (10230): Verilog HDL assignment warning at frequency.v(14): truncated value with size 32 to match size of target (26) File: /home/andreojr/dev/project-elevator-ed/frequency.v Line: 14
+Info (12128): Elaborating entity "movement" for hierarchy "movement:MOVEMENT" File: /home/andreojr/dev/project-elevator-ed/design.v Line: 56
 Warning (10030): Net "sos_mode" at movement.v(3) has no driver or initial value, using a default initial value '0' File: /home/andreojr/dev/project-elevator-ed/movement.v Line: 3
 Info (12128): Elaborating entity "frequency_door" for hierarchy "movement:MOVEMENT|frequency_door:FD" File: /home/andreojr/dev/project-elevator-ed/movement.v Line: 16
-Warning (10230): Verilog HDL assignment warning at frequency_door.v(14): truncated value with size 32 to match size of target (26) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 14
-Error (10028): Can't resolve multiple constant drivers for net "counter[25]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10029): Constant driver at frequency_door.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 7
-Error (10028): Can't resolve multiple constant drivers for net "counter[24]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[23]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[22]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[21]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[20]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[19]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[18]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[17]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[16]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[15]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[14]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[13]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[12]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[11]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[10]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[9]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (10028): Can't resolve multiple constant drivers for net "counter[8]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
-Error (12152): Can't elaborate user hierarchy "movement:MOVEMENT|frequency_door:FD" File: /home/andreojr/dev/project-elevator-ed/movement.v Line: 16
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 20 errors, 6 warnings
-    Error: Peak virtual memory: 326 megabytes
-    Error: Processing ended: Thu Aug 29 16:10:46 2024
-    Error: Elapsed time: 00:00:06
-    Error: Total CPU time (on all processors): 00:00:23
+Info (12128): Elaborating entity "frequency_move" for hierarchy "movement:MOVEMENT|frequency_move:FM" File: /home/andreojr/dev/project-elevator-ed/movement.v Line: 17
+Error (10200): Verilog HDL Conditional Statement error at frequency_move.v(8): cannot match operand(s) in the condition to the corresponding edges in the enclosing event control of the always construct File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at frequency_move.v(7): inferring latch(es) for variable "counter", which holds its previous value in one or more paths through the always construct File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Warning (10230): Verilog HDL assignment warning at frequency_move.v(14): truncated value with size 32 to match size of target (26) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 14
+Info (10041): Inferred latch for "counter[0]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[1]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[2]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[3]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[4]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[5]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[6]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[7]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[8]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[9]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[10]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[11]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[12]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[13]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[14]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[15]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[16]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[17]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[18]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[19]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[20]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[21]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[22]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[23]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[24]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Info (10041): Inferred latch for "counter[25]" at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Error (10028): Can't resolve multiple constant drivers for net "counter[25]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10029): Constant driver at frequency_move.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 7
+Error (10028): Can't resolve multiple constant drivers for net "counter[24]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[23]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[22]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[21]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[20]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[19]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[18]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[17]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[16]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[15]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[14]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[13]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[12]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[11]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[10]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[9]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[8]" at frequency_move.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 11
+Error (12152): Can't elaborate user hierarchy "movement:MOVEMENT|frequency_move:FM" File: /home/andreojr/dev/project-elevator-ed/movement.v Line: 17
+Info (144001): Generated suppressed messages file /home/andreojr/dev/project-elevator-ed/quartus/output_files/design.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 21 errors, 7 warnings
+    Error: Peak virtual memory: 335 megabytes
+    Error: Processing ended: Thu Aug 29 16:43:04 2024
+    Error: Elapsed time: 00:00:04
+    Error: Total CPU time (on all processors): 00:00:11
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /home/andreojr/dev/project-elevator-ed/quartus/output_files/design.map.smsg.
 
 
