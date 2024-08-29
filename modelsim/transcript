@@ -1,0 +1,958 @@
+# Loading project elevador-quatus
+# Compile of buttons.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of design.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of led_disable.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of testbench.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 03:44:07 on Aug 29,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+# Loading work.emergency
+# Loading work.sos
+# Loading work.weight
+# Break key hit
+quit -sim
+# End time: 03:44:29 on Aug 29,2024, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 2
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 03:44:36 on Aug 29,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.door
+# Loading work.goal
+# Loading work.buttons
+# Loading work.emergency
+# Loading work.sos
+# Loading work.weight
+restart -f
+add wave -position insertpoint sim:/testbench/*
+add wave sim:/testbench/TOP/*
+# Can't move the Now cursor.
+run
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:1,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:1,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+add wave sim:/testbench/TOP/MOVEMENT/GOAL/*
+restart -f
+run
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:1,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:1,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# led1:1,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0
+# WARNING: No extended dataflow license exists
+# Compile of buttons.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of design.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of led_disable.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v failed with 1 errors.
+# Compile of testbench.v failed with 3 errors.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v failed with 1 errors.
+# 25 compiles, 3 failed with 5 errors.
+# Compile of buttons.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of design.v was successful.
+# Compile of door.v was successful.
+# Compile of door_tb.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of led_disable.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v failed with 1 errors.
+# Compile of testbench.v failed with 2 errors.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# 25 compiles, 2 failed with 3 errors.
+# End time: 04:20:04 on Aug 29,2024, Elapsed time: 0:35:28
+# Errors: 0, Warnings: 3
+# Closing project /home/fontana/dev/ufba/ENGC40/semestral/modelsim/elevador-quatus.mpf
+# reading /home/fontana/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevator
+# reading /home/fontana/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevador-quatus
+# Compile of buttons.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of design.v was successful.
+# Compile of door_tb.v failed with 1 errors.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of led_disable.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of testbench.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# 24 compiles, 2 failed with 1 error.
+dataset reload -f
+# Dataset not found: 
+# Compile of buttons.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of design.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of led_disable.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of testbench.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of moving.v was successful.
+# 24 compiles, 1 failed with no errors.
+# Compile of buttons.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of design.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of led_disable.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of testbench.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of moving.v was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 04:21:18 on Aug 29,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.moving
+# Loading work.goal
+# Loading work.buttons
+# Loading work.emergency
+# Loading work.sos
+# Loading work.weight
+add wave -position insertpoint sim:/testbench/TOP/*
+run
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+run
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# ** Note: $finish    : /home/fontana/dev/ufba/ENGC40/semestral/testbench.v(61)
+#    Time: 166 ps  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at /home/fontana/dev/ufba/ENGC40/semestral/testbench.v line 61
+quit -sim
+# End time: 04:27:09 on Aug 29,2024, Elapsed time: 0:05:51
+# Errors: 0, Warnings: 7
+# reading /home/fontana/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project elevador-quatus
+# Compile of buttons.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of design.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of led_disable.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of testbench.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of moving.v was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 04:27:32 on Aug 29,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.moving
+# Loading work.goal
+# Loading work.buttons
+# Loading work.emergency
+# Loading work.sos
+# Loading work.weight
+add wave -position insertpoint sim:/testbench/TOP/*
+run
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+quit -sim
+# End time: 04:29:13 on Aug 29,2024, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 2
+# Load canceled
+# Compile of buttons.v was successful.
+# Compile of buttons_tb.v was successful.
+# Compile of delay.v was successful.
+# Compile of delay_tb.v was successful.
+# Compile of design.v was successful.
+# Compile of emergency.v was successful.
+# Compile of emergency_tb.v was successful.
+# Compile of floor_types.v was successful.
+# Compile of floor_types_tb.v was successful.
+# Compile of frequency.v was successful.
+# Compile of frequency_door.v was successful.
+# Compile of frequency_move.v was successful.
+# Compile of frequency_tb.v was successful.
+# Compile of goal.v was successful.
+# Compile of goal_tb.v was successful.
+# Compile of led_disable.v was successful.
+# Compile of movement.v was successful.
+# Compile of movement_tb.v was successful.
+# Compile of sos.v was successful.
+# Compile of sos_tb.v was successful.
+# Compile of testbench.v was successful.
+# Compile of weight.v was successful.
+# Compile of weight_tb.v was successful.
+# Compile of moving.v was successful.
+# 24 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 04:29:28 on Aug 29,2024
+# Loading work.testbench
+# Loading work.TOP
+# Loading work.frequency
+# Loading work.movement
+# Loading work.frequency_door
+# Loading work.frequency_move
+# Loading work.floor_types
+# Loading work.moving
+# Loading work.goal
+# Loading work.buttons
+# Loading work.emergency
+# Loading work.sos
+# Loading work.weight
+add wave -position insertpoint sim:/testbench/TOP/*
+run
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:1,floor2:0,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:1,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:1,led3:0,floor1:0,floor2:0,floor3:1,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+run
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:1,led2:0,led3:0,floor1:0,floor2:1,floor3:0,door:0,sos_mode:0,weight_limit_exceeded:0, moving:1
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# led1:0,led2:0,led3:0,floor1:1,floor2:0,floor3:0,door:1,sos_mode:0,weight_limit_exceeded:0, moving:0
+# ** Note: $finish    : /home/fontana/dev/ufba/ENGC40/semestral/testbench.v(60)
+#    Time: 166 ps  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at /home/fontana/dev/ufba/ENGC40/semestral/testbench.v line 60

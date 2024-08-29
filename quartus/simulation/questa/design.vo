@@ -1,0 +1,688 @@
+// Copyright (C) 2024  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
+
+// DATE "08/29/2024 03:15:15"
+
+// 
+// Device: Altera EP4CE115F29C8L Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for Questa Intel FPGA (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module TOP (
+	clk_50,
+	clk,
+	button1,
+	button2,
+	button3,
+	sos_flip,
+	weight_flip,
+	weight_flip_reset,
+	led1,
+	led2,
+	led3,
+	floor1,
+	floor2,
+	floor3,
+	door,
+	moving,
+	sos_mode,
+	weight_limit_exceeded);
+input 	clk_50;
+output 	clk;
+input 	button1;
+input 	button2;
+input 	button3;
+input 	sos_flip;
+input 	weight_flip;
+input 	weight_flip_reset;
+output 	led1;
+output 	led2;
+output 	led3;
+output 	floor1;
+output 	floor2;
+output 	floor3;
+output 	door;
+output 	moving;
+output 	sos_mode;
+output 	weight_limit_exceeded;
+
+// Design Ports Information
+// clk	=>  Location: PIN_AE7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led1	=>  Location: PIN_E22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led2	=>  Location: PIN_M1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// led3	=>  Location: PIN_R3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// floor1	=>  Location: PIN_AD19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// floor2	=>  Location: PIN_AF16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// floor3	=>  Location: PIN_W28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// door	=>  Location: PIN_AE8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// moving	=>  Location: PIN_AF26,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sos_mode	=>  Location: PIN_H15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// weight_limit_exceeded	=>  Location: PIN_AF7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// button1	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// button2	=>  Location: PIN_M2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// button3	=>  Location: PIN_U4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sos_flip	=>  Location: PIN_B17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk_50	=>  Location: PIN_AF8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// weight_flip	=>  Location: PIN_J1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// weight_flip_reset	=>  Location: PIN_Y2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \button1~input_o ;
+wire \clk~output_o ;
+wire \led1~output_o ;
+wire \led2~output_o ;
+wire \led3~output_o ;
+wire \floor1~output_o ;
+wire \floor2~output_o ;
+wire \floor3~output_o ;
+wire \door~output_o ;
+wire \moving~output_o ;
+wire \sos_mode~output_o ;
+wire \weight_limit_exceeded~output_o ;
+wire \clk_50~input_o ;
+wire \FREQUENCY|clk~0_combout ;
+wire \FREQUENCY|clk~feeder_combout ;
+wire \FREQUENCY|clk~q ;
+wire \button2~input_o ;
+wire \button3~input_o ;
+wire \MOVEMENT|DOOR|door~feeder_combout ;
+wire \MOVEMENT|DOOR|door~q ;
+wire \sos_flip~input_o ;
+wire \weight_flip~input_o ;
+wire \weight_flip~inputclkctrl_outclk ;
+wire \EMERGENCY|WEIGHT|counter[2]~1_combout ;
+wire \weight_flip_reset~input_o ;
+wire \weight_flip_reset~inputclkctrl_outclk ;
+wire \EMERGENCY|WEIGHT|counter[1]~2_combout ;
+wire \EMERGENCY|WEIGHT|counter[0]~0_combout ;
+wire \EMERGENCY|WEIGHT|weight_limit_exceeded~0_combout ;
+wire \EMERGENCY|WEIGHT|weight_limit_exceeded~1_combout ;
+wire \EMERGENCY|WEIGHT|weight_limit_exceeded~q ;
+wire [2:0] \EMERGENCY|WEIGHT|counter ;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X20_Y0_N16
+cycloneive_io_obuf \clk~output (
+	.i(\FREQUENCY|clk~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\clk~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \clk~output .bus_hold = "false";
+defparam \clk~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X111_Y73_N9
+cycloneive_io_obuf \led1~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led1~output .bus_hold = "false";
+defparam \led1~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y44_N23
+cycloneive_io_obuf \led2~output (
+	.i(!\button2~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led2~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led2~output .bus_hold = "false";
+defparam \led2~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y34_N23
+cycloneive_io_obuf \led3~output (
+	.i(!\button3~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led3~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led3~output .bus_hold = "false";
+defparam \led3~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X94_Y0_N2
+cycloneive_io_obuf \floor1~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\floor1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \floor1~output .bus_hold = "false";
+defparam \floor1~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X65_Y0_N16
+cycloneive_io_obuf \floor2~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\floor2~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \floor2~output .bus_hold = "false";
+defparam \floor2~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X115_Y21_N16
+cycloneive_io_obuf \floor3~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\floor3~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \floor3~output .bus_hold = "false";
+defparam \floor3~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y0_N23
+cycloneive_io_obuf \door~output (
+	.i(\MOVEMENT|DOOR|door~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\door~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \door~output .bus_hold = "false";
+defparam \door~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X89_Y0_N2
+cycloneive_io_obuf \moving~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\moving~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \moving~output .bus_hold = "false";
+defparam \moving~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X60_Y73_N16
+cycloneive_io_obuf \sos_mode~output (
+	.i(\sos_flip~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sos_mode~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sos_mode~output .bus_hold = "false";
+defparam \sos_mode~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X20_Y0_N9
+cycloneive_io_obuf \weight_limit_exceeded~output (
+	.i(\EMERGENCY|WEIGHT|weight_limit_exceeded~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\weight_limit_exceeded~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \weight_limit_exceeded~output .bus_hold = "false";
+defparam \weight_limit_exceeded~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X23_Y0_N15
+cycloneive_io_ibuf \clk_50~input (
+	.i(clk_50),
+	.ibar(gnd),
+	.o(\clk_50~input_o ));
+// synopsys translate_off
+defparam \clk_50~input .bus_hold = "false";
+defparam \clk_50~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y1_N18
+cycloneive_lcell_comb \FREQUENCY|clk~0 (
+// Equation(s):
+// \FREQUENCY|clk~0_combout  = !\FREQUENCY|clk~q 
+
+	.dataa(gnd),
+	.datab(\FREQUENCY|clk~q ),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\FREQUENCY|clk~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \FREQUENCY|clk~0 .lut_mask = 16'h3333;
+defparam \FREQUENCY|clk~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y1_N2
+cycloneive_lcell_comb \FREQUENCY|clk~feeder (
+// Equation(s):
+// \FREQUENCY|clk~feeder_combout  = \FREQUENCY|clk~0_combout 
+
+	.dataa(\FREQUENCY|clk~0_combout ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\FREQUENCY|clk~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \FREQUENCY|clk~feeder .lut_mask = 16'hAAAA;
+defparam \FREQUENCY|clk~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y1_N3
+dffeas \FREQUENCY|clk (
+	.clk(\clk_50~input_o ),
+	.d(\FREQUENCY|clk~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\FREQUENCY|clk~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \FREQUENCY|clk .is_wysiwyg = "true";
+defparam \FREQUENCY|clk .power_up = "low";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y44_N15
+cycloneive_io_ibuf \button2~input (
+	.i(button2),
+	.ibar(gnd),
+	.o(\button2~input_o ));
+// synopsys translate_off
+defparam \button2~input .bus_hold = "false";
+defparam \button2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y34_N15
+cycloneive_io_ibuf \button3~input (
+	.i(button3),
+	.ibar(gnd),
+	.o(\button3~input_o ));
+// synopsys translate_off
+defparam \button3~input .bus_hold = "false";
+defparam \button3~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y1_N16
+cycloneive_lcell_comb \MOVEMENT|DOOR|door~feeder (
+// Equation(s):
+// \MOVEMENT|DOOR|door~feeder_combout  = VCC
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\MOVEMENT|DOOR|door~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \MOVEMENT|DOOR|door~feeder .lut_mask = 16'hFFFF;
+defparam \MOVEMENT|DOOR|door~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y1_N17
+dffeas \MOVEMENT|DOOR|door (
+	.clk(\FREQUENCY|clk~q ),
+	.d(\MOVEMENT|DOOR|door~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\MOVEMENT|DOOR|door~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \MOVEMENT|DOOR|door .is_wysiwyg = "true";
+defparam \MOVEMENT|DOOR|door .power_up = "low";
+// synopsys translate_on
+
+// Location: IOIBUF_X60_Y73_N8
+cycloneive_io_ibuf \sos_flip~input (
+	.i(sos_flip),
+	.ibar(gnd),
+	.o(\sos_flip~input_o ));
+// synopsys translate_off
+defparam \sos_flip~input .bus_hold = "false";
+defparam \sos_flip~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y36_N8
+cycloneive_io_ibuf \weight_flip~input (
+	.i(weight_flip),
+	.ibar(gnd),
+	.o(\weight_flip~input_o ));
+// synopsys translate_off
+defparam \weight_flip~input .bus_hold = "false";
+defparam \weight_flip~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G2
+cycloneive_clkctrl \weight_flip~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\weight_flip~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\weight_flip~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \weight_flip~inputclkctrl .clock_type = "global clock";
+defparam \weight_flip~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y1_N16
+cycloneive_lcell_comb \EMERGENCY|WEIGHT|counter[2]~1 (
+// Equation(s):
+// \EMERGENCY|WEIGHT|counter[2]~1_combout  = (\EMERGENCY|WEIGHT|counter [2]) # ((\MOVEMENT|DOOR|door~q  & (\EMERGENCY|WEIGHT|counter [0] & \EMERGENCY|WEIGHT|counter [1])))
+
+	.dataa(\MOVEMENT|DOOR|door~q ),
+	.datab(\EMERGENCY|WEIGHT|counter [0]),
+	.datac(\EMERGENCY|WEIGHT|counter [2]),
+	.datad(\EMERGENCY|WEIGHT|counter [1]),
+	.cin(gnd),
+	.combout(\EMERGENCY|WEIGHT|counter[2]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \EMERGENCY|WEIGHT|counter[2]~1 .lut_mask = 16'hF8F0;
+defparam \EMERGENCY|WEIGHT|counter[2]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y36_N15
+cycloneive_io_ibuf \weight_flip_reset~input (
+	.i(weight_flip_reset),
+	.ibar(gnd),
+	.o(\weight_flip_reset~input_o ));
+// synopsys translate_off
+defparam \weight_flip_reset~input .bus_hold = "false";
+defparam \weight_flip_reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G4
+cycloneive_clkctrl \weight_flip_reset~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\weight_flip_reset~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\weight_flip_reset~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \weight_flip_reset~inputclkctrl .clock_type = "global clock";
+defparam \weight_flip_reset~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: FF_X24_Y1_N17
+dffeas \EMERGENCY|WEIGHT|counter[2] (
+	.clk(\weight_flip~inputclkctrl_outclk ),
+	.d(\EMERGENCY|WEIGHT|counter[2]~1_combout ),
+	.asdata(vcc),
+	.clrn(!\weight_flip_reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\EMERGENCY|WEIGHT|counter [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \EMERGENCY|WEIGHT|counter[2] .is_wysiwyg = "true";
+defparam \EMERGENCY|WEIGHT|counter[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y1_N14
+cycloneive_lcell_comb \EMERGENCY|WEIGHT|counter[1]~2 (
+// Equation(s):
+// \EMERGENCY|WEIGHT|counter[1]~2_combout  = (\EMERGENCY|WEIGHT|counter [0] & ((\EMERGENCY|WEIGHT|counter [1] & ((\EMERGENCY|WEIGHT|counter [2]) # (!\MOVEMENT|DOOR|door~q ))) # (!\EMERGENCY|WEIGHT|counter [1] & ((\MOVEMENT|DOOR|door~q ))))) # 
+// (!\EMERGENCY|WEIGHT|counter [0] & (((\EMERGENCY|WEIGHT|counter [1]))))
+
+	.dataa(\EMERGENCY|WEIGHT|counter [2]),
+	.datab(\EMERGENCY|WEIGHT|counter [0]),
+	.datac(\EMERGENCY|WEIGHT|counter [1]),
+	.datad(\MOVEMENT|DOOR|door~q ),
+	.cin(gnd),
+	.combout(\EMERGENCY|WEIGHT|counter[1]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \EMERGENCY|WEIGHT|counter[1]~2 .lut_mask = 16'hBCF0;
+defparam \EMERGENCY|WEIGHT|counter[1]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y1_N15
+dffeas \EMERGENCY|WEIGHT|counter[1] (
+	.clk(\weight_flip~inputclkctrl_outclk ),
+	.d(\EMERGENCY|WEIGHT|counter[1]~2_combout ),
+	.asdata(vcc),
+	.clrn(!\weight_flip_reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\EMERGENCY|WEIGHT|counter [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \EMERGENCY|WEIGHT|counter[1] .is_wysiwyg = "true";
+defparam \EMERGENCY|WEIGHT|counter[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y1_N30
+cycloneive_lcell_comb \EMERGENCY|WEIGHT|counter[0]~0 (
+// Equation(s):
+// \EMERGENCY|WEIGHT|counter[0]~0_combout  = \EMERGENCY|WEIGHT|counter [0] $ (((\MOVEMENT|DOOR|door~q  & ((!\EMERGENCY|WEIGHT|counter [2]) # (!\EMERGENCY|WEIGHT|counter [1])))))
+
+	.dataa(\EMERGENCY|WEIGHT|counter [1]),
+	.datab(\EMERGENCY|WEIGHT|counter [2]),
+	.datac(\EMERGENCY|WEIGHT|counter [0]),
+	.datad(\MOVEMENT|DOOR|door~q ),
+	.cin(gnd),
+	.combout(\EMERGENCY|WEIGHT|counter[0]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \EMERGENCY|WEIGHT|counter[0]~0 .lut_mask = 16'h87F0;
+defparam \EMERGENCY|WEIGHT|counter[0]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y1_N31
+dffeas \EMERGENCY|WEIGHT|counter[0] (
+	.clk(\weight_flip~inputclkctrl_outclk ),
+	.d(\EMERGENCY|WEIGHT|counter[0]~0_combout ),
+	.asdata(vcc),
+	.clrn(!\weight_flip_reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\EMERGENCY|WEIGHT|counter [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \EMERGENCY|WEIGHT|counter[0] .is_wysiwyg = "true";
+defparam \EMERGENCY|WEIGHT|counter[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y1_N24
+cycloneive_lcell_comb \EMERGENCY|WEIGHT|weight_limit_exceeded~0 (
+// Equation(s):
+// \EMERGENCY|WEIGHT|weight_limit_exceeded~0_combout  = (\EMERGENCY|WEIGHT|counter [0] & (\MOVEMENT|DOOR|door~q  & (!\EMERGENCY|WEIGHT|counter [1] & \EMERGENCY|WEIGHT|counter [2])))
+
+	.dataa(\EMERGENCY|WEIGHT|counter [0]),
+	.datab(\MOVEMENT|DOOR|door~q ),
+	.datac(\EMERGENCY|WEIGHT|counter [1]),
+	.datad(\EMERGENCY|WEIGHT|counter [2]),
+	.cin(gnd),
+	.combout(\EMERGENCY|WEIGHT|weight_limit_exceeded~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \EMERGENCY|WEIGHT|weight_limit_exceeded~0 .lut_mask = 16'h0800;
+defparam \EMERGENCY|WEIGHT|weight_limit_exceeded~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y1_N28
+cycloneive_lcell_comb \EMERGENCY|WEIGHT|weight_limit_exceeded~1 (
+// Equation(s):
+// \EMERGENCY|WEIGHT|weight_limit_exceeded~1_combout  = (\EMERGENCY|WEIGHT|weight_limit_exceeded~0_combout ) # (\EMERGENCY|WEIGHT|weight_limit_exceeded~q )
+
+	.dataa(gnd),
+	.datab(\EMERGENCY|WEIGHT|weight_limit_exceeded~0_combout ),
+	.datac(\EMERGENCY|WEIGHT|weight_limit_exceeded~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\EMERGENCY|WEIGHT|weight_limit_exceeded~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \EMERGENCY|WEIGHT|weight_limit_exceeded~1 .lut_mask = 16'hFCFC;
+defparam \EMERGENCY|WEIGHT|weight_limit_exceeded~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y1_N29
+dffeas \EMERGENCY|WEIGHT|weight_limit_exceeded (
+	.clk(\weight_flip~inputclkctrl_outclk ),
+	.d(\EMERGENCY|WEIGHT|weight_limit_exceeded~1_combout ),
+	.asdata(vcc),
+	.clrn(!\weight_flip_reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\EMERGENCY|WEIGHT|weight_limit_exceeded~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \EMERGENCY|WEIGHT|weight_limit_exceeded .is_wysiwyg = "true";
+defparam \EMERGENCY|WEIGHT|weight_limit_exceeded .power_up = "low";
+// synopsys translate_on
+
+// Location: IOIBUF_X52_Y73_N22
+cycloneive_io_ibuf \button1~input (
+	.i(button1),
+	.ibar(gnd),
+	.o(\button1~input_o ));
+// synopsys translate_off
+defparam \button1~input .bus_hold = "false";
+defparam \button1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign clk = \clk~output_o ;
+
+assign led1 = \led1~output_o ;
+
+assign led2 = \led2~output_o ;
+
+assign led3 = \led3~output_o ;
+
+assign floor1 = \floor1~output_o ;
+
+assign floor2 = \floor2~output_o ;
+
+assign floor3 = \floor3~output_o ;
+
+assign door = \door~output_o ;
+
+assign moving = \moving~output_o ;
+
+assign sos_mode = \sos_mode~output_o ;
+
+assign weight_limit_exceeded = \weight_limit_exceeded~output_o ;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_FLASH_nCE_nCSO~~padout ;
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_FLASH_nCE_nCSO~~ibuf_o ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+
+
+endmodule

@@ -1,0 +1,27 @@
+module led_disable #(
+    parameter labelF1 = 2'b00,
+    labelF2 = 2'b01,
+    labelF3 = 2'b10
+) (
+    clk,
+    floor,
+    led1,
+    led2,
+    led3
+);
+    input clk, floor;
+    output led1, led2, led3;
+
+    always @(posedge clk) begin
+        case (floor)
+            labelF1: led1 <= 1'b0;
+            labelF2: led2 <= 1'b0;
+            labelF3: led3 <= 1'b0;
+            default: begin
+                led1 <= 1'b0;
+                led2 <= 1'b0;
+                led3 <= 1'b0;
+            end
+        endcase
+    end
+endmodule

@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "led2",
+					"strict" : false
+				},
+				{
+					"name" : "led3",
+					"strict" : false
+				},
+				{
+					"name" : "door",
+					"strict" : false
+				},
+				{
+					"name" : "sos_mode",
+					"strict" : false
+				},
+				{
+					"name" : "weight_limit_exceeded",
+					"strict" : false
+				},
+				{
+					"name" : "button2",
+					"strict" : false
+				},
+				{
+					"name" : "button3",
+					"strict" : false
+				},
+				{
+					"name" : "sos_flip",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50",
+					"strict" : false
+				},
+				{
+					"name" : "weight_flip",
+					"strict" : false
+				},
+				{
+					"name" : "weight_flip_reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

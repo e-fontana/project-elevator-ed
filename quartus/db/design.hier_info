@@ -1,0 +1,317 @@
+|TOP
+clk_50 => clk_50.IN1
+clk << clk.DB_MAX_OUTPUT_PORT_TYPE
+button1 => button1.IN1
+button2 => button2.IN1
+button3 => button3.IN1
+sos_flip => sos_flip.IN1
+weight_flip => weight_flip.IN1
+weight_flip_reset => weight_flip_reset.IN1
+led1 << movement:MOVEMENT.port4
+led2 << movement:MOVEMENT.port5
+led3 << movement:MOVEMENT.port6
+floor1 << movement:MOVEMENT.port7
+floor2 << movement:MOVEMENT.port8
+floor3 << movement:MOVEMENT.port9
+door << door.DB_MAX_OUTPUT_PORT_TYPE
+moving << movement:MOVEMENT.port11
+sos_mode << sos_mode.DB_MAX_OUTPUT_PORT_TYPE
+weight_limit_exceeded << weight_limit_exceeded.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|frequency:FREQUENCY
+clk_50 => clk~reg0.CLK
+clk_50 => counter[0].CLK
+clk_50 => counter[1].CLK
+clk_50 => counter[2].CLK
+clk_50 => counter[3].CLK
+clk_50 => counter[4].CLK
+clk_50 => counter[5].CLK
+clk_50 => counter[6].CLK
+clk_50 => counter[7].CLK
+clk_50 => counter[8].CLK
+clk_50 => counter[9].CLK
+clk_50 => counter[10].CLK
+clk_50 => counter[11].CLK
+clk_50 => counter[12].CLK
+clk_50 => counter[13].CLK
+clk_50 => counter[14].CLK
+clk_50 => counter[15].CLK
+clk_50 => counter[16].CLK
+clk_50 => counter[17].CLK
+clk_50 => counter[18].CLK
+clk_50 => counter[19].CLK
+clk_50 => counter[20].CLK
+clk_50 => counter[21].CLK
+clk_50 => counter[22].CLK
+clk_50 => counter[23].CLK
+clk_50 => counter[24].CLK
+clk_50 => counter[25].CLK
+clk_50 => counter[26].CLK
+clk_50 => counter[27].CLK
+clk_50 => counter[28].CLK
+clk_50 => counter[29].CLK
+clk_50 => counter[30].CLK
+clk_50 => counter[31].CLK
+clk <= clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|movement:MOVEMENT
+clk => clk.IN1
+button1 => frequency_move:FM.button1
+button1 => buttons:BT.button1
+button2 => frequency_move:FM.button2
+button2 => buttons:BT.button2
+button3 => frequency_move:FM.button3
+button3 => buttons:BT.button3
+led1 <= buttons:BT.led1
+led2 <= buttons:BT.led2
+led3 <= buttons:BT.led3
+floor1 <= floor_types:FT.floor1
+floor2 <= floor_types:FT.floor2
+floor3 <= floor_types:FT.floor3
+door <= door:DOOR.door
+moving <= move_handler.DB_MAX_OUTPUT_PORT_TYPE
+sos_mode => frequency_move:FM.sos_mode
+weight_limit_exceeded => weight_limit_exceeded.IN1
+
+
+|TOP|movement:MOVEMENT|frequency_door:FD
+clk => door_clk~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+clk => counter[26].CLK
+clk => counter[27].CLK
+clk => counter[28].CLK
+clk => counter[29].CLK
+clk => counter[30].CLK
+clk => counter[31].CLK
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+move_handler => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => counter.OUTPUTSELECT
+weight_limit_exceeded => door_clk~reg0.ENA
+door_clk <= door_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|movement:MOVEMENT|frequency_move:FM
+clk => move_clk~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+clk => counter[26].CLK
+clk => counter[27].CLK
+clk => counter[28].CLK
+clk => counter[29].CLK
+clk => counter[30].CLK
+clk => counter[31].CLK
+button1 => ~NO_FANOUT~
+button2 => ~NO_FANOUT~
+button3 => ~NO_FANOUT~
+moving => always0.IN1
+sos_mode => always0.IN0
+weight_limit_exceeded => always0.IN1
+move_clk <= move_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|movement:MOVEMENT|floor_types:FT
+floor[0] => Equal0.IN1
+floor[0] => Equal1.IN0
+floor[0] => Equal2.IN1
+floor[1] => Equal0.IN0
+floor[1] => Equal1.IN1
+floor[1] => Equal2.IN0
+floor1 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+floor2 <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+floor3 <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|movement:MOVEMENT|door:DOOR
+clk => door~reg0.CLK
+moving => door.IN1
+f1 => door.IN0
+f1 => door.IN0
+f1 => door.IN0
+f2 => door.IN1
+f2 => door.IN1
+f2 => door.IN1
+f3 => door.IN1
+f3 => door.IN1
+f3 => door.IN1
+door <= door~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|movement:MOVEMENT|goal:GOAL
+floor[0] => Mux0.IN4
+floor[0] => Mux1.IN4
+floor[1] => Mux0.IN3
+floor[1] => Mux1.IN3
+led1 => gf.OUTPUTSELECT
+led1 => gf.OUTPUTSELECT
+led1 => gf.DATAA
+led2 => gf.OUTPUTSELECT
+led2 => gf.DATAA
+led2 => Mux1.IN5
+led2 => gf.DATAA
+led2 => gf.DATAA
+led3 => gf.OUTPUTSELECT
+led3 => Mux0.IN5
+move_handler => ~NO_FANOUT~
+gf[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+gf[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|movement:MOVEMENT|buttons:BT
+clk => ~NO_FANOUT~
+button1 => led1.IN1
+button2 => led2.IN1
+button3 => led3.IN1
+led1 <= led1.DB_MAX_OUTPUT_PORT_TYPE
+led2 <= led2.DB_MAX_OUTPUT_PORT_TYPE
+led3 <= led3.DB_MAX_OUTPUT_PORT_TYPE
+move_handler => ~NO_FANOUT~
+floor[0] => Equal0.IN1
+floor[0] => Equal1.IN0
+floor[0] => Equal2.IN1
+floor[1] => Equal0.IN0
+floor[1] => Equal1.IN1
+floor[1] => Equal2.IN0
+
+
+|TOP|emergency:EMERGENCY
+sos_flip => sos_flip.IN1
+sos_mode <= sos:SOS.port1
+door => door.IN1
+weight_flip => weight_flip.IN1
+weight_flip_reset => weight_flip_reset.IN1
+weight_limit_exceeded <= weight:WEIGHT.port3
+
+
+|TOP|emergency:EMERGENCY|sos:SOS
+sos_flip => sos_mode.DATAIN
+sos_mode <= sos_flip.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|emergency:EMERGENCY|weight:WEIGHT
+door => weight_limit_exceeded~reg0.ENA
+door => counter[2].ENA
+door => counter[1].ENA
+door => counter[0].ENA
+weight_flip => weight_limit_exceeded~reg0.CLK
+weight_flip => counter[0].CLK
+weight_flip => counter[1].CLK
+weight_flip => counter[2].CLK
+weight_flip_reset => weight_limit_exceeded~reg0.ACLR
+weight_flip_reset => counter[0].ACLR
+weight_flip_reset => counter[1].ACLR
+weight_flip_reset => counter[2].ACLR
+weight_limit_exceeded <= weight_limit_exceeded~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

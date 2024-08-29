@@ -1,0 +1,32 @@
+/home/fontana/dev/ufba/ENGC40/semestral/floor_types.v {1 {vlog -work work -stats=none /home/fontana/dev/ufba/ENGC40/semestral/floor_types.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module floor_types
+
+Top level modules:
+	floor_types
+
+} {} {}} /home/fontana/dev/ufba/ENGC40/semestral/emergency_tb.v {1 {vlog -work work -stats=none /home/fontana/dev/ufba/ENGC40/semestral/emergency_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+} {} {}} /home/fontana/dev/ufba/ENGC40/semestral/sos.v {1 {vlog -work work -stats=none /home/fontana/dev/ufba/ENGC40/semestral/sos.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sos
+
+Top level modules:
+	sos
+
+} {} {}} /home/fontana/dev/ufba/ENGC40/semestral/delay.v {1 {vlog -work work -stats=none /home/fontana/dev/ufba/ENGC40/semestral/delay.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module delay
+
+Top level modules:
+	delay
+
+} {} {}} /home/fontana/dev/ufba/ENGC40/semestral/moving.v {1 {vlog -work work -stats=none /home/fontana/dev/ufba/ENGC40/semestral/moving.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module moving
+
+Top level modules:
+	moving
+
+} {} {}}

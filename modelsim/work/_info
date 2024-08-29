@@ -1,0 +1,564 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/fontana/dev/ufba/ENGC40/semestral
+vbuttons
+Z0 !s110 1724916560
+!i10b 1
+!s100 F]m669Lz;Ah1<AFKg:jmX0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IVSDJRY9TOW:55dj>04M2F2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 d/home/fontana/dev/ufba/ENGC40/semestral/modelsim
+w1724914955
+8/home/fontana/dev/ufba/ENGC40/semestral/buttons.v
+F/home/fontana/dev/ufba/ENGC40/semestral/buttons.v
+!i122 332
+Z4 L0 1 22
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1724916559.000000
+Z7 !s107 /home/fontana/dev/ufba/ENGC40/semestral/weight.v|/home/fontana/dev/ufba/ENGC40/semestral/sos.v|/home/fontana/dev/ufba/ENGC40/semestral/emergency.v|/home/fontana/dev/ufba/ENGC40/semestral/frequency_door.v|/home/fontana/dev/ufba/ENGC40/semestral/frequency_move.v|/home/fontana/dev/ufba/ENGC40/semestral/floor_types.v|/home/fontana/dev/ufba/ENGC40/semestral/led_disable.v|/home/fontana/dev/ufba/ENGC40/semestral/buttons.v|/home/fontana/dev/ufba/ENGC40/semestral/moving.v|/home/fontana/dev/ufba/ENGC40/semestral/goal.v|/home/fontana/dev/ufba/ENGC40/semestral/movement.v|/home/fontana/dev/ufba/ENGC40/semestral/frequency.v|/home/fontana/dev/ufba/ENGC40/semestral/design.v|/home/fontana/dev/ufba/ENGC40/semestral/testbench.v|
+Z8 !s90 -reportprogress|300|-work|work|-stats=none|/home/fontana/dev/ufba/ENGC40/semestral/testbench.v|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+vbuttons_tb
+Z11 !s110 1724916559
+!i10b 1
+!s100 ?8:G7ZCP@SlMBINieIH3Q3
+R1
+Io2@hUfT:[HWZAD8j:zU]k0
+R2
+R3
+Z12 w1724914627
+8/home/fontana/dev/ufba/ENGC40/semestral/buttons_tb.v
+F/home/fontana/dev/ufba/ENGC40/semestral/buttons_tb.v
+!i122 315
+L0 3 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/fontana/dev/ufba/ENGC40/semestral/buttons.v|/home/fontana/dev/ufba/ENGC40/semestral/buttons_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/fontana/dev/ufba/ENGC40/semestral/buttons_tb.v|
+!i113 1
+R9
+R10
+vdelay
+R11
+!i10b 1
+!s100 F4VUh9U<lF3I9bW`n2zl61
+R1
+I[ESh_PE@f=z]H2X_K]:1n2
+R2
+R3
+Z13 w1724858362
+8/home/fontana/dev/ufba/ENGC40/semestral/delay.v
+F/home/fontana/dev/ufba/ENGC40/semestral/delay.v
+!i122 317
+R4
+R5
+r1
+!s85 0
+31
+R6
+Z14 !s107 /home/fontana/dev/ufba/ENGC40/semestral/delay.v|/home/fontana/dev/ufba/ENGC40/semestral/frequency.v|/home/fontana/dev/ufba/ENGC40/semestral/delay_tb.v|
+Z15 !s90 -reportprogress|300|-work|work|-stats=none|/home/fontana/dev/ufba/ENGC40/semestral/delay_tb.v|
+!i113 1
+R9
+R10
+vdelay_tb
+R11
+!i10b 1
+!s100 fL6LJEb<>Z]:`:^<>Q[^l3
+R1
+IKkG7>H[gNN;zU;DSX9i^^3
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/delay_tb.v
+F/home/fontana/dev/ufba/ENGC40/semestral/delay_tb.v
+!i122 317
+L0 4 18
+R5
+r1
+!s85 0
+31
+R6
+R14
+R15
+!i113 1
+R9
+R10
+vdoor
+Z16 !s110 1724914731
+!i10b 1
+!s100 =ng;bE?3MHXZ3V4T_GDah2
+R1
+I77U;>TOD9C]Gkh8lFh4Lm2
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/door.v
+F/home/fontana/dev/ufba/ENGC40/semestral/door.v
+!i122 224
+Z17 L0 1 5
+R5
+r1
+!s85 0
+31
+Z18 !s108 1724914731.000000
+!s107 /home/fontana/dev/ufba/ENGC40/semestral/weight.v|/home/fontana/dev/ufba/ENGC40/semestral/sos.v|/home/fontana/dev/ufba/ENGC40/semestral/emergency.v|/home/fontana/dev/ufba/ENGC40/semestral/frequency_door.v|/home/fontana/dev/ufba/ENGC40/semestral/frequency_move.v|/home/fontana/dev/ufba/ENGC40/semestral/floor_types.v|/home/fontana/dev/ufba/ENGC40/semestral/led_disable.v|/home/fontana/dev/ufba/ENGC40/semestral/buttons.v|/home/fontana/dev/ufba/ENGC40/semestral/door.v|/home/fontana/dev/ufba/ENGC40/semestral/goal.v|/home/fontana/dev/ufba/ENGC40/semestral/movement.v|/home/fontana/dev/ufba/ENGC40/semestral/frequency.v|/home/fontana/dev/ufba/ENGC40/semestral/design.v|/home/fontana/dev/ufba/ENGC40/semestral/testbench.v|
+R8
+!i113 1
+R9
+R10
+vdoor_tb
+R16
+!i10b 1
+!s100 jH[n=o=n6V?2bX7g;IX1Y1
+R1
+IW_XBBI@J0IZJI25`4obc01
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/door_tb.v
+F/home/fontana/dev/ufba/ENGC40/semestral/door_tb.v
+!i122 211
+L0 3 35
+R5
+r1
+!s85 0
+31
+R18
+!s107 /home/fontana/dev/ufba/ENGC40/semestral/door.v|/home/fontana/dev/ufba/ENGC40/semestral/door_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/fontana/dev/ufba/ENGC40/semestral/door_tb.v|
+!i113 1
+R9
+R10
+vemergency
+R0
+!i10b 1
+!s100 ;LIjSVe3h3lchO;6H:zd_0
+R1
+I;=JnGh@Q6aXY09ThVfSKo1
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/emergency.v
+F/home/fontana/dev/ufba/ENGC40/semestral/emergency.v
+!i122 332
+L0 4 7
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vfloor_types
+R0
+!i10b 1
+!s100 IG4L>Dh6O3_X_Y51l4c413
+R1
+IY3fmEYO4N8HK5Z3FEm7`J3
+R2
+R3
+R13
+8/home/fontana/dev/ufba/ENGC40/semestral/floor_types.v
+F/home/fontana/dev/ufba/ENGC40/semestral/floor_types.v
+!i122 332
+L0 1 8
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vfloor_types_tb
+R11
+!i10b 1
+!s100 h1RSI?bHVNzUV]7]GO=ZG1
+R1
+I96cbB[olPZj0igE6:HU8j1
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/floor_types_tb.v
+F/home/fontana/dev/ufba/ENGC40/semestral/floor_types_tb.v
+!i122 321
+L0 3 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/fontana/dev/ufba/ENGC40/semestral/floor_types.v|/home/fontana/dev/ufba/ENGC40/semestral/floor_types_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/fontana/dev/ufba/ENGC40/semestral/floor_types_tb.v|
+!i113 1
+R9
+R10
+vfrequency
+R0
+!i10b 1
+!s100 GS@cOK[K=>JGl:?]J[oB51
+R1
+I8g7=CV^6WJaDG_oM6U>;A2
+R2
+R3
+w1724916389
+8/home/fontana/dev/ufba/ENGC40/semestral/frequency.v
+F/home/fontana/dev/ufba/ENGC40/semestral/frequency.v
+!i122 332
+L0 1 21
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vfrequency_door
+R0
+!i10b 1
+!s100 L`Ql[in2kFFNDS_`TIe<i2
+R1
+Ij0^=lg:PWkldocRml[d3j1
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/frequency_door.v
+F/home/fontana/dev/ufba/ENGC40/semestral/frequency_door.v
+!i122 332
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vfrequency_move
+R0
+!i10b 1
+!s100 likSR`4LU2MSTHz`aW15g2
+R1
+IHTz80:1ViV:1ML7WVU_8Y1
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/frequency_move.v
+F/home/fontana/dev/ufba/ENGC40/semestral/frequency_move.v
+!i122 332
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vfrequency_tb
+R11
+!i10b 1
+!s100 zIgY8_BPY:aM=U7mocTR71
+R1
+IAV^[8Mcg[]cl56L@e=MMO3
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/frequency_tb.v
+F/home/fontana/dev/ufba/ENGC40/semestral/frequency_tb.v
+!i122 325
+L0 3 36
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/fontana/dev/ufba/ENGC40/semestral/frequency.v|/home/fontana/dev/ufba/ENGC40/semestral/frequency_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/fontana/dev/ufba/ENGC40/semestral/frequency_tb.v|
+!i113 1
+R9
+R10
+vgoal
+R0
+!i10b 1
+!s100 c8cLzP?zL=MIZ01HlK^Y;1
+R1
+ITd]U890Uil_Z@`7j2NBic2
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/goal.v
+F/home/fontana/dev/ufba/ENGC40/semestral/goal.v
+!i122 332
+L0 1 28
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vgoal_tb
+R11
+!i10b 1
+!s100 2dQ1FIKm^Lm;OmB9;Rfab3
+R1
+Ik^HXX254oLFA3ggfkW@N`2
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/goal_tb.v
+F/home/fontana/dev/ufba/ENGC40/semestral/goal_tb.v
+!i122 327
+L0 3 34
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/fontana/dev/ufba/ENGC40/semestral/goal.v|/home/fontana/dev/ufba/ENGC40/semestral/goal_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/fontana/dev/ufba/ENGC40/semestral/goal_tb.v|
+!i113 1
+R9
+R10
+vmovement
+R0
+!i10b 1
+!s100 5ALQ]481h>9MMRWZTn>aB3
+R1
+IlAAJIPm^C3]Y66LA3hIEX0
+R2
+R3
+w1724915673
+8/home/fontana/dev/ufba/ENGC40/semestral/movement.v
+F/home/fontana/dev/ufba/ENGC40/semestral/movement.v
+!i122 332
+L0 9 93
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vmovement_tb
+R11
+!i10b 1
+!s100 fz:1eNhE;IoNUT`6Wk;GQ1
+R1
+IYm5;<JClCm^YT@PJ@;jQe2
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/movement_tb.v
+F/home/fontana/dev/ufba/ENGC40/semestral/movement_tb.v
+!i122 329
+L0 3 33
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/fontana/dev/ufba/ENGC40/semestral/frequency_door.v|/home/fontana/dev/ufba/ENGC40/semestral/frequency_move.v|/home/fontana/dev/ufba/ENGC40/semestral/floor_types.v|/home/fontana/dev/ufba/ENGC40/semestral/led_disable.v|/home/fontana/dev/ufba/ENGC40/semestral/buttons.v|/home/fontana/dev/ufba/ENGC40/semestral/moving.v|/home/fontana/dev/ufba/ENGC40/semestral/goal.v|/home/fontana/dev/ufba/ENGC40/semestral/movement.v|/home/fontana/dev/ufba/ENGC40/semestral/movement_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/fontana/dev/ufba/ENGC40/semestral/movement_tb.v|
+!i113 1
+R9
+R10
+vmoving
+R0
+!i10b 1
+!s100 ZPFo=mP0zzN;;:iP0bSTW3
+R1
+IRmF6JfG^iNdHJbNloAze_1
+R2
+R3
+w1724915896
+8/home/fontana/dev/ufba/ENGC40/semestral/moving.v
+F/home/fontana/dev/ufba/ENGC40/semestral/moving.v
+!i122 335
+L0 1 12
+R5
+r1
+!s85 0
+31
+Z19 !s108 1724916560.000000
+!s107 /home/fontana/dev/ufba/ENGC40/semestral/moving.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/fontana/dev/ufba/ENGC40/semestral/moving.v|
+!i113 1
+R9
+R10
+vsos
+R0
+!i10b 1
+!s100 :AF@=oUUj[P1?=d<FeOjF0
+R1
+Ic9UQE8@McOND:G]X8lS1l2
+R2
+R3
+R13
+8/home/fontana/dev/ufba/ENGC40/semestral/sos.v
+F/home/fontana/dev/ufba/ENGC40/semestral/sos.v
+!i122 332
+R17
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vsos_handler_tb
+R11
+!i10b 1
+!s100 YzcaA>LGBnL7Q>N9CI7]Q0
+R1
+IUg<0QV^:7R_L;TeJOd><F2
+R2
+R3
+w1724914748
+8/home/fontana/dev/ufba/ENGC40/semestral/sos_tb.v
+F/home/fontana/dev/ufba/ENGC40/semestral/sos_tb.v
+!i122 331
+L0 3 25
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/fontana/dev/ufba/ENGC40/semestral/./sos.v|/home/fontana/dev/ufba/ENGC40/semestral/sos_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/fontana/dev/ufba/ENGC40/semestral/sos_tb.v|
+!i113 1
+R9
+R10
+vtestbench
+R0
+!i10b 1
+!s100 mYSj[XP3<aBJ]RQF;8dnK1
+R1
+I<kJ2G4g;9bZLb8KhMKLIE1
+R2
+R3
+w1724916514
+8/home/fontana/dev/ufba/ENGC40/semestral/testbench.v
+F/home/fontana/dev/ufba/ENGC40/semestral/testbench.v
+!i122 332
+L0 3 101
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vTOP
+R0
+!i10b 1
+!s100 O1P8lL07XZZVXbnhSSf_G0
+R1
+IBkM6Cohm[1_Gz7LBIiod?1
+R2
+R3
+w1724916500
+8/home/fontana/dev/ufba/ENGC40/semestral/design.v
+F/home/fontana/dev/ufba/ENGC40/semestral/design.v
+!i122 332
+L0 5 65
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+n@t@o@p
+vweight
+R0
+!i10b 1
+!s100 XCRFd=XDz<<Gemg<MDNoJ2
+R1
+Iob0WZ4LKAoT1dozZ?WFGT2
+R2
+R3
+R12
+8/home/fontana/dev/ufba/ENGC40/semestral/weight.v
+F/home/fontana/dev/ufba/ENGC40/semestral/weight.v
+!i122 334
+L0 1 20
+R5
+r1
+!s85 0
+31
+R19
+Z20 !s107 /home/fontana/dev/ufba/ENGC40/semestral/weight.v|/home/fontana/dev/ufba/ENGC40/semestral/weight_tb.v|
+Z21 !s90 -reportprogress|300|-work|work|-stats=none|/home/fontana/dev/ufba/ENGC40/semestral/weight_tb.v|
+!i113 1
+R9
+R10
+vweight_tb
+R0
+!i10b 1
+!s100 n9H^8UjhaSPbYOX9BeeTi3
+R1
+I^65FPXNlo1S[C;o6^;Z4J0
+R2
+R3
+w1724914669
+8/home/fontana/dev/ufba/ENGC40/semestral/weight_tb.v
+F/home/fontana/dev/ufba/ENGC40/semestral/weight_tb.v
+!i122 334
+L0 3 31
+R5
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R9
+R10
