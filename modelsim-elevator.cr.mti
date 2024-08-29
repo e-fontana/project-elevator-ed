@@ -33,12 +33,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	movement_tb
 
-} {} {}} /home/andreojr/dev/project-elevator-ed/frequency.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/frequency.v
+} {} {}} /home/andreojr/dev/project-elevator-ed/button_handler.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/button_handler.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module frequency
+-- Compiling module button_handler
 
 Top level modules:
-	frequency
+	button_handler
 
 } {} {}} /home/andreojr/dev/project-elevator-ed/design.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/design.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -46,6 +46,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	TOP
+
+} {} {}} /home/andreojr/dev/project-elevator-ed/frequency.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/frequency.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module frequency
+
+Top level modules:
+	frequency
 
 } {} {}} /home/andreojr/dev/project-elevator-ed/sos_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/sos_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -82,13 +89,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	door
 
-} {} {}} /home/andreojr/dev/project-elevator-ed/sos.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/sos.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module sos
-
-Top level modules:
-	sos
-
 } {} {}} /home/andreojr/dev/project-elevator-ed/weight_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/weight_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module weight_tb
@@ -96,12 +96,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	weight_tb
 
-} {} {}} /home/andreojr/dev/project-elevator-ed/delay.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/delay.v
+} {} {}} /home/andreojr/dev/project-elevator-ed/sos.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/sos.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module delay
+-- Compiling module sos
 
 Top level modules:
-	delay
+	sos
 
 } {} {}} /home/andreojr/dev/project-elevator-ed/frequency_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/frequency_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -109,6 +109,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	frequency_tb
+
+} {} {}} /home/andreojr/dev/project-elevator-ed/delay.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/delay.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module delay
+
+Top level modules:
+	delay
 
 } {} {}} /home/andreojr/dev/project-elevator-ed/goal_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/goal_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -131,15 +138,15 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	goal
 
-} {} {}} /home/andreojr/dev/project-elevator-ed/emergency_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/emergency_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-
 } {} {}} /home/andreojr/dev/project-elevator-ed/buttons_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/buttons_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module buttons_tb
 
 Top level modules:
 	buttons_tb
+
+} {} {}} /home/andreojr/dev/project-elevator-ed/emergency_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/emergency_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
 } {} {}} /home/andreojr/dev/project-elevator-ed/frequency_door.v {1 {vlog -work work -stats=none /home/andreojr/dev/project-elevator-ed/frequency_door.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

@@ -1,6 +1,14 @@
 module testbench;
-    reg clk_50, button1, button2, button3, sos_flip, weight_flip, weight_flip_reset;
-    wire clk, led1, led2, led3, floor1, floor2, floor3, door, moving, sos_mode, weight_limit_exceeded;
+    reg
+        clk_50,
+        button1_pushed,
+        button2_pushed,
+        button3_pushed,
+        button_reset_pushed,
+        sos_flip,
+        weight_flip,
+        weight_flip_reset;
+    wire led1, led2, led3, floor1, floor2, floor3, door, moving, sos_mode, weight_limit_exceeded;
 
     integer i = 0;
 
@@ -21,10 +29,10 @@ module testbench;
 
     TOP TOP (
         clk_50,
-        clk,
-        button1,
-        button2,
-        button3,
+        button1_pushed,
+        button2_pushed,
+        button3_pushed,
+        button_reset_pushed,
         sos_flip,
         weight_flip,
         weight_flip_reset,
@@ -42,9 +50,10 @@ module testbench;
 
     initial begin
         clk_50 = 1'b0;
-        button1 = 1'b1;
-        button2 = 1'b1;
-        button3 = 1'b1;
+        button1_pushed = 1'b1;
+        button2_pushed = 1'b1;
+        button3_pushed = 1'b1;
+        button_reset_pushed = 1'b1;
         sos_flip = 1'b0;
         weight_flip = 1'b0;
         weight_flip_reset = 1'b0;
@@ -76,22 +85,22 @@ module testbench;
 
     task press_button1;
         begin
-            #0.5 button1 = ~button1;
-            #0.5 button1 = ~button1;
+            #0.5 button1_pushed = ~button1_pushed;
+            #0.5 button1_pushed = ~button1_pushed;
         end
     endtask
 
     task press_button2;
         begin
-            #0.5 button2 = ~button2;
-            #0.5 button2 = ~button2;
+            #0.5 button2_pushed = ~button2_pushed;
+            #0.5 button2_pushed = ~button2_pushed;
         end
     endtask
 
     task press_button3;
         begin
-            #0.5 button3 = ~button3;
-            #0.5 button3 = ~button3;
+            #0.5 button3_pushed = ~button3_pushed;
+            #0.5 button3_pushed = ~button3_pushed;
         end
     endtask
 endmodule

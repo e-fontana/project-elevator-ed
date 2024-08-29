@@ -4,7 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "clk",
+					"name" : "led1",
 					"strict" : false
 				},
 				{
@@ -16,7 +16,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "floor1",
+					"strict" : false
+				},
+				{
+					"name" : "floor2",
+					"strict" : false
+				},
+				{
+					"name" : "floor3",
+					"strict" : false
+				},
+				{
 					"name" : "door",
+					"strict" : false
+				},
+				{
+					"name" : "moving",
 					"strict" : false
 				},
 				{
@@ -28,19 +44,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "button2",
-					"strict" : false
-				},
-				{
-					"name" : "button3",
-					"strict" : false
-				},
-				{
 					"name" : "sos_flip",
 					"strict" : false
 				},
 				{
-					"name" : "clk_50",
+					"name" : "button1_pushed",
+					"strict" : false
+				},
+				{
+					"name" : "button2_pushed",
+					"strict" : false
+				},
+				{
+					"name" : "button3_pushed",
 					"strict" : false
 				},
 				{
@@ -49,6 +65,10 @@
 				},
 				{
 					"name" : "weight_flip_reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50",
 					"strict" : false
 				}
 			]

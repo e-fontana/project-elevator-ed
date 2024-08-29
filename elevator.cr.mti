@@ -108,6 +108,9 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	goal
 
+} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/emergency_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/emergency_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
 } {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/buttons_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module buttons
@@ -115,9 +118,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	buttons_tb
-
-} {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/emergency_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/emergency_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
 } {} {}} /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_door.v {1 {vlog -work work -stats=none /home/andreojr/dev/edu/engc40/modelsim-elevator/frequency_door.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

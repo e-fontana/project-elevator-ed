@@ -2,25 +2,22 @@ module frequency_move #(
     parameter move_time = 10
 ) (
     clk,
-    button1,
-    button2,
-    button3,
-    moving,
+    led1,
+    led2,
+    led3,
+    move_handler,
     sos_mode,
     weight_limit_exceeded,
     move_clk
 );
-    input clk, button1, button2, button3, moving, sos_mode, weight_limit_exceeded;
-    output reg move_clk;
+    input clk, led1, led2, led3, move_handler, sos_mode, weight_limit_exceeded;
+    output reg move_clk = 1'b0;
 
     reg [25:0] counter = 0;
 
-    always @(negedge button1 or negedge button2 or negedge button3) begin
-        if (~moving) counter = 0;
-    end
-
     always @(posedge clk) begin
-        if (~sos_mode && ~weight_limit_exceeded) begin
+        if (~move_handler & (led1 | led2 | led3)) counter = 0;
+        else if (~sos_mode && ~weight_limit_exceeded) begin
             if (counter < move_time) begin
                 counter  <= counter + 1;
                 move_clk <= 1'b0;

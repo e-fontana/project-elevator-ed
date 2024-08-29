@@ -1,0 +1,39 @@
+# Copyright (C) 2024  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+
+# Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+# File: /home/andreojr/dev/project-elevator-ed/quartus/semestral.csv
+# Generated on: Thu Aug 29 19:54:47 2024
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
+button1_pushed,Input,PIN_R24,5,B5_N0,PIN_A12,,,,,,
+button2_pushed,Input,PIN_N21,6,B6_N2,PIN_G14,,,,,,
+button3_pushed,Input,PIN_M21,6,B6_N1,PIN_D14,,,,,,
+clk_50,Input,PIN_Y2,2,B2_N0,PIN_J1,,,,,,
+door,Output,PIN_H21,7,B7_N2,PIN_H14,,,,,,
+floor1,Output,PIN_E19,7,B7_N0,PIN_D12,,,,,,
+floor2,Output,PIN_F19,7,B7_N0,PIN_B11,,,,,,
+floor3,Output,PIN_G19,7,B7_N2,PIN_A11,,,,,,
+led1,Output,PIN_F17,7,B7_N2,PIN_E14,,,,,,
+led2,Output,PIN_G21,7,B7_N1,PIN_F14,,,,,,
+led3,Output,PIN_G22,7,B7_N2,PIN_J14,,,,,,
+moving,Output,PIN_E24,7,B7_N1,PIN_J13,,,,,,
+sos_flip,Input,PIN_AC27,5,B5_N2,PIN_C12,,,,,,
+sos_mode,Output,PIN_F18,7,B7_N1,PIN_C14,,,,,,
+weight_flip,Input,PIN_AC28,5,B5_N2,PIN_Y2,,,,,,
+weight_flip_reset,Input,PIN_AB28,5,B5_N1,PIN_AH14,,,,,,
+weight_limit_exceeded,Output,PIN_E18,7,B7_N1,PIN_J12,,,,,,

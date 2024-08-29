@@ -14,8 +14,8 @@ module movement (
     sos_mode,
     weight_limit_exceeded
 );
-    input clk, button1, button2, button3;
-    output led1, led2, led3, floor1, floor2, floor3, door, sos_mode, weight_limit_exceeded;
+    input clk, button1, button2, button3, sos_mode, weight_limit_exceeded;
+    output led1, led2, led3, floor1, floor2, floor3, door;
     output reg moving = 1'b0;
 
     wire [1:0] goal_floor;
@@ -36,10 +36,10 @@ module movement (
     );
     frequency_move #(move_time) FM (
         clk,
-        button1,
-        button2,
-        button3,
-        moving,
+        led1,
+        led2,
+        led3,
+        move_handler,
         sos_mode,
         weight_limit_exceeded,
         move_clk

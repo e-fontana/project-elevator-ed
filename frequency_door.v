@@ -7,7 +7,7 @@ module frequency_door #(
     door_clk
 );
     input clk, move_handler, weight_limit_exceeded;
-    output reg door_clk;
+    output reg door_clk = 1'b0;
 
     reg [31:0] counter = 0;
 

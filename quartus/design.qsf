@@ -57,6 +57,10 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE ../button_handler.v
 set_global_assignment -name VERILOG_FILE ../weight_tb.v
 set_global_assignment -name VERILOG_FILE ../weight.v
 set_global_assignment -name VERILOG_FILE ../testbench.v
@@ -82,7 +86,21 @@ set_global_assignment -name VERILOG_FILE ../delay_tb.v
 set_global_assignment -name VERILOG_FILE ../delay.v
 set_global_assignment -name VERILOG_FILE ../buttons_tb.v
 set_global_assignment -name VERILOG_FILE ../buttons.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_R24 -to button1_pushed
+set_location_assignment PIN_N21 -to button2_pushed
+set_location_assignment PIN_M21 -to button3_pushed
+set_location_assignment PIN_Y2 -to clk_50
+set_location_assignment PIN_H21 -to door
+set_location_assignment PIN_E19 -to floor1
+set_location_assignment PIN_F19 -to floor2
+set_location_assignment PIN_G19 -to floor3
+set_location_assignment PIN_F17 -to led1
+set_location_assignment PIN_G21 -to led2
+set_location_assignment PIN_G22 -to led3
+set_location_assignment PIN_E24 -to moving
+set_location_assignment PIN_AC27 -to sos_flip
+set_location_assignment PIN_F18 -to sos_mode
+set_location_assignment PIN_AC28 -to weight_flip
+set_location_assignment PIN_AB28 -to weight_flip_reset
+set_location_assignment PIN_E18 -to weight_limit_exceeded
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
