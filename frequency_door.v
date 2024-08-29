@@ -2,7 +2,7 @@ module frequency_door #(parameter door_time = 2) (clk, move_handler, weight_limi
 	input clk, move_handler, weight_limit_exceeded;
 	output reg door_clk;
 
-	reg [25:0] counter = 0;
+	reg [31:0] counter = 0;
 
 	always @(posedge clk) begin
 		if (move_handler) begin
