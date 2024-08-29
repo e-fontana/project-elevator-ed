@@ -1,5 +1,5 @@
-Analysis & Elaboration report for design
-Thu Aug 29 03:16:43 2024
+Analysis & Synthesis report for design
+Thu Aug 29 16:10:46 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -7,19 +7,10 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |TOP
-  5. Parameter Settings for User Entity Instance: frequency:FREQUENCY
-  6. Parameter Settings for User Entity Instance: movement:MOVEMENT
-  7. Parameter Settings for User Entity Instance: movement:MOVEMENT|frequency_door:FD
-  8. Parameter Settings for User Entity Instance: movement:MOVEMENT|frequency_move:FM
-  9. Parameter Settings for User Entity Instance: movement:MOVEMENT|floor_types:FT
- 10. Parameter Settings for User Entity Instance: movement:MOVEMENT|goal:GOAL
- 11. Parameter Settings for User Entity Instance: movement:MOVEMENT|buttons:BT
- 12. Analysis & Elaboration Settings
- 13. Port Connectivity Checks: "movement:MOVEMENT|frequency_door:FD"
- 14. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
 
 
 
@@ -44,9 +35,9 @@ https://fpgasoftware.intel.com/eula.
 
 
 +-------------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                      ;
+; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Thu Aug 29 03:16:43 2024          ;
+; Analysis & Synthesis Status        ; Failed - Thu Aug 29 16:10:46 2024              ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; design                                         ;
 ; Top-level Entity Name              ; TOP                                            ;
@@ -63,114 +54,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+------------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |TOP ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; clk_freq       ; 1     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: frequency:FREQUENCY ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; clk_freq       ; 1     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: movement:MOVEMENT ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; labelF1        ; 00    ; Unsigned Binary                       ;
-; labelF2        ; 01    ; Unsigned Binary                       ;
-; labelF3        ; 10    ; Unsigned Binary                       ;
-; door_time      ; 2     ; Signed Integer                        ;
-; move_time      ; 5     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: movement:MOVEMENT|frequency_door:FD ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; door_time      ; 2     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: movement:MOVEMENT|frequency_move:FM ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; move_time      ; 5     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: movement:MOVEMENT|floor_types:FT ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; labelF1        ; 00    ; Unsigned Binary                                      ;
-; labelF2        ; 01    ; Unsigned Binary                                      ;
-; labelF3        ; 10    ; Unsigned Binary                                      ;
-+----------------+-------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: movement:MOVEMENT|goal:GOAL ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; labelF1        ; 00    ; Unsigned Binary                                 ;
-; labelF2        ; 01    ; Unsigned Binary                                 ;
-; labelF3        ; 10    ; Unsigned Binary                                 ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: movement:MOVEMENT|buttons:BT ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; labelF1        ; 00    ; Unsigned Binary                                  ;
-; labelF2        ; 01    ; Unsigned Binary                                  ;
-; labelF3        ; 10    ; Unsigned Binary                                  ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -255,99 +140,112 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "movement:MOVEMENT|frequency_door:FD"                                                    ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; door_clk ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 10          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Aug 29 03:16:37 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off semestral -c design --analysis_and_elaboration
+    Info: Processing started: Thu Aug 29 16:10:40 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off semestral -c design
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/weight_tb.v
-    Info (12023): Found entity 1: weight_tb File: /home/fontana/dev/ufba/ENGC40/semestral/weight_tb.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/weight.v
-    Info (12023): Found entity 1: weight File: /home/fontana/dev/ufba/ENGC40/semestral/weight.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/testbench.v
-    Info (12023): Found entity 1: testbench File: /home/fontana/dev/ufba/ENGC40/semestral/testbench.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/sos_tb.v
-    Info (12023): Found entity 1: sos_handler_tb File: /home/fontana/dev/ufba/ENGC40/semestral/sos_tb.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/sos.v
-    Info (12023): Found entity 1: sos File: /home/fontana/dev/ufba/ENGC40/semestral/sos.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/movement_tb.v
-    Info (12023): Found entity 1: movement_tb File: /home/fontana/dev/ufba/ENGC40/semestral/movement_tb.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/movement.v
-    Info (12023): Found entity 1: movement File: /home/fontana/dev/ufba/ENGC40/semestral/movement.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/led_disable.v
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/goal_tb.v
-    Info (12023): Found entity 1: goal_tb File: /home/fontana/dev/ufba/ENGC40/semestral/goal_tb.v Line: 1
-Warning (10261): Verilog HDL Event Control warning at goal.v(17): Event Control contains a complex event expression File: /home/fontana/dev/ufba/ENGC40/semestral/goal.v Line: 17
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/goal.v
-    Info (12023): Found entity 1: goal File: /home/fontana/dev/ufba/ENGC40/semestral/goal.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/frequency_tb.v
-    Info (12023): Found entity 1: frequency_tb File: /home/fontana/dev/ufba/ENGC40/semestral/frequency_tb.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/frequency_move.v
-    Info (12023): Found entity 1: frequency_move File: /home/fontana/dev/ufba/ENGC40/semestral/frequency_move.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/frequency_door.v
-    Info (12023): Found entity 1: frequency_door File: /home/fontana/dev/ufba/ENGC40/semestral/frequency_door.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/frequency.v
-    Info (12023): Found entity 1: frequency File: /home/fontana/dev/ufba/ENGC40/semestral/frequency.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/floor_types_tb.v
-    Info (12023): Found entity 1: floor_types_tb File: /home/fontana/dev/ufba/ENGC40/semestral/floor_types_tb.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/floor_types.v
-    Info (12023): Found entity 1: floor_types File: /home/fontana/dev/ufba/ENGC40/semestral/floor_types.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/emergency_tb.v
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/emergency.v
-    Info (12023): Found entity 1: emergency File: /home/fontana/dev/ufba/ENGC40/semestral/emergency.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/door_tb.v
-    Info (12023): Found entity 1: door_tb File: /home/fontana/dev/ufba/ENGC40/semestral/door_tb.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/door.v
-    Info (12023): Found entity 1: door File: /home/fontana/dev/ufba/ENGC40/semestral/door.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/design.v
-    Info (12023): Found entity 1: TOP File: /home/fontana/dev/ufba/ENGC40/semestral/design.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/delay_tb.v
-    Info (12023): Found entity 1: delay_tb File: /home/fontana/dev/ufba/ENGC40/semestral/delay_tb.v Line: 1
-Warning (10261): Verilog HDL Event Control warning at delay.v(9): Event Control contains a complex event expression File: /home/fontana/dev/ufba/ENGC40/semestral/delay.v Line: 9
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/delay.v
-    Info (12023): Found entity 1: delay File: /home/fontana/dev/ufba/ENGC40/semestral/delay.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/buttons_tb.v
-    Info (12023): Found entity 1: buttons_tb File: /home/fontana/dev/ufba/ENGC40/semestral/buttons_tb.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/fontana/dev/ufba/ENGC40/semestral/buttons.v
-    Info (12023): Found entity 1: buttons File: /home/fontana/dev/ufba/ENGC40/semestral/buttons.v Line: 1
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/weight_tb.v
+    Info (12023): Found entity 1: weight_tb File: /home/andreojr/dev/project-elevator-ed/weight_tb.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/weight.v
+    Info (12023): Found entity 1: weight File: /home/andreojr/dev/project-elevator-ed/weight.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/testbench.v
+    Info (12023): Found entity 1: testbench File: /home/andreojr/dev/project-elevator-ed/testbench.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/sos_tb.v
+    Info (12023): Found entity 1: sos_handler_tb File: /home/andreojr/dev/project-elevator-ed/sos_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/sos.v
+    Info (12023): Found entity 1: sos File: /home/andreojr/dev/project-elevator-ed/sos.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/movement_tb.v
+    Info (12023): Found entity 1: movement_tb File: /home/andreojr/dev/project-elevator-ed/movement_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/movement.v
+    Info (12023): Found entity 1: movement File: /home/andreojr/dev/project-elevator-ed/movement.v Line: 1
+Warning (12019): Can't analyze file -- file ../led_disable.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/goal_tb.v
+    Info (12023): Found entity 1: goal_tb File: /home/andreojr/dev/project-elevator-ed/goal_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/goal.v
+    Info (12023): Found entity 1: goal File: /home/andreojr/dev/project-elevator-ed/goal.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/frequency_tb.v
+    Info (12023): Found entity 1: frequency_tb File: /home/andreojr/dev/project-elevator-ed/frequency_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/frequency_move.v
+    Info (12023): Found entity 1: frequency_move File: /home/andreojr/dev/project-elevator-ed/frequency_move.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/frequency_door.v
+    Info (12023): Found entity 1: frequency_door File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/frequency.v
+    Info (12023): Found entity 1: frequency File: /home/andreojr/dev/project-elevator-ed/frequency.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/floor_types_tb.v
+    Info (12023): Found entity 1: floor_types_tb File: /home/andreojr/dev/project-elevator-ed/floor_types_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/floor_types.v
+    Info (12023): Found entity 1: floor_types File: /home/andreojr/dev/project-elevator-ed/floor_types.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file /home/andreojr/dev/project-elevator-ed/emergency_tb.v
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/emergency.v
+    Info (12023): Found entity 1: emergency File: /home/andreojr/dev/project-elevator-ed/emergency.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/door_tb.v
+    Info (12023): Found entity 1: door_tb File: /home/andreojr/dev/project-elevator-ed/door_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/door.v
+    Info (12023): Found entity 1: door File: /home/andreojr/dev/project-elevator-ed/door.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/design.v
+    Info (12023): Found entity 1: TOP File: /home/andreojr/dev/project-elevator-ed/design.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/delay_tb.v
+    Info (12023): Found entity 1: delay_tb File: /home/andreojr/dev/project-elevator-ed/delay_tb.v Line: 1
+Warning (10261): Verilog HDL Event Control warning at delay.v(9): Event Control contains a complex event expression File: /home/andreojr/dev/project-elevator-ed/delay.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/delay.v
+    Info (12023): Found entity 1: delay File: /home/andreojr/dev/project-elevator-ed/delay.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/buttons_tb.v
+    Info (12023): Found entity 1: buttons_tb File: /home/andreojr/dev/project-elevator-ed/buttons_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /home/andreojr/dev/project-elevator-ed/buttons.v
+    Info (12023): Found entity 1: buttons File: /home/andreojr/dev/project-elevator-ed/buttons.v Line: 1
 Info (12127): Elaborating entity "TOP" for the top level hierarchy
-Info (12128): Elaborating entity "frequency" for hierarchy "frequency:FREQUENCY" File: /home/fontana/dev/ufba/ENGC40/semestral/design.v Line: 41
-Info (12128): Elaborating entity "movement" for hierarchy "movement:MOVEMENT" File: /home/fontana/dev/ufba/ENGC40/semestral/design.v Line: 57
-Critical Warning (10237): Verilog HDL warning at movement.v(82): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: /home/fontana/dev/ufba/ENGC40/semestral/movement.v Line: 82
-Info (12128): Elaborating entity "frequency_door" for hierarchy "movement:MOVEMENT|frequency_door:FD" File: /home/fontana/dev/ufba/ENGC40/semestral/movement.v Line: 36
-Info (12128): Elaborating entity "frequency_move" for hierarchy "movement:MOVEMENT|frequency_move:FM" File: /home/fontana/dev/ufba/ENGC40/semestral/movement.v Line: 46
-Info (12128): Elaborating entity "floor_types" for hierarchy "movement:MOVEMENT|floor_types:FT" File: /home/fontana/dev/ufba/ENGC40/semestral/movement.v Line: 53
-Info (12128): Elaborating entity "door" for hierarchy "movement:MOVEMENT|door:DOOR" File: /home/fontana/dev/ufba/ENGC40/semestral/movement.v Line: 61
-Info (12128): Elaborating entity "goal" for hierarchy "movement:MOVEMENT|goal:GOAL" File: /home/fontana/dev/ufba/ENGC40/semestral/movement.v Line: 69
-Warning (10235): Verilog HDL Always Construct warning at goal.v(18): variable "floor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/fontana/dev/ufba/ENGC40/semestral/goal.v Line: 18
-Warning (10235): Verilog HDL Always Construct warning at goal.v(30): variable "led3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/fontana/dev/ufba/ENGC40/semestral/goal.v Line: 30
-Info (12128): Elaborating entity "buttons" for hierarchy "movement:MOVEMENT|buttons:BT" File: /home/fontana/dev/ufba/ENGC40/semestral/movement.v Line: 80
-Critical Warning (10237): Verilog HDL warning at buttons.v(22): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: /home/fontana/dev/ufba/ENGC40/semestral/buttons.v Line: 22
-Critical Warning (10237): Verilog HDL warning at buttons.v(23): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: /home/fontana/dev/ufba/ENGC40/semestral/buttons.v Line: 23
-Critical Warning (10237): Verilog HDL warning at buttons.v(24): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: /home/fontana/dev/ufba/ENGC40/semestral/buttons.v Line: 24
-Info (12128): Elaborating entity "emergency" for hierarchy "emergency:EMERGENCY" File: /home/fontana/dev/ufba/ENGC40/semestral/design.v Line: 65
-Info (12128): Elaborating entity "sos" for hierarchy "emergency:EMERGENCY|sos:SOS" File: /home/fontana/dev/ufba/ENGC40/semestral/emergency.v Line: 15
-Info (12128): Elaborating entity "weight" for hierarchy "emergency:EMERGENCY|weight:WEIGHT" File: /home/fontana/dev/ufba/ENGC40/semestral/emergency.v Line: 21
-Warning (10230): Verilog HDL assignment warning at weight.v(18): truncated value with size 32 to match size of target (3) File: /home/fontana/dev/ufba/ENGC40/semestral/weight.v Line: 18
-Warning (10230): Verilog HDL assignment warning at weight.v(20): truncated value with size 32 to match size of target (3) File: /home/fontana/dev/ufba/ENGC40/semestral/weight.v Line: 20
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 646 megabytes
-    Info: Processing ended: Thu Aug 29 03:16:43 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:18
+Info (12128): Elaborating entity "frequency" for hierarchy "frequency:FREQUENCY" File: /home/andreojr/dev/project-elevator-ed/design.v Line: 26
+Warning (10230): Verilog HDL assignment warning at frequency.v(9): truncated value with size 32 to match size of target (26) File: /home/andreojr/dev/project-elevator-ed/frequency.v Line: 9
+Info (12128): Elaborating entity "movement" for hierarchy "movement:MOVEMENT" File: /home/andreojr/dev/project-elevator-ed/design.v Line: 27
+Warning (10030): Net "sos_mode" at movement.v(3) has no driver or initial value, using a default initial value '0' File: /home/andreojr/dev/project-elevator-ed/movement.v Line: 3
+Info (12128): Elaborating entity "frequency_door" for hierarchy "movement:MOVEMENT|frequency_door:FD" File: /home/andreojr/dev/project-elevator-ed/movement.v Line: 16
+Warning (10230): Verilog HDL assignment warning at frequency_door.v(14): truncated value with size 32 to match size of target (26) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 14
+Error (10028): Can't resolve multiple constant drivers for net "counter[25]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10029): Constant driver at frequency_door.v(7) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 7
+Error (10028): Can't resolve multiple constant drivers for net "counter[24]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[23]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[22]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[21]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[20]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[19]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[18]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[17]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[16]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[15]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[14]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[13]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[12]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[11]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[10]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[9]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (10028): Can't resolve multiple constant drivers for net "counter[8]" at frequency_door.v(11) File: /home/andreojr/dev/project-elevator-ed/frequency_door.v Line: 11
+Error (12152): Can't elaborate user hierarchy "movement:MOVEMENT|frequency_door:FD" File: /home/andreojr/dev/project-elevator-ed/movement.v Line: 16
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 20 errors, 6 warnings
+    Error: Peak virtual memory: 326 megabytes
+    Error: Processing ended: Thu Aug 29 16:10:46 2024
+    Error: Elapsed time: 00:00:06
+    Error: Total CPU time (on all processors): 00:00:23
 
 
