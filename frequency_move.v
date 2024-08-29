@@ -3,12 +3,11 @@ module frequency_move #(parameter move_time = 10) (clk, button1, button2, button
 	output reg move_clk;
 
 	reg [25:0] counter = 0;
-
-	always @(negedge button1 or negedge button2 or negedge button3) begin
-		if (~moving) counter <= 0;
-	end
 	
-	always @(posedge clk) begin
+	always @(posedge clk or negedge button1 or negedge button2 or negedge button3) begin
+		if (~moving) begin
+			counter <= 0;
+		end
 		if (~sos_mode && ~weight_limit_exceeded) begin
 			if (counter < move_time) begin
 				counter <= counter + 1;
