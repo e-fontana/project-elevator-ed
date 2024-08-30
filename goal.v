@@ -14,26 +14,50 @@ module goal #(
     input led1, led2, led3, move_handler;
     output reg [1:0] gf = labelF1;
 
-    always @(led1 or led2 or led3) begin
+    always @(move_handler or led1 or led2 or led3) begin
+
         if (~move_handler) begin
+
             case (floor)
+
                 labelF1: begin
-                    if (led1) gf = labelF1;
-                    else if (led2) gf = labelF2;
-                    else gf = labelF3;
+                    case ({
+                        led1, led2, led3
+                    })
+                        3'b001:  gf = labelF3;
+                        3'b010:  gf = labelF2;
+                        3'b011:  gf = labelF2;
+                        default: gf = labelF1;
+                    endcase
                 end
+
                 labelF2: begin
-                    if (led2) gf = labelF2;
-                    else if (led1) gf = labelF1;
-                    else gf = labelF3;
+                    case ({
+                        led1, led2, led3
+                    })
+                        3'b001:  gf = labelF3;
+                        3'b100:  gf = labelF1;
+                        3'b101:  gf = labelF1;
+                        default: gf = labelF2;
+                    endcase
                 end
+
                 labelF3: begin
-                    if (led3) gf = labelF3;
-                    else if (led2) gf = labelF2;
-                    else gf = labelF1;
+                    case ({
+                        led1, led2, led3
+                    })
+                        3'b010:  gf = labelF2;
+                        3'b100:  gf = labelF1;
+                        3'b110:  gf = labelF2;
+                        default: gf = labelF3;
+                    endcase
                 end
-                default: gf = gf;
+
+                default: gf = labelF1;
+
             endcase
+
         end else gf = gf;
+
     end
 endmodule

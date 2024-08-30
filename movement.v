@@ -71,6 +71,7 @@ module movement (
         button1,
         button2,
         button3,
+        button_reset,
         led1,
         led2,
         led3,

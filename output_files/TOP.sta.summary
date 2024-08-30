@@ -1,0 +1,185 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'frequency:FREQUENCY|clk'
+Slack : -6.009
+TNS   : -168.804
+
+Type  : Slow 1200mV 85C Model Setup 'movement:MOVEMENT|frequency_move:FM|move_clk'
+Slack : -4.202
+TNS   : -7.718
+
+Type  : Slow 1200mV 85C Model Setup 'weight_flip'
+Slack : -4.114
+TNS   : -129.057
+
+Type  : Slow 1200mV 85C Model Setup 'clk_50'
+Slack : -3.731
+TNS   : -91.108
+
+Type  : Slow 1200mV 85C Model Setup 'movement:MOVEMENT|floor[0]'
+Slack : -2.123
+TNS   : -3.996
+
+Type  : Slow 1200mV 85C Model Hold 'movement:MOVEMENT|floor[0]'
+Slack : -0.059
+TNS   : -0.059
+
+Type  : Slow 1200mV 85C Model Hold 'weight_flip'
+Slack : 0.429
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'movement:MOVEMENT|frequency_move:FM|move_clk'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'frequency:FREQUENCY|clk'
+Slack : 0.442
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_50'
+Slack : 0.631
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_50'
+Slack : -3.000
+TNS   : -45.405
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'weight_flip'
+Slack : -3.000
+TNS   : -45.405
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'frequency:FREQUENCY|clk'
+Slack : -1.285
+TNS   : -38.550
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'movement:MOVEMENT|frequency_move:FM|move_clk'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'movement:MOVEMENT|floor[0]'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'frequency:FREQUENCY|clk'
+Slack : -5.485
+TNS   : -153.282
+
+Type  : Slow 1200mV 0C Model Setup 'movement:MOVEMENT|frequency_move:FM|move_clk'
+Slack : -3.736
+TNS   : -6.821
+
+Type  : Slow 1200mV 0C Model Setup 'weight_flip'
+Slack : -3.594
+TNS   : -114.520
+
+Type  : Slow 1200mV 0C Model Setup 'clk_50'
+Slack : -3.357
+TNS   : -81.021
+
+Type  : Slow 1200mV 0C Model Setup 'movement:MOVEMENT|floor[0]'
+Slack : -1.848
+TNS   : -3.443
+
+Type  : Slow 1200mV 0C Model Hold 'movement:MOVEMENT|floor[0]'
+Slack : -0.032
+TNS   : -0.032
+
+Type  : Slow 1200mV 0C Model Hold 'weight_flip'
+Slack : 0.336
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'movement:MOVEMENT|frequency_move:FM|move_clk'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'frequency:FREQUENCY|clk'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_50'
+Slack : 0.577
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : -3.000
+TNS   : -45.405
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'weight_flip'
+Slack : -3.000
+TNS   : -45.405
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'frequency:FREQUENCY|clk'
+Slack : -1.285
+TNS   : -38.550
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'movement:MOVEMENT|frequency_move:FM|move_clk'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'movement:MOVEMENT|floor[0]'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'frequency:FREQUENCY|clk'
+Slack : -2.653
+TNS   : -67.942
+
+Type  : Fast 1200mV 0C Model Setup 'weight_flip'
+Slack : -1.710
+TNS   : -48.580
+
+Type  : Fast 1200mV 0C Model Setup 'movement:MOVEMENT|frequency_move:FM|move_clk'
+Slack : -1.639
+TNS   : -2.953
+
+Type  : Fast 1200mV 0C Model Setup 'clk_50'
+Slack : -1.354
+TNS   : -25.812
+
+Type  : Fast 1200mV 0C Model Setup 'movement:MOVEMENT|floor[0]'
+Slack : -0.970
+TNS   : -1.575
+
+Type  : Fast 1200mV 0C Model Hold 'movement:MOVEMENT|floor[0]'
+Slack : -0.144
+TNS   : -0.144
+
+Type  : Fast 1200mV 0C Model Hold 'frequency:FREQUENCY|clk'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'movement:MOVEMENT|frequency_move:FM|move_clk'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'weight_flip'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_50'
+Slack : 0.286
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'weight_flip'
+Slack : -3.000
+TNS   : -41.346
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : -3.000
+TNS   : -37.996
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'frequency:FREQUENCY|clk'
+Slack : -1.000
+TNS   : -30.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'movement:MOVEMENT|frequency_move:FM|move_clk'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'movement:MOVEMENT|floor[0]'
+Slack : 0.279
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,6 +1,7 @@
 
 
 module emergency (
+    button_reset,
     sos_flip,
     sos_mode,
     door,
@@ -8,7 +9,7 @@ module emergency (
     weight_flip_reset,
     weight_limit_exceeded
 );
-    input sos_flip, door, weight_flip, weight_flip_reset;
+    input sos_flip, door, weight_flip, weight_flip_reset, button_reset;
     output sos_mode, weight_limit_exceeded;
 
     sos SOS (
@@ -16,6 +17,7 @@ module emergency (
         sos_mode
     );
     weight WEIGHT (
+        button_reset,
         door,
         weight_flip,
         weight_flip_reset,

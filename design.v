@@ -1,4 +1,6 @@
-module TOP #(parameter clk_freq = 50000000)(
+module TOP #(
+    parameter clk_freq = 50000000
+) (
     // ENTRADAS
 
     // clocks
@@ -67,6 +69,7 @@ module TOP #(parameter clk_freq = 50000000)(
         weight_limit_exceeded
     );
     emergency EMERGENCY (
+        button_reset,
         sos_flip,
         sos_mode,
         door,

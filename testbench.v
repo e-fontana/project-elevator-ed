@@ -12,7 +12,7 @@ module testbench;
 
     integer i = 0;
 
-    parameter clk_freq = 500;
+    parameter clk_freq = 50;
 
     always #1 clk_50 <= ~clk_50;
     always #1
