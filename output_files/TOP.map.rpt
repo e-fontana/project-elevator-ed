@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TOP
-Fri Aug 30 20:24:58 2024
+Fri Aug 30 22:03:50 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -55,13 +55,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Aug 30 20:24:57 2024          ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 30 22:03:50 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; TOP                                            ;
 ; Top-level Entity Name              ; TOP                                            ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 156                                            ;
-;     Total combinational functions  ; 156                                            ;
+; Total logic elements               ; 157                                            ;
+;     Total combinational functions  ; 157                                            ;
 ;     Dedicated logic registers      ; 98                                             ;
 ; Total registers                    ; 98                                             ;
 ; Total pins                         ; 18                                             ;
@@ -175,7 +175,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-10        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -205,16 +206,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------------------------+
 ; Resource                                    ; Usage                                                     ;
 +---------------------------------------------+-----------------------------------------------------------+
-; Estimated Total logic elements              ; 156                                                       ;
+; Estimated Total logic elements              ; 157                                                       ;
 ;                                             ;                                                           ;
-; Total combinational functions               ; 156                                                       ;
+; Total combinational functions               ; 157                                                       ;
 ; Logic element usage by number of LUT inputs ;                                                           ;
-;     -- 4 input functions                    ; 44                                                        ;
-;     -- 3 input functions                    ; 11                                                        ;
-;     -- <=2 input functions                  ; 101                                                       ;
+;     -- 4 input functions                    ; 42                                                        ;
+;     -- 3 input functions                    ; 13                                                        ;
+;     -- <=2 input functions                  ; 102                                                       ;
 ;                                             ;                                                           ;
 ; Logic elements by mode                      ;                                                           ;
-;     -- normal mode                          ; 69                                                        ;
+;     -- normal mode                          ; 70                                                        ;
 ;     -- arithmetic mode                      ; 87                                                        ;
 ;                                             ;                                                           ;
 ; Total registers                             ; 98                                                        ;
@@ -228,7 +229,7 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum fan-out node                        ; emergency:EMERGENCY|weight:WEIGHT|weight_limit_exceeded~1 ;
 ; Maximum fan-out                             ; 33                                                        ;
 ; Total fan-out                               ; 786                                                       ;
-; Average fan-out                             ; 2.71                                                      ;
+; Average fan-out                             ; 2.70                                                      ;
 +---------------------------------------------+-----------------------------------------------------------+
 
 
@@ -237,28 +238,28 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Entity Name    ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+----------------+--------------+
-; |TOP                       ; 156 (0)             ; 98 (0)                    ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |TOP                                     ; TOP            ; work         ;
-;    |emergency:EMERGENCY|   ; 46 (0)              ; 33 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|emergency:EMERGENCY                 ; emergency      ; work         ;
-;       |weight:WEIGHT|      ; 46 (46)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|emergency:EMERGENCY|weight:WEIGHT   ; weight         ; work         ;
+; |TOP                       ; 157 (0)             ; 98 (0)                    ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |TOP                                     ; TOP            ; work         ;
+;    |emergency:EMERGENCY|   ; 47 (0)              ; 33 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|emergency:EMERGENCY                 ; emergency      ; work         ;
+;       |weight:WEIGHT|      ; 47 (47)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|emergency:EMERGENCY|weight:WEIGHT   ; weight         ; work         ;
 ;    |frequency:FREQUENCY|   ; 43 (43)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|frequency:FREQUENCY                 ; frequency      ; work         ;
-;    |movement:MOVEMENT|     ; 67 (3)              ; 32 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|movement:MOVEMENT                   ; movement       ; work         ;
+;    |movement:MOVEMENT|     ; 67 (4)              ; 32 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|movement:MOVEMENT                   ; movement       ; work         ;
 ;       |buttons:BT|         ; 15 (15)             ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|movement:MOVEMENT|buttons:BT        ; buttons        ; work         ;
-;       |door:DOOR|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|movement:MOVEMENT|door:DOOR         ; door           ; work         ;
-;       |frequency_move:FM|  ; 42 (42)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|movement:MOVEMENT|frequency_move:FM ; frequency_move ; work         ;
+;       |door:DOOR|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|movement:MOVEMENT|door:DOOR         ; door           ; work         ;
+;       |frequency_move:FM|  ; 40 (40)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|movement:MOVEMENT|frequency_move:FM ; frequency_move ; work         ;
 ;       |goal:GOAL|          ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP|movement:MOVEMENT|goal:GOAL         ; goal           ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                    ;
-+----------------------------------------------------+--------------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal      ; Free of Timing Hazards ;
-+----------------------------------------------------+--------------------------+------------------------+
-; movement:MOVEMENT|goal:GOAL|gf[0]                  ; movement:MOVEMENT|Equal0 ; yes                    ;
-; movement:MOVEMENT|goal:GOAL|gf[1]                  ; movement:MOVEMENT|Equal0 ; yes                    ;
-; Number of user-specified and inferred latches = 2  ;                          ;                        ;
-+----------------------------------------------------+--------------------------+------------------------+
++--------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                          ;
++----------------------------------------------------+--------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal            ; Free of Timing Hazards ;
++----------------------------------------------------+--------------------------------+------------------------+
+; movement:MOVEMENT|goal:GOAL|gf[0]                  ; movement:MOVEMENT|move_handler ; yes                    ;
+; movement:MOVEMENT|goal:GOAL|gf[1]                  ; movement:MOVEMENT|move_handler ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                                ;                        ;
++----------------------------------------------------+--------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -277,13 +278,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |TOP|movement:MOVEMENT|frequency_move:FM|counter[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 4:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |TOP|movement:MOVEMENT|frequency_move:FM|counter[10] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 
 
 +---------------------------------------------------------------------+
@@ -401,13 +402,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     arith             ; 87                          ;
 ;         2 data inputs ; 87                          ;
 ;     normal            ; 71                          ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 44                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 42                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 3.16                        ;
+; Average LUT depth     ; 3.18                        ;
 +-----------------------+-----------------------------+
 
 
@@ -426,7 +427,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Aug 30 20:24:53 2024
+    Info: Processing started: Fri Aug 30 22:03:46 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TOP -c TOP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -445,22 +446,24 @@ Info (12128): Elaborating entity "button_handler" for hierarchy "button_handler:
 Warning (12125): Using design file movement.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: movement File: /home/andreojr/dev/elevator/movement.v Line: 1
 Info (12128): Elaborating entity "movement" for hierarchy "movement:MOVEMENT" File: /home/andreojr/dev/elevator/design.v Line: 70
+Critical Warning (10237): Verilog HDL warning at movement.v(33): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: /home/andreojr/dev/elevator/movement.v Line: 33
+Critical Warning (10237): Verilog HDL warning at movement.v(91): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: /home/andreojr/dev/elevator/movement.v Line: 91
 Warning (12125): Using design file frequency_door.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: frequency_door File: /home/andreojr/dev/elevator/frequency_door.v Line: 1
-Info (12128): Elaborating entity "frequency_door" for hierarchy "movement:MOVEMENT|frequency_door:FD" File: /home/andreojr/dev/elevator/movement.v Line: 35
+Info (12128): Elaborating entity "frequency_door" for hierarchy "movement:MOVEMENT|frequency_door:FD" File: /home/andreojr/dev/elevator/movement.v Line: 42
 Warning (12125): Using design file frequency_move.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: frequency_move File: /home/andreojr/dev/elevator/frequency_move.v Line: 1
-Info (12128): Elaborating entity "frequency_move" for hierarchy "movement:MOVEMENT|frequency_move:FM" File: /home/andreojr/dev/elevator/movement.v Line: 45
+Info (12128): Elaborating entity "frequency_move" for hierarchy "movement:MOVEMENT|frequency_move:FM" File: /home/andreojr/dev/elevator/movement.v Line: 52
 Warning (10230): Verilog HDL assignment warning at frequency_move.v(22): truncated value with size 32 to match size of target (26) File: /home/andreojr/dev/elevator/frequency_move.v Line: 22
 Warning (12125): Using design file floor_types.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: floor_types File: /home/andreojr/dev/elevator/floor_types.v Line: 1
-Info (12128): Elaborating entity "floor_types" for hierarchy "movement:MOVEMENT|floor_types:FT" File: /home/andreojr/dev/elevator/movement.v Line: 52
+Info (12128): Elaborating entity "floor_types" for hierarchy "movement:MOVEMENT|floor_types:FT" File: /home/andreojr/dev/elevator/movement.v Line: 59
 Warning (12125): Using design file door.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: door File: /home/andreojr/dev/elevator/door.v Line: 1
-Info (12128): Elaborating entity "door" for hierarchy "movement:MOVEMENT|door:DOOR" File: /home/andreojr/dev/elevator/movement.v Line: 60
+Info (12128): Elaborating entity "door" for hierarchy "movement:MOVEMENT|door:DOOR" File: /home/andreojr/dev/elevator/movement.v Line: 68
 Warning (12125): Using design file goal.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: goal File: /home/andreojr/dev/elevator/goal.v Line: 1
-Info (12128): Elaborating entity "goal" for hierarchy "movement:MOVEMENT|goal:GOAL" File: /home/andreojr/dev/elevator/movement.v Line: 68
+Info (12128): Elaborating entity "goal" for hierarchy "movement:MOVEMENT|goal:GOAL" File: /home/andreojr/dev/elevator/movement.v Line: 76
 Warning (10235): Verilog HDL Always Construct warning at goal.v(21): variable "floor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/andreojr/dev/elevator/goal.v Line: 21
 Warning (10235): Verilog HDL Always Construct warning at goal.v(60): variable "gf" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/andreojr/dev/elevator/goal.v Line: 60
 Warning (10240): Verilog HDL Always Construct warning at goal.v(17): inferring latch(es) for variable "gf", which holds its previous value in one or more paths through the always construct File: /home/andreojr/dev/elevator/goal.v Line: 17
@@ -468,7 +471,7 @@ Info (10041): Inferred latch for "gf[0]" at goal.v(60) File: /home/andreojr/dev/
 Info (10041): Inferred latch for "gf[1]" at goal.v(60) File: /home/andreojr/dev/elevator/goal.v Line: 60
 Warning (12125): Using design file buttons.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: buttons File: /home/andreojr/dev/elevator/buttons.v Line: 1
-Info (12128): Elaborating entity "buttons" for hierarchy "movement:MOVEMENT|buttons:BT" File: /home/andreojr/dev/elevator/movement.v Line: 80
+Info (12128): Elaborating entity "buttons" for hierarchy "movement:MOVEMENT|buttons:BT" File: /home/andreojr/dev/elevator/movement.v Line: 88
 Warning (12125): Using design file emergency.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: emergency File: /home/andreojr/dev/elevator/emergency.v Line: 3
 Info (12128): Elaborating entity "emergency" for hierarchy "emergency:EMERGENCY" File: /home/andreojr/dev/elevator/design.v Line: 79
@@ -482,9 +485,9 @@ Warning (12162): EDA synthesis tool is specified as "Custom", but Library Mappin
 Warning (12163): EDA synthesis tool is specified as "Custom", but VCC is not specified
 Warning (12164): EDA synthesis tool is specified as "Custom", but GND is not specified
 Warning (13012): Latch movement:MOVEMENT|goal:GOAL|gf[0] has unsafe behavior File: /home/andreojr/dev/elevator/goal.v Line: 60
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal movement:MOVEMENT|floor[1] File: /home/andreojr/dev/elevator/movement.v Line: 85
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal movement:MOVEMENT|floor[1] File: /home/andreojr/dev/elevator/movement.v Line: 95
 Warning (13012): Latch movement:MOVEMENT|goal:GOAL|gf[1] has unsafe behavior File: /home/andreojr/dev/elevator/goal.v Line: 60
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal movement:MOVEMENT|floor[1] File: /home/andreojr/dev/elevator/movement.v Line: 85
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal movement:MOVEMENT|floor[1] File: /home/andreojr/dev/elevator/movement.v Line: 95
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "movement:MOVEMENT|buttons:BT|led1" is converted into an equivalent circuit using register "movement:MOVEMENT|buttons:BT|led1~_emulated" and latch "movement:MOVEMENT|buttons:BT|led1~1" File: /home/andreojr/dev/elevator/buttons.v Line: 19
     Warning (13310): Register "movement:MOVEMENT|buttons:BT|led2" is converted into an equivalent circuit using register "movement:MOVEMENT|buttons:BT|led2~_emulated" and latch "movement:MOVEMENT|buttons:BT|led2~1" File: /home/andreojr/dev/elevator/buttons.v Line: 19
@@ -493,15 +496,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file /home/andreojr/dev/elevator/output_files/TOP.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 174 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 175 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 156 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 448 megabytes
-    Info: Processing ended: Fri Aug 30 20:24:58 2024
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:12
+    Info (21061): Implemented 157 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 484 megabytes
+    Info: Processing ended: Fri Aug 30 22:03:50 2024
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:13
 
 
 +------------------------------------------+

@@ -10,51 +10,51 @@ z2
 cModel Technology
 d/home/andreojr/dev/elevador/modelsim
 vbutton_handler
-Z0 !s110 1725058907
+Z0 !s110 1725062946
 !i10b 1
 !s100 DLWX2iEFc6XkIOM<:Ggb[1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I@9]N`P5XkUZlIGJk3Nnkc0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 d/home/andreojr/dev/elevator
-Z4 w1725054110
+Z4 w1725061440
 8/home/andreojr/dev/elevator/button_handler.v
 F/home/andreojr/dev/elevator/button_handler.v
-!i122 269
+!i122 394
 Z5 L0 1 18
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1725058907.000000
+!s108 1725062945.000000
 !s107 /home/andreojr/dev/elevator/button_handler.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/button_handler.v|
 !i113 1
-Z8 o-work work
-Z9 tCvgOpt 0
+Z7 o-work work
+Z8 tCvgOpt 0
 vbuttons
 R0
 !i10b 1
-!s100 a0[iQzP]l^J7ZnFQY?M=O1
+!s100 cM=oNm4@o[M_bAKRC]KUT2
 R1
-IM56DVbdXCa3D<8Dc9Z9`Z1
+IN1XI^H4>cYf;BK7FVLo_g3
 R2
 R3
-w1725058881
+R4
 8/home/andreojr/dev/elevator/buttons.v
 F/home/andreojr/dev/elevator/buttons.v
-!i122 270
+!i122 395
 L0 1 40
 R6
 r1
 !s85 0
 31
-R7
+Z9 !s108 1725062946.000000
 !s107 /home/andreojr/dev/elevator/buttons.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/buttons.v|
 !i113 1
+R7
 R8
-R9
 vbuttons_tb
 R0
 !i10b 1
@@ -66,18 +66,18 @@ R3
 R4
 8/home/andreojr/dev/elevator/buttons_tb.v
 F/home/andreojr/dev/elevator/buttons_tb.v
-!i122 271
+!i122 396
 L0 2 19
 R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/andreojr/dev/elevator/buttons_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/buttons_tb.v|
 !i113 1
+R7
 R8
-R9
 vdelay
 R0
 !i10b 1
@@ -89,18 +89,18 @@ R3
 R4
 8/home/andreojr/dev/elevator/delay.v
 F/home/andreojr/dev/elevator/delay.v
-!i122 272
+!i122 397
 L0 1 22
 R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/andreojr/dev/elevator/delay.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/delay.v|
 !i113 1
+R7
 R8
-R9
 vdelay_tb
 R0
 !i10b 1
@@ -112,18 +112,18 @@ R3
 R4
 8/home/andreojr/dev/elevator/delay_tb.v
 F/home/andreojr/dev/elevator/delay_tb.v
-!i122 273
+!i122 398
 R5
 R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/andreojr/dev/elevator/delay_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/delay_tb.v|
 !i113 1
+R7
 R8
-R9
 vdoor
 R0
 !i10b 1
@@ -135,18 +135,18 @@ R3
 R4
 8/home/andreojr/dev/elevator/door.v
 F/home/andreojr/dev/elevator/door.v
-!i122 275
+!i122 400
 Z10 L0 1 12
 R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/andreojr/dev/elevator/door.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/door.v|
 !i113 1
+R7
 R8
-R9
 vdoor_tb
 R0
 !i10b 1
@@ -158,18 +158,18 @@ R3
 R4
 8/home/andreojr/dev/elevator/door_tb.v
 F/home/andreojr/dev/elevator/door_tb.v
-!i122 276
+!i122 401
 L0 2 35
 R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/andreojr/dev/elevator/door_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/door_tb.v|
 !i113 1
+R7
 R8
-R9
 vemergency
 R0
 !i10b 1
@@ -178,21 +178,21 @@ R1
 IQ1GkR:8iF^ol212k>DT?n2
 R2
 R3
-w1725058842
+R4
 8/home/andreojr/dev/elevator/emergency.v
 F/home/andreojr/dev/elevator/emergency.v
-!i122 277
+!i122 402
 L0 3 24
 R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/andreojr/dev/elevator/emergency.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/emergency.v|
 !i113 1
+R7
 R8
-R9
 vfloor_types
 R0
 !i10b 1
@@ -204,18 +204,18 @@ R3
 R4
 8/home/andreojr/dev/elevator/floor_types.v
 F/home/andreojr/dev/elevator/floor_types.v
-!i122 278
+!i122 403
 L0 1 17
 R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/andreojr/dev/elevator/floor_types.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/floor_types.v|
 !i113 1
+R7
 R8
-R9
 vfloor_types_tb
 R0
 !i10b 1
@@ -227,18 +227,18 @@ R3
 R4
 8/home/andreojr/dev/elevator/floor_types_tb.v
 F/home/andreojr/dev/elevator/floor_types_tb.v
-!i122 279
+!i122 404
 L0 2 18
 R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/andreojr/dev/elevator/floor_types_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/floor_types_tb.v|
 !i113 1
+R7
 R8
-R9
 vfrequency
 R0
 !i10b 1
@@ -250,20 +250,20 @@ R3
 R4
 8/home/andreojr/dev/elevator/frequency.v
 F/home/andreojr/dev/elevator/frequency.v
-!i122 280
+!i122 405
 L0 1 21
 R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/andreojr/dev/elevator/frequency.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/frequency.v|
 !i113 1
+R7
 R8
-R9
 vfrequency_door
-Z11 !s110 1725058908
+R0
 !i10b 1
 !s100 [LPdJRo9GC1=O>Ua_D:z53
 R1
@@ -273,20 +273,20 @@ R3
 R4
 8/home/andreojr/dev/elevator/frequency_door.v
 F/home/andreojr/dev/elevator/frequency_door.v
-!i122 281
+!i122 406
 L0 1 25
 R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/andreojr/dev/elevator/frequency_door.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/frequency_door.v|
 !i113 1
+R7
 R8
-R9
 vfrequency_move
-R11
+R0
 !i10b 1
 !s100 l_:GN49L^:FDA4XPHKUi=2
 R1
@@ -296,20 +296,20 @@ R3
 R4
 8/home/andreojr/dev/elevator/frequency_move.v
 F/home/andreojr/dev/elevator/frequency_move.v
-!i122 282
+!i122 407
 L0 1 30
 R6
 r1
 !s85 0
 31
-Z12 !s108 1725058908.000000
+R9
 !s107 /home/andreojr/dev/elevator/frequency_move.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/frequency_move.v|
 !i113 1
+R7
 R8
-R9
 vfrequency_tb
-R11
+R0
 !i10b 1
 !s100 ?LbngUkRBf=lzJPzLcmaj0
 R1
@@ -319,43 +319,43 @@ R3
 R4
 8/home/andreojr/dev/elevator/frequency_tb.v
 F/home/andreojr/dev/elevator/frequency_tb.v
-!i122 283
+!i122 408
 L0 2 36
 R6
 r1
 !s85 0
 31
-R12
+R9
 !s107 /home/andreojr/dev/elevator/frequency_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/frequency_tb.v|
 !i113 1
+R7
 R8
-R9
 vgoal
-R11
+R0
 !i10b 1
-!s100 AQYbP:aH@`BC1V5V=BG^21
+!s100 ]GW;RN:O_1c1z[ghTUeKk2
 R1
-IXz=Yj=^RF<Zgz<J>QVJ>Z2
+IMoWL3LLUdcF@6OZN:KT201
 R2
 R3
-w1725054656
+w1725062508
 8/home/andreojr/dev/elevator/goal.v
 F/home/andreojr/dev/elevator/goal.v
-!i122 284
-L0 1 63
+!i122 409
+L0 1 62
 R6
 r1
 !s85 0
 31
-R12
+R9
 !s107 /home/andreojr/dev/elevator/goal.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/goal.v|
 !i113 1
+R7
 R8
-R9
 vgoal_tb
-R11
+R0
 !i10b 1
 !s100 obHEnXS=b0jizW<GmYj<23
 R1
@@ -365,43 +365,43 @@ R3
 R4
 8/home/andreojr/dev/elevator/goal_tb.v
 F/home/andreojr/dev/elevator/goal_tb.v
-!i122 285
+!i122 410
 L0 2 34
 R6
 r1
 !s85 0
 31
-R12
+R9
 !s107 /home/andreojr/dev/elevator/goal_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/goal_tb.v|
 !i113 1
+R7
 R8
-R9
 vmovement
-R11
+R0
 !i10b 1
 !s100 =AOYgI9Aa>7LAl>Bf^dVE2
 R1
 I6A6M_>Ena^>UM0<cW`zMO0
 R2
 R3
-w1725057875
+R4
 8/home/andreojr/dev/elevator/movement.v
 F/home/andreojr/dev/elevator/movement.v
-!i122 286
+!i122 411
 L0 1 93
 R6
 r1
 !s85 0
 31
-R12
+R9
 !s107 /home/andreojr/dev/elevator/movement.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/movement.v|
 !i113 1
+R7
 R8
-R9
 vmovement_tb
-R11
+R0
 !i10b 1
 !s100 [3zz0nKeUdecYokWC8b=61
 R1
@@ -411,20 +411,20 @@ R3
 R4
 8/home/andreojr/dev/elevator/movement_tb.v
 F/home/andreojr/dev/elevator/movement_tb.v
-!i122 287
+!i122 412
 L0 2 33
 R6
 r1
 !s85 0
 31
-R12
+R9
 !s107 /home/andreojr/dev/elevator/movement_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/movement_tb.v|
 !i113 1
+R7
 R8
-R9
 vmoving
-R11
+R0
 !i10b 1
 !s100 ZPFo=mP0zzN;;:iP0bSTW3
 R1
@@ -434,20 +434,20 @@ R3
 R4
 8/home/andreojr/dev/elevator/moving.v
 F/home/andreojr/dev/elevator/moving.v
-!i122 288
+!i122 413
 R10
 R6
 r1
 !s85 0
 31
-R12
+R9
 !s107 /home/andreojr/dev/elevator/moving.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/moving.v|
 !i113 1
+R7
 R8
-R9
 vsos
-R11
+R0
 !i10b 1
 !s100 :AF@=oUUj[P1?=d<FeOjF0
 R1
@@ -457,20 +457,20 @@ R3
 R4
 8/home/andreojr/dev/elevator/sos.v
 F/home/andreojr/dev/elevator/sos.v
-!i122 289
+!i122 414
 L0 1 5
 R6
 r1
 !s85 0
 31
-R12
+R9
 !s107 /home/andreojr/dev/elevator/sos.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/sos.v|
 !i113 1
+R7
 R8
-R9
 vsos_handler_tb
-R11
+R0
 !i10b 1
 !s100 e0k614I[<bh21kHlg>8QT0
 R1
@@ -480,41 +480,41 @@ R3
 R4
 8/home/andreojr/dev/elevator/sos_tb.v
 F/home/andreojr/dev/elevator/sos_tb.v
-!i122 290
+!i122 415
 L0 2 25
 R6
 r1
 !s85 0
 31
-R12
+R9
 !s107 /home/andreojr/dev/elevator/sos_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/sos_tb.v|
 !i113 1
+R7
 R8
-R9
 vtestbench
-R11
+R0
 !i10b 1
-!s100 =W1A<AQFWW_iVL6fA;S_o2
+!s100 f]DXB05[F2YORh6h?Cc2=1
 R1
-ITX6W9h3McMUb3hg9:jkLP0
+If@1ICEen;78W1JM?DCD^70
 R2
 R3
-w1725054742
+w1725062502
 8/home/andreojr/dev/elevator/testbench.v
 F/home/andreojr/dev/elevator/testbench.v
-!i122 291
-L0 1 114
+!i122 416
+L0 1 115
 R6
 r1
 !s85 0
 31
-R12
+R9
 !s107 /home/andreojr/dev/elevator/testbench.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/testbench.v|
 !i113 1
+R7
 R8
-R9
 vTOP
 R0
 !i10b 1
@@ -523,47 +523,47 @@ R1
 IPXDMS5CZ@Y^8T_]cNG0<N2
 R2
 R3
-w1725058677
+R4
 8/home/andreojr/dev/elevator/design.v
 F/home/andreojr/dev/elevator/design.v
-!i122 274
+!i122 399
 L0 1 80
 R6
 r1
 !s85 0
 31
-R7
+R9
 !s107 /home/andreojr/dev/elevator/design.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/design.v|
 !i113 1
+R7
 R8
-R9
 n@t@o@p
 vweight
-R11
+R0
 !i10b 1
-!s100 zf6HeJ6NHCZUGhh=NAcG_1
+!s100 3c?jijHK><1LJN=cgf6aP2
 R1
-I<[CIBYYzkaH360IWXm4Ai2
+IA@a4SlHE:LN?_Cc;6zHVf2
 R2
 R3
-w1725058845
+w1725062896
 8/home/andreojr/dev/elevator/weight.v
 F/home/andreojr/dev/elevator/weight.v
-!i122 292
+!i122 417
 L0 1 28
 R6
 r1
 !s85 0
 31
-R12
+R9
 !s107 /home/andreojr/dev/elevator/weight.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/weight.v|
 !i113 1
+R7
 R8
-R9
 vweight_tb
-R11
+R0
 !i10b 1
 !s100 z@3M_CY@X6oPiU4gHk:IN3
 R1
@@ -573,15 +573,15 @@ R3
 R4
 8/home/andreojr/dev/elevator/weight_tb.v
 F/home/andreojr/dev/elevator/weight_tb.v
-!i122 293
+!i122 418
 L0 1 31
 R6
 r1
 !s85 0
 31
-R12
+R9
 !s107 /home/andreojr/dev/elevator/weight_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/andreojr/dev/elevator/weight_tb.v|
 !i113 1
+R7
 R8
-R9

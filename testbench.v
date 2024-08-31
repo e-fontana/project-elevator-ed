@@ -59,9 +59,10 @@ module testbench;
         sos_flip = 1'b0;
         weight_flip = 1'b0;
         weight_flip_reset = 1'b0;
-        //#10 for (i = 0; i <= 6; i = i + 1) increase_people;
-        press_button_reset;
-        #(clk_freq * 20) press_button3;
+
+
+        #1 press_button_reset;
+        #10 for (i = 0; i <= 6; i = i + 1) increase_people;
     end
 
     task reset_weight;

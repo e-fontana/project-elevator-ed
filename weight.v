@@ -18,10 +18,10 @@ module weight (
             counter <= 0;
             weight_limit_exceeded <= 1'b0;
         end else if (door) begin
-            if (counter == 10) begin
+            if (counter == 5) begin
                 counter <= counter + 1;
                 weight_limit_exceeded <= 1'b1;
-            end else if (counter < 10) counter <= counter + 1;
+            end else if (counter < 5) counter <= counter + 1;
             else counter <= counter;
         end else counter <= counter;
     end

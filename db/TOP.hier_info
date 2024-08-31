@@ -82,7 +82,7 @@ floor3 <= floor3.DB_MAX_OUTPUT_PORT_TYPE
 door <= door:DOOR.port5
 moving <= move_handler.DB_MAX_OUTPUT_PORT_TYPE
 sos_mode => sos_mode.IN1
-weight_limit_exceeded => weight_limit_exceeded.IN2
+weight_limit_exceeded => weight_limit_exceeded.IN3
 
 
 |TOP|movement:MOVEMENT|frequency_door:FD
@@ -218,6 +218,7 @@ f3 => door.IN1
 f3 => door.IN1
 f3 => door.IN1
 door <= door.DB_MAX_OUTPUT_PORT_TYPE
+weight_limit_exceeded => door.IN1
 
 
 |TOP|movement:MOVEMENT|goal:GOAL

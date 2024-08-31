@@ -58,6 +58,5 @@ module goal #(
             endcase
 
         end else gf = gf;
-
     end
 endmodule

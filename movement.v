@@ -20,12 +20,19 @@ module movement (
     output reg moving;
 
     wire [1:0] goal_floor;
-    wire move_handler, door_clk, move_clk;
+    wire door_clk, move_clk;
+    reg move_handler;
 
     parameter labelF1 = 2'b00, labelF2 = 2'b01, labelF3 = 2'b10, door_time = 2, move_time = 5;
     reg [1:0] floor, next_floor;
 
-    assign move_handler = ~(goal_floor == floor);
+    always @(posedge button_reset or posedge weight_limit_exceeded or posedge floor1 or posedge floor2 or posedge floor3) begin
+        if (button_reset | weight_limit_exceeded) begin
+            move_handler <= 1'b0;
+        end else begin
+            move_handler <= ~(goal_floor == floor);
+        end
+    end
 
     frequency_door #(door_time) FD (
         clk,
@@ -56,7 +63,8 @@ module movement (
         floor1,
         floor2,
         floor3,
-        door
+        door,
+        weight_limit_exceeded
     );
     goal #(labelF1, labelF2, labelF3) GOAL (
         floor,
@@ -79,10 +87,12 @@ module movement (
         floor
     );
 
-    always @(posedge door_clk or negedge move_handler) moving = move_handler;
+    always @(posedge door_clk or negedge move_handler or posedge button_reset) begin
+        moving <= move_handler;
+    end
     always @(posedge move_clk or posedge button_reset) begin
-        if (button_reset) floor = labelF1;
-        else floor = next_floor;
+        if (button_reset) floor <= labelF1;
+        else floor <= next_floor;
     end
 
     always @(floor or goal_floor) begin
