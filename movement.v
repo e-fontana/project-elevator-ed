@@ -26,8 +26,8 @@ module movement (
     parameter labelF1 = 2'b00, labelF2 = 2'b01, labelF3 = 2'b10, door_time = 2, move_time = 5;
     reg [1:0] floor, next_floor;
 
-    always @(posedge button_reset or posedge weight_limit_exceeded or posedge floor1 or posedge floor2 or posedge floor3) begin
-        if (button_reset | weight_limit_exceeded) begin
+    always @(posedge button_reset or posedge weight_limit_exceeded or posedge sos_mode or posedge floor1 or posedge floor2 or posedge floor3) begin
+        if (button_reset | weight_limit_exceeded | sos_mode) begin
             move_handler <= 1'b0;
         end else begin
             move_handler <= ~(goal_floor == floor);
