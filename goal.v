@@ -20,7 +20,7 @@ module goal #(
 
             case (floor)
 
-                labelF1: begin
+                labelF1: beginA
                     case ({
                         led1, led2, led3
                     })

@@ -1,5 +1,5 @@
 Flow report for TOP
-Fri Aug 30 22:04:03 2024
+Tue Sep  3 16:22:33 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,14 +41,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Fri Aug 30 22:04:03 2024          ;
+; Flow Status                        ; Successful - Tue Sep  3 16:22:33 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; TOP                                            ;
 ; Top-level Entity Name              ; TOP                                            ;
 ; Family                             ; Cyclone IV E                                   ;
 ; Device                             ; EP4CE115F29C7                                  ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 159 / 114,480 ( < 1 % )                        ;
+; Total logic elements               ; 161 / 114,480 ( < 1 % )                        ;
 ;     Total combinational functions  ; 157 / 114,480 ( < 1 % )                        ;
 ;     Dedicated logic registers      ; 98 / 114,480 ( < 1 % )                         ;
 ; Total registers                    ; 98                                             ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/30/2024 22:03:46 ;
+; Start date & time ; 09/03/2024 16:21:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TOP                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 5415295079301.172506622615874          ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 5415295079301.172539131817718          ; --            ; --          ; --                                ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Custom                                 ; <None>        ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -101,26 +101,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:04     ; 1.0                     ; 484 MB              ; 00:00:13                           ;
-; Fitter               ; 00:00:07     ; 1.0                     ; 1585 MB             ; 00:00:13                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 364 MB              ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.2                     ; 592 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 585 MB              ; 00:00:00                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:28                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 462 MB              ; 00:00:25                           ;
+; Fitter               ; 00:00:16     ; 1.0                     ; 1589 MB             ; 00:00:29                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 376 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 600 MB              ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 593 MB              ; 00:00:00                           ;
+; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:59                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+----------------------+------------------+--------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name      ; OS Version ; Processor type ;
-+----------------------+------------------+--------------+------------+----------------+
-; Analysis & Synthesis ; espectro         ; Ubuntu 24.04 ; 24         ; x86_64         ;
-; Fitter               ; espectro         ; Ubuntu 24.04 ; 24         ; x86_64         ;
-; Assembler            ; espectro         ; Ubuntu 24.04 ; 24         ; x86_64         ;
-; Timing Analyzer      ; espectro         ; Ubuntu 24.04 ; 24         ; x86_64         ;
-; EDA Netlist Writer   ; espectro         ; Ubuntu 24.04 ; 24         ; x86_64         ;
-+----------------------+------------------+--------------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++----------------------+------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++----------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; espectro         ; Ubuntu 24.04.1 ; 24         ; x86_64         ;
+; Fitter               ; espectro         ; Ubuntu 24.04.1 ; 24         ; x86_64         ;
+; Assembler            ; espectro         ; Ubuntu 24.04.1 ; 24         ; x86_64         ;
+; Timing Analyzer      ; espectro         ; Ubuntu 24.04.1 ; 24         ; x86_64         ;
+; EDA Netlist Writer   ; espectro         ; Ubuntu 24.04.1 ; 24         ; x86_64         ;
++----------------------+------------------+----------------+------------+----------------+
 
 
 ------------

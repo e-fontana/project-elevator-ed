@@ -60,9 +60,10 @@ module testbench;
         weight_flip = 1'b0;
         weight_flip_reset = 1'b0;
 
-
         #1 press_button_reset;
-        #10 for (i = 0; i <= 6; i = i + 1) increase_people;
+        #(clk_freq * 5) press_button3;
+        #(clk_freq * 5) press_button1;
+        #(clk_freq * 5) press_button2;
     end
 
     task reset_weight;

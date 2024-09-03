@@ -3,24 +3,24 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'frequency:FREQUENCY|clk'
-Slack : -6.139
-TNS   : -175.657
+Slack : -6.343
+TNS   : -181.433
 
 Type  : Slow 1200mV 85C Model Setup 'weight_flip'
-Slack : -5.309
-TNS   : -170.221
+Slack : -5.437
+TNS   : -174.920
 
 Type  : Slow 1200mV 85C Model Setup 'movement:MOVEMENT|frequency_move:FM|move_clk'
-Slack : -4.300
-TNS   : -8.579
+Slack : -4.226
+TNS   : -8.437
 
 Type  : Slow 1200mV 85C Model Setup 'clk_50'
-Slack : -3.728
-TNS   : -94.016
+Slack : -3.693
+TNS   : -92.877
 
 Type  : Slow 1200mV 85C Model Setup 'button_reset_pushed'
-Slack : -2.716
-TNS   : -5.360
+Slack : -3.591
+TNS   : -6.994
 
 Type  : Slow 1200mV 85C Model Hold 'movement:MOVEMENT|frequency_move:FM|move_clk'
 Slack : 0.440
@@ -34,36 +34,36 @@ Type  : Slow 1200mV 85C Model Hold 'frequency:FREQUENCY|clk'
 Slack : 0.442
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'button_reset_pushed'
-Slack : 0.511
-TNS   : 0.000
-
 Type  : Slow 1200mV 85C Model Hold 'clk_50'
 Slack : 0.632
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'frequency:FREQUENCY|clk'
-Slack : -1.468
-TNS   : -3.882
+Type  : Slow 1200mV 85C Model Hold 'button_reset_pushed'
+Slack : 0.909
+TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'weight_flip'
-Slack : -1.346
-TNS   : -40.258
+Type  : Slow 1200mV 85C Model Recovery 'frequency:FREQUENCY|clk'
+Slack : -1.818
+TNS   : -5.220
 
 Type  : Slow 1200mV 85C Model Recovery 'movement:MOVEMENT|frequency_move:FM|move_clk'
-Slack : -0.989
-TNS   : -1.978
+Slack : -1.107
+TNS   : -2.214
 
-Type  : Slow 1200mV 85C Model Removal 'frequency:FREQUENCY|clk'
-Slack : 0.989
+Type  : Slow 1200mV 85C Model Recovery 'weight_flip'
+Slack : -1.025
+TNS   : -28.521
+
+Type  : Slow 1200mV 85C Model Removal 'weight_flip'
+Slack : 0.628
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'movement:MOVEMENT|frequency_move:FM|move_clk'
-Slack : 1.048
+Slack : 1.174
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'weight_flip'
-Slack : 1.058
+Type  : Slow 1200mV 85C Model Removal 'frequency:FREQUENCY|clk'
+Slack : 1.409
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_50'
@@ -87,67 +87,67 @@ Slack : -1.285
 TNS   : -2.570
 
 Type  : Slow 1200mV 0C Model Setup 'frequency:FREQUENCY|clk'
-Slack : -5.632
-TNS   : -159.902
+Slack : -5.849
+TNS   : -165.313
 
 Type  : Slow 1200mV 0C Model Setup 'weight_flip'
-Slack : -4.712
-TNS   : -151.592
+Slack : -4.820
+TNS   : -154.485
 
 Type  : Slow 1200mV 0C Model Setup 'movement:MOVEMENT|frequency_move:FM|move_clk'
-Slack : -3.813
-TNS   : -7.620
+Slack : -3.773
+TNS   : -7.534
 
 Type  : Slow 1200mV 0C Model Setup 'clk_50'
-Slack : -3.368
-TNS   : -84.216
+Slack : -3.343
+TNS   : -83.007
 
 Type  : Slow 1200mV 0C Model Setup 'button_reset_pushed'
-Slack : -2.358
-TNS   : -4.703
+Slack : -3.232
+TNS   : -6.257
+
+Type  : Slow 1200mV 0C Model Hold 'weight_flip'
+Slack : 0.384
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'movement:MOVEMENT|frequency_move:FM|move_clk'
 Slack : 0.387
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'weight_flip'
-Slack : 0.387
-TNS   : 0.000
-
 Type  : Slow 1200mV 0C Model Hold 'frequency:FREQUENCY|clk'
-Slack : 0.399
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'button_reset_pushed'
-Slack : 0.476
+Slack : 0.398
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk_50'
 Slack : 0.577
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'frequency:FREQUENCY|clk'
-Slack : -1.338
-TNS   : -3.561
-
-Type  : Slow 1200mV 0C Model Recovery 'weight_flip'
-Slack : -1.117
-TNS   : -33.245
-
-Type  : Slow 1200mV 0C Model Recovery 'movement:MOVEMENT|frequency_move:FM|move_clk'
-Slack : -0.809
-TNS   : -1.618
-
-Type  : Slow 1200mV 0C Model Removal 'weight_flip'
-Slack : 0.893
+Type  : Slow 1200mV 0C Model Hold 'button_reset_pushed'
+Slack : 0.846
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Removal 'frequency:FREQUENCY|clk'
-Slack : 0.985
+Type  : Slow 1200mV 0C Model Recovery 'frequency:FREQUENCY|clk'
+Slack : -1.655
+TNS   : -4.743
+
+Type  : Slow 1200mV 0C Model Recovery 'movement:MOVEMENT|frequency_move:FM|move_clk'
+Slack : -0.945
+TNS   : -1.890
+
+Type  : Slow 1200mV 0C Model Recovery 'weight_flip'
+Slack : -0.837
+TNS   : -22.541
+
+Type  : Slow 1200mV 0C Model Removal 'weight_flip'
+Slack : 0.507
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'movement:MOVEMENT|frequency_move:FM|move_clk'
-Slack : 0.990
+Slack : 1.121
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'frequency:FREQUENCY|clk'
+Slack : 1.352
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_50'
@@ -171,28 +171,24 @@ Slack : -1.285
 TNS   : -2.570
 
 Type  : Fast 1200mV 0C Model Setup 'frequency:FREQUENCY|clk'
-Slack : -2.615
-TNS   : -69.068
+Slack : -2.768
+TNS   : -73.360
 
 Type  : Fast 1200mV 0C Model Setup 'weight_flip'
-Slack : -2.267
-TNS   : -67.899
+Slack : -2.168
+TNS   : -70.328
 
 Type  : Fast 1200mV 0C Model Setup 'movement:MOVEMENT|frequency_move:FM|move_clk'
-Slack : -1.652
-TNS   : -3.292
-
-Type  : Fast 1200mV 0C Model Setup 'clk_50'
-Slack : -1.425
-TNS   : -28.369
+Slack : -1.615
+TNS   : -3.224
 
 Type  : Fast 1200mV 0C Model Setup 'button_reset_pushed'
-Slack : -1.118
-TNS   : -2.160
+Slack : -1.502
+TNS   : -2.876
 
-Type  : Fast 1200mV 0C Model Hold 'button_reset_pushed'
-Slack : 0.190
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Setup 'clk_50'
+Slack : -1.324
+TNS   : -27.180
 
 Type  : Fast 1200mV 0C Model Hold 'frequency:FREQUENCY|clk'
 Slack : 0.199
@@ -210,41 +206,45 @@ Type  : Fast 1200mV 0C Model Hold 'clk_50'
 Slack : 0.287
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'weight_flip'
-Slack : -0.778
-TNS   : -23.594
+Type  : Fast 1200mV 0C Model Hold 'button_reset_pushed'
+Slack : 0.398
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'frequency:FREQUENCY|clk'
-Slack : -0.718
-TNS   : -1.918
+Slack : -0.963
+TNS   : -2.762
 
 Type  : Fast 1200mV 0C Model Recovery 'movement:MOVEMENT|frequency_move:FM|move_clk'
-Slack : -0.623
-TNS   : -1.246
+Slack : -0.651
+TNS   : -1.302
 
-Type  : Fast 1200mV 0C Model Removal 'frequency:FREQUENCY|clk'
-Slack : 0.362
+Type  : Fast 1200mV 0C Model Recovery 'weight_flip'
+Slack : -0.626
+TNS   : -18.286
+
+Type  : Fast 1200mV 0C Model Removal 'weight_flip'
+Slack : 0.351
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'movement:MOVEMENT|frequency_move:FM|move_clk'
-Slack : 0.463
+Slack : 0.520
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'weight_flip'
-Slack : 0.580
+Type  : Fast 1200mV 0C Model Removal 'frequency:FREQUENCY|clk'
+Slack : 0.581
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'weight_flip'
 Slack : -3.000
-TNS   : -42.970
+TNS   : -42.682
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_50'
 Slack : -3.000
-TNS   : -38.030
+TNS   : -38.046
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'button_reset_pushed'
 Slack : -3.000
-TNS   : -3.114
+TNS   : -3.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'frequency:FREQUENCY|clk'
 Slack : -1.000

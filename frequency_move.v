@@ -17,7 +17,7 @@ module frequency_move #(
 
     always @(posedge clk) begin
         if (~move_handler & (led1 | led2 | led3)) counter = 0;
-        else if (~sos_mode && ~weight_limit_exceeded) begin
+        else if (~sos_mode & ~weight_limit_exceeded) begin
             if (counter < move_time) begin
                 counter  <= counter + 1;
                 move_clk <= 1'b0;
