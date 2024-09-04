@@ -1,0 +1,12 @@
+*.v.bak
+db
+incremental_db
+output_files
+simulation
+work
+*.cr.mti
+*.mpf
+*.qpf
+*.qsf
+*.wlf
+transcript

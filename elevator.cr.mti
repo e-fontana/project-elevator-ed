@@ -43,19 +43,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	buttons
 
-} {} {}} /home/andreojr/dev/elevator/testbench.v {1 {vlog -work work -stats=none /home/andreojr/dev/elevator/testbench.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module testbench
-
-Top level modules:
-	testbench
-
 } {} {}} /home/andreojr/dev/elevator/frequency_move.v {1 {vlog -work work -stats=none /home/andreojr/dev/elevator/frequency_move.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module frequency_move
 
 Top level modules:
 	frequency_move
+
+} {} {}} /home/andreojr/dev/elevator/testbench.v {1 {vlog -work work -stats=none /home/andreojr/dev/elevator/testbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbench
+
+Top level modules:
+	testbench
 
 } {} {}} /home/andreojr/dev/elevator/weight.v {1 {vlog -work work -stats=none /home/andreojr/dev/elevator/weight.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -105,13 +105,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	TOP
-
-} {} {}} /home/andreojr/dev/elevator/movement.v {1 {vlog -work work -stats=none /home/andreojr/dev/elevator/movement.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module movement
-
-Top level modules:
-	movement
 
 } {} {}} /home/andreojr/dev/elevator/floor_types_tb.v {1 {vlog -work work -stats=none /home/andreojr/dev/elevator/floor_types_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
