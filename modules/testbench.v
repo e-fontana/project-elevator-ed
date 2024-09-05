@@ -1,3 +1,5 @@
+// `include "./modules/design.v"
+
 module testbench;
     reg
         clk_50,

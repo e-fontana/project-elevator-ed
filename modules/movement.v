@@ -1,3 +1,12 @@
+// `include "./modules/segments.v"
+// `include "./modules/frequency_door.v"
+// `include "./modules/frequency_move.v"
+// `include "./modules/door.v"
+// `include "./modules/goal.v"
+// `include "./modules/buttons.v"
+// `include "./modules/floor_types.v"
+
+
 module movement (
     clk,
     button1,
@@ -13,9 +22,13 @@ module movement (
     door,
     moving,
     sos_mode,
-    weight_limit_exceeded
+    weight_limit_exceeded,
+    display10, display11, display12, display13, display14, display15, display16,
+    display20, display21, display22, display23, display24, display25, display26
 );
     input clk, button1, button2, button3, button_reset, sos_mode, weight_limit_exceeded;
+    output display10, display11, display12, display13, display14, display15, display16;
+    output display20, display21, display22, display23, display24, display25, display26;
     output led1, led2, led3, floor1, floor2, floor3, door;
     output reg moving;
 
@@ -26,7 +39,7 @@ module movement (
     parameter labelF1 = 2'b00, labelF2 = 2'b01, labelF3 = 2'b10, door_time = 2, move_time = 5;
     reg [1:0] floor, next_floor;
 
-    always @(posedge button_reset or posedge weight_limit_exceeded or posedge floor1 or posedge floor2 or posedge floor3) begin
+    always @(posedge clk or posedge button_reset or posedge weight_limit_exceeded or posedge led1 or posedge led2 or posedge led3) begin
         if (button_reset | weight_limit_exceeded) begin
             move_handler <= 1'b0;
         end else begin
@@ -38,7 +51,8 @@ module movement (
         clk,
         move_handler,
         weight_limit_exceeded,
-        door_clk
+        door_clk,
+        button_reset
     );
     frequency_move #(move_time) FM (
         clk,
@@ -48,7 +62,8 @@ module movement (
         move_handler,
         sos_mode,
         weight_limit_exceeded,
-        move_clk
+        move_clk,
+        button_reset
     );
     floor_types FT (
         floor,
@@ -84,6 +99,13 @@ module movement (
         led3,
         move_handler,
         floor
+    );
+    segments SEG(
+        floor1,
+        floor2,
+        floor3,
+        display10, display11, display12, display13, display14, display15, display16,
+        display20, display21, display22, display23, display24, display25, display26
     );
 
     always @(posedge door_clk or negedge move_handler or posedge button_reset) begin

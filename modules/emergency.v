@@ -1,4 +1,5 @@
-
+// `include "./modules/sos.v"
+// `include "./modules/weight.v"
 
 module emergency (
     button_reset,

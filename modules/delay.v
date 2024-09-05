@@ -1,14 +1,20 @@
-module delay #(parameter delay = 3'b111) (clk, count, pass);
+module delay #(
+    parameter delay = 3'b111
+) (
+    clk,
+    count,
+    pass
+);
     input clk;
     output reg pass;
-	inout [2:0] count;
+    inout [2:0] count;
 
     reg [2:0] count_temp = 3'b000;
-	assign count = count_temp;
+    assign count = count_temp;
 
-	always @(count == 3'b000) begin
-		count_temp = 1'b0;
-	end
+    always @(count == 3'b000) begin
+        count_temp = 1'b0;
+    end
 
     always @(posedge clk) begin
         if (count_temp == delay) begin

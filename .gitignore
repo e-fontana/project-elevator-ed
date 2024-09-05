@@ -12,3 +12,4 @@ work
 transcript
 quartus/*
 modelsim/*
+*.sh

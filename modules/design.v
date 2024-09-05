@@ -1,3 +1,8 @@
+// `include "./modules/frequency.v"
+// `include "./modules/button_handler.v"
+// `include "./modules/movement.v"
+// `include "./modules/emergency.v"
+
 module TOP #(
     parameter clk_freq = 50000000
 ) (
@@ -30,10 +35,29 @@ module TOP #(
     moving,
     // emergencia (leds vermelhos)
     sos_mode,
-    weight_limit_exceeded
+    weight_limit_exceeded,
+    // display1
+    display10,
+    display11,
+    display12,
+    display13,
+    display14,
+    display15,
+    display16,
+    //display2
+    display20,
+    display21,
+    display22,
+    display23,
+    display24,
+    display25,
+    display26
 );
     input clk_50, button1_pushed, button2_pushed, button3_pushed, button_reset_pushed, sos_flip, weight_flip, weight_flip_reset;
     output led1, led2, led3, floor1, floor2, floor3, door, moving, sos_mode, weight_limit_exceeded;
+
+    output display10, display11, display12, display13, display14, display15, display16;
+    output display20, display21, display22, display23, display24, display25, display26;
 
     wire clk, button1, button2, button3, button_reset;
 
@@ -66,7 +90,21 @@ module TOP #(
         door,
         moving,
         sos_mode,
-        weight_limit_exceeded
+        weight_limit_exceeded,
+        display10,
+        display11,
+        display12,
+        display13,
+        display14,
+        display15,
+        display16,
+        display20,
+        display21,
+        display22,
+        display23,
+        display24,
+        display25,
+        display26
     );
     emergency EMERGENCY (
         button_reset,
