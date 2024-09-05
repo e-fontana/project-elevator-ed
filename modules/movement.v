@@ -50,7 +50,6 @@ module movement (
         weight_limit_exceeded,
         move_clk
     );
-
     floor_types FT (
         floor,
         floor1,

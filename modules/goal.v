@@ -15,11 +15,8 @@ module goal #(
     output reg [1:0] gf = labelF1;
 
     always @(move_handler or led1 or led2 or led3) begin
-
         if (~move_handler) begin
-
             case (floor)
-
                 labelF1: begin
                     case ({
                         led1, led2, led3
@@ -30,7 +27,6 @@ module goal #(
                         default: gf = labelF1;
                     endcase
                 end
-
                 labelF2: begin
                     case ({
                         led1, led2, led3
@@ -41,7 +37,6 @@ module goal #(
                         default: gf = labelF2;
                     endcase
                 end
-
                 labelF3: begin
                     case ({
                         led1, led2, led3
@@ -54,9 +49,7 @@ module goal #(
                 end
 
                 default: gf = labelF1;
-
             endcase
-
         end else gf = gf;
     end
 endmodule
